@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+            <string>Helvetica-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="545" id="9ry-tm-uNf" customClass="TEAssignmentDetailCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="545"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9ry-tm-uNf" id="13B-B6-LA1">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="544.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignment Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b9-xP-b9M" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="36" y="93.5" width="130.5" height="18.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130.5" id="ikD-fI-zG8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" text="Non graded" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeD-j1-Mr8" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="184.5" y="93.5" width="154.5" height="18.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLr-WB-4OG" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="36" y="127" width="41" height="18.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" text="12" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwf-ch-pK5" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="184" y="127" width="154.5" height="18.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Published On" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9g-te-Ie7" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="36" y="160.5" width="97" height="18.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" text="20 Apr" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0B-4E-Ut1" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="184" y="160.5" width="154.5" height="18.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="966-rO-DtN" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="36" y="194" width="68" height="18.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" text="21 May" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH3-fV-MNK" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="184" y="194" width="154.5" height="18.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBn-Wg-72b" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="28" y="20" width="319" height="55.5"/>
+                        <string key="text">If you want, you can apply the criteria to one range and sum the corresponding values in a different range. For example, the formula</string>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Paper Attachment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR6-kv-hTb">
+                        <rect key="frame" x="36" y="356" width="172" height="17"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FB0-zy-Rdp" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="36" y="374.5" width="302.5" height="44"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pdf" translatesAutoresizingMaskIntoConstraints="NO" id="lo6-au-IsJ" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="15" y="12" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="5Tx-oU-toO"/>
+                                    <constraint firstAttribute="height" constant="20" id="dfb-eb-JHl"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-download-active" translatesAutoresizingMaskIntoConstraints="NO" id="0tT-JF-HpK" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="262.5" y="12" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="eXO-Zl-S2h"/>
+                                    <constraint firstAttribute="width" constant="20" id="vyb-hM-Gw6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paper.pdf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="G31-4T-CmZ" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="43" y="14.5" width="211.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7e-cY-1hv">
+                                <rect key="frame" x="0.0" y="-0.5" width="302.5" height="44"/>
+                                <connections>
+                                    <action selector="downloadAssigmentDidClick:" destination="9ry-tm-uNf" eventType="touchUpInside" id="YV6-G9-2vB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lo6-au-IsJ" firstAttribute="centerY" secondItem="FB0-zy-Rdp" secondAttribute="centerY" id="3CB-3O-6mR"/>
+                            <constraint firstItem="0tT-JF-HpK" firstAttribute="leading" secondItem="G31-4T-CmZ" secondAttribute="trailing" constant="8" id="75N-15-a0q"/>
+                            <constraint firstItem="lo6-au-IsJ" firstAttribute="leading" secondItem="FB0-zy-Rdp" secondAttribute="leading" constant="15" id="G1d-OH-D6s"/>
+                            <constraint firstItem="G7e-cY-1hv" firstAttribute="top" secondItem="FB0-zy-Rdp" secondAttribute="top" id="GGe-Xu-5mU"/>
+                            <constraint firstItem="G7e-cY-1hv" firstAttribute="leading" secondItem="FB0-zy-Rdp" secondAttribute="leading" id="KcM-zp-mxb"/>
+                            <constraint firstAttribute="trailing" secondItem="G7e-cY-1hv" secondAttribute="trailing" id="OCx-zW-rJZ"/>
+                            <constraint firstAttribute="trailing" secondItem="0tT-JF-HpK" secondAttribute="trailing" constant="20" id="ReO-XL-T9n"/>
+                            <constraint firstAttribute="height" constant="44" id="UDl-VQ-fcn"/>
+                            <constraint firstAttribute="bottom" secondItem="G7e-cY-1hv" secondAttribute="bottom" id="ck5-m4-Lgn"/>
+                            <constraint firstItem="0tT-JF-HpK" firstAttribute="centerY" secondItem="FB0-zy-Rdp" secondAttribute="centerY" id="qKf-Zy-JrY"/>
+                            <constraint firstItem="G31-4T-CmZ" firstAttribute="leading" secondItem="lo6-au-IsJ" secondAttribute="trailing" constant="8" id="u8Q-7H-laq"/>
+                            <constraint firstItem="G31-4T-CmZ" firstAttribute="centerY" secondItem="lo6-au-IsJ" secondAttribute="centerY" id="yRb-of-TCd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJz-Pf-4sq" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="36" y="426" width="302.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFM-Bb-jyd" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="115" y="462.5" width="145" height="28"/>
+                        <color key="backgroundColor" red="0.0" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="MTb-qK-kLF"/>
+                            <constraint firstAttribute="width" constant="145" id="toy-t8-mmd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <state key="normal" title="Upload Attachment">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="uploadAssigmentDidClick:" destination="9ry-tm-uNf" eventType="touchUpInside" id="f9c-B1-IZY"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sucess" translatesAutoresizingMaskIntoConstraints="NO" id="zGf-C7-bku" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="167" y="498" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="lfi-Ln-Yir"/>
+                            <constraint firstAttribute="width" constant="40" id="nep-9e-Jp4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAE-ys-LDS" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="36" y="227.5" width="68" height="18.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" text="21 May" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCt-ht-mpI" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="184" y="227.5" width="154.5" height="18.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Marks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYo-zS-elB" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="36" y="261" width="79" height="19"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" text="21 May" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuB-Ad-4bb" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="184" y="261" width="154.5" height="18.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min Marks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJK-ww-goP" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="36" y="296" width="74" height="19"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" text="21 May" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9P-kE-xT8" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="184" y="296" width="154.5" height="18.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eLr-WB-4OG" firstAttribute="leading" secondItem="4b9-xP-b9M" secondAttribute="leading" id="09N-2m-dhL"/>
+                    <constraint firstItem="w0B-4E-Ut1" firstAttribute="trailing" secondItem="Hwf-ch-pK5" secondAttribute="trailing" id="1h6-yM-u6w"/>
+                    <constraint firstItem="Hwf-ch-pK5" firstAttribute="top" secondItem="eLr-WB-4OG" secondAttribute="top" id="1hy-05-TjN"/>
+                    <constraint firstItem="XR6-kv-hTb" firstAttribute="leading" secondItem="966-rO-DtN" secondAttribute="leading" id="26u-Ot-g7b"/>
+                    <constraint firstItem="FB0-zy-Rdp" firstAttribute="top" secondItem="XR6-kv-hTb" secondAttribute="bottom" constant="2" id="2e7-Yi-pff"/>
+                    <constraint firstItem="UCt-ht-mpI" firstAttribute="leading" secondItem="NH3-fV-MNK" secondAttribute="leading" id="4cb-vu-tEm"/>
+                    <constraint firstItem="AJz-Pf-4sq" firstAttribute="top" secondItem="FB0-zy-Rdp" secondAttribute="bottom" constant="7.5" id="9Kk-2h-JJs"/>
+                    <constraint firstItem="AJz-Pf-4sq" firstAttribute="leading" secondItem="FB0-zy-Rdp" secondAttribute="leading" id="AF7-bU-WgM"/>
+                    <constraint firstItem="KBn-Wg-72b" firstAttribute="top" secondItem="13B-B6-LA1" secondAttribute="top" constant="20" id="AMv-9N-on8"/>
+                    <constraint firstItem="M9g-te-Ie7" firstAttribute="top" secondItem="Hwf-ch-pK5" secondAttribute="bottom" constant="15" id="IOM-vV-Rn7"/>
+                    <constraint firstItem="zGf-C7-bku" firstAttribute="centerX" secondItem="bFM-Bb-jyd" secondAttribute="centerX" id="J0N-er-Grm"/>
+                    <constraint firstItem="HeD-j1-Mr8" firstAttribute="leading" secondItem="4b9-xP-b9M" secondAttribute="trailing" constant="18" id="L1D-hh-dn5"/>
+                    <constraint firstItem="KBn-Wg-72b" firstAttribute="leading" secondItem="13B-B6-LA1" secondAttribute="leading" constant="28" id="MgP-Je-jaa"/>
+                    <constraint firstItem="966-rO-DtN" firstAttribute="leading" secondItem="M9g-te-Ie7" secondAttribute="leading" id="MwZ-w2-S74"/>
+                    <constraint firstItem="966-rO-DtN" firstAttribute="top" secondItem="w0B-4E-Ut1" secondAttribute="bottom" constant="15" id="Nru-nR-3EJ"/>
+                    <constraint firstItem="XAE-ys-LDS" firstAttribute="leading" secondItem="966-rO-DtN" secondAttribute="leading" id="Orn-R6-qU7"/>
+                    <constraint firstItem="HeD-j1-Mr8" firstAttribute="top" secondItem="4b9-xP-b9M" secondAttribute="top" id="Ppv-32-SzU"/>
+                    <constraint firstItem="XR6-kv-hTb" firstAttribute="top" secondItem="u9P-kE-xT8" secondAttribute="bottom" constant="41.5" id="R9h-RV-0xt"/>
+                    <constraint firstItem="tYo-zS-elB" firstAttribute="top" secondItem="UCt-ht-mpI" secondAttribute="bottom" constant="15" id="TXG-gl-Nwp"/>
+                    <constraint firstItem="NH3-fV-MNK" firstAttribute="top" secondItem="966-rO-DtN" secondAttribute="top" id="XfR-jr-5gk"/>
+                    <constraint firstItem="M9g-te-Ie7" firstAttribute="leading" secondItem="eLr-WB-4OG" secondAttribute="leading" id="XfU-vR-jQm"/>
+                    <constraint firstItem="zGf-C7-bku" firstAttribute="top" secondItem="bFM-Bb-jyd" secondAttribute="bottom" constant="7.5" id="YgN-8K-yFe"/>
+                    <constraint firstItem="HuB-Ad-4bb" firstAttribute="trailing" secondItem="UCt-ht-mpI" secondAttribute="trailing" id="a3S-wd-7b4"/>
+                    <constraint firstItem="UCt-ht-mpI" firstAttribute="top" secondItem="XAE-ys-LDS" secondAttribute="top" id="bHZ-DS-gQN"/>
+                    <constraint firstItem="eLr-WB-4OG" firstAttribute="top" secondItem="HeD-j1-Mr8" secondAttribute="bottom" constant="15" id="cLU-kS-vqK"/>
+                    <constraint firstItem="u9P-kE-xT8" firstAttribute="leading" secondItem="HuB-Ad-4bb" secondAttribute="leading" id="dlX-rH-7NS"/>
+                    <constraint firstItem="bFM-Bb-jyd" firstAttribute="top" secondItem="AJz-Pf-4sq" secondAttribute="bottom" constant="20" id="e1Y-3m-9sZ"/>
+                    <constraint firstItem="rJK-ww-goP" firstAttribute="leading" secondItem="tYo-zS-elB" secondAttribute="leading" id="eSM-MD-GYH"/>
+                    <constraint firstItem="HuB-Ad-4bb" firstAttribute="leading" secondItem="UCt-ht-mpI" secondAttribute="leading" id="eeo-eq-mNm"/>
+                    <constraint firstItem="rJK-ww-goP" firstAttribute="top" secondItem="HuB-Ad-4bb" secondAttribute="bottom" constant="16.5" id="fBJ-Zd-icT"/>
+                    <constraint firstAttribute="bottom" secondItem="zGf-C7-bku" secondAttribute="bottom" constant="6.5" id="geT-dE-ytJ"/>
+                    <constraint firstAttribute="trailing" secondItem="KBn-Wg-72b" secondAttribute="trailing" constant="28" id="hZi-h7-J56"/>
+                    <constraint firstItem="u9P-kE-xT8" firstAttribute="top" secondItem="rJK-ww-goP" secondAttribute="top" id="huW-Xe-jSh"/>
+                    <constraint firstItem="Hwf-ch-pK5" firstAttribute="trailing" secondItem="HeD-j1-Mr8" secondAttribute="trailing" id="i46-Nf-dVH"/>
+                    <constraint firstItem="4b9-xP-b9M" firstAttribute="leading" secondItem="13B-B6-LA1" secondAttribute="leadingMargin" constant="20" id="i6k-Kv-uND"/>
+                    <constraint firstItem="tYo-zS-elB" firstAttribute="leading" secondItem="XAE-ys-LDS" secondAttribute="leading" id="is2-hc-w7a"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="HeD-j1-Mr8" secondAttribute="trailing" constant="20" id="kpN-hT-HPb"/>
+                    <constraint firstItem="UCt-ht-mpI" firstAttribute="trailing" secondItem="NH3-fV-MNK" secondAttribute="trailing" id="m4J-Fw-dqw"/>
+                    <constraint firstItem="4b9-xP-b9M" firstAttribute="top" secondItem="KBn-Wg-72b" secondAttribute="bottom" constant="18" id="mMc-xV-WXC"/>
+                    <constraint firstItem="NH3-fV-MNK" firstAttribute="trailing" secondItem="w0B-4E-Ut1" secondAttribute="trailing" id="n1u-33-seO"/>
+                    <constraint firstItem="AJz-Pf-4sq" firstAttribute="trailing" secondItem="FB0-zy-Rdp" secondAttribute="trailing" id="oBW-z7-pGR"/>
+                    <constraint firstItem="bFM-Bb-jyd" firstAttribute="centerX" secondItem="FB0-zy-Rdp" secondAttribute="centerX" id="oRk-51-YW6"/>
+                    <constraint firstItem="NH3-fV-MNK" firstAttribute="leading" secondItem="w0B-4E-Ut1" secondAttribute="leading" id="qit-m3-P2S"/>
+                    <constraint firstItem="HuB-Ad-4bb" firstAttribute="top" secondItem="tYo-zS-elB" secondAttribute="top" id="s0A-dG-Zo4"/>
+                    <constraint firstItem="FB0-zy-Rdp" firstAttribute="trailing" secondItem="NH3-fV-MNK" secondAttribute="trailing" id="sVq-cT-zGe"/>
+                    <constraint firstItem="w0B-4E-Ut1" firstAttribute="leading" secondItem="Hwf-ch-pK5" secondAttribute="leading" id="uJp-Yc-LPb"/>
+                    <constraint firstItem="FB0-zy-Rdp" firstAttribute="leading" secondItem="966-rO-DtN" secondAttribute="leading" id="vJi-Sz-nN8"/>
+                    <constraint firstItem="Hwf-ch-pK5" firstAttribute="leading" secondItem="HeD-j1-Mr8" secondAttribute="leading" id="wFe-bd-7cn"/>
+                    <constraint firstItem="XAE-ys-LDS" firstAttribute="top" secondItem="NH3-fV-MNK" secondAttribute="bottom" constant="15" id="wnY-Ut-Enw"/>
+                    <constraint firstItem="w0B-4E-Ut1" firstAttribute="top" secondItem="M9g-te-Ie7" secondAttribute="top" id="xh7-nG-N6p"/>
+                    <constraint firstItem="u9P-kE-xT8" firstAttribute="trailing" secondItem="HuB-Ad-4bb" secondAttribute="trailing" id="zCa-9t-Cxv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnUploadDoc" destination="bFM-Bb-jyd" id="7l6-la-V8v"/>
+                <outlet property="btnUploadDocHeight" destination="MTb-qK-kLF" id="66J-Ew-wzM"/>
+                <outlet property="btnUploadDocWidth" destination="toy-t8-mmd" id="DdH-I0-dEU"/>
+                <outlet property="imgSuccess" destination="zGf-C7-bku" id="3pU-TA-wBa"/>
+                <outlet property="imgSuccessHeight" destination="lfi-Ln-Yir" id="QDZ-hj-T1N"/>
+                <outlet property="imgSuccessWidth" destination="nep-9e-Jp4" id="bPd-YA-nPc"/>
+                <outlet property="lblDescription" destination="KBn-Wg-72b" id="nGH-bt-ayR"/>
+                <outlet property="lblDuedate" destination="NH3-fV-MNK" id="FQu-7R-ZrO"/>
+                <outlet property="lblFileName" destination="G31-4T-CmZ" id="sbe-Va-ZKx"/>
+                <outlet property="lblMarkGet" destination="UCt-ht-mpI" id="GfO-9K-X9o"/>
+                <outlet property="lblMarkTitle" destination="XAE-ys-LDS" id="PLK-O3-eBf"/>
+                <outlet property="lblMaxMark" destination="HuB-Ad-4bb" id="8Az-ah-2kd"/>
+                <outlet property="lblMinMark" destination="u9P-kE-xT8" id="wGu-mQ-49x"/>
+                <outlet property="lblMode" destination="Hwf-ch-pK5" id="9w1-WY-pzO"/>
+                <outlet property="lblNote" destination="AJz-Pf-4sq" id="Uko-gh-YgL"/>
+                <outlet property="lblPublishedOn" destination="w0B-4E-Ut1" id="0sp-hB-HOZ"/>
+                <outlet property="lblTitleDuedate" destination="966-rO-DtN" id="gjx-Wc-3ze"/>
+                <outlet property="lblTitleMaxMark" destination="tYo-zS-elB" id="LPM-IK-fDd"/>
+                <outlet property="lblTitleMinMark" destination="rJK-ww-goP" id="9Bi-Su-BcQ"/>
+                <outlet property="lblTitleMode" destination="eLr-WB-4OG" id="yKB-7q-dWZ"/>
+                <outlet property="lblTitlePublishedOn" destination="M9g-te-Ie7" id="MZj-DM-med"/>
+                <outlet property="lblTitleType" destination="4b9-xP-b9M" id="PWW-Mk-1sf"/>
+                <outlet property="lblType" destination="HeD-j1-Mr8" id="vYn-oV-B94"/>
+            </connections>
+            <point key="canvasLocation" x="-77.5" y="299.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic-download-active" width="14" height="14"/>
+        <image name="pdf" width="20" height="20"/>
+        <image name="sucess" width="29" height="28"/>
+    </resources>
+</document>

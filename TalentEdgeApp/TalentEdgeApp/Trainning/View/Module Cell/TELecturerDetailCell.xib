@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="224" id="brX-4J-kft" customClass="TELecturerDetailCell" customModule="ELSA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="brX-4J-kft" id="zOs-V2-JxS">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="agU-N6-hAt" customClass="BCUIImageView" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="20" y="8" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.87843137250000003" green="0.30196078430000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="CzP-CW-btO"/>
+                            <constraint firstAttribute="width" constant="40" id="HRq-B7-7EP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="By Prof. Shailender Tripathi, PhD" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="bH8-mJ-9i0" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="70" y="13" width="287" height="21.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J9O-pR-UM4" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="70" y="36.5" width="84" height="12"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="QsZ-xT-zok"/>
+                            <constraint firstAttribute="width" constant="84" id="laK-i7-k8W"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="2.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" red="1" green="0.94901960780000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                <color key="value" red="1" green="0.94901960780000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,101 Ratings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeR-fw-Xws" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="156" y="36.5" width="86" height="13.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13.5" id="v41-Jd-l2x"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="ITIL - Foundation Certification Training" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxq-q3-xxb" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="20" y="59.5" width="337" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0R-C6-JKx" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="20" y="88.5" width="337" height="54.5"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VGk-CQ-h2h">
+                        <rect key="frame" x="0.0" y="153" width="375" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="KgU-lb-VPA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mxq-q3-xxb" firstAttribute="leading" secondItem="agU-N6-hAt" secondAttribute="leading" id="1sd-eJ-bGI"/>
+                    <constraint firstItem="bH8-mJ-9i0" firstAttribute="top" secondItem="zOs-V2-JxS" secondAttribute="topMargin" constant="5" id="BSu-a1-obj"/>
+                    <constraint firstItem="H0R-C6-JKx" firstAttribute="leading" secondItem="mxq-q3-xxb" secondAttribute="leading" id="JwG-M5-f6u"/>
+                    <constraint firstItem="VGk-CQ-h2h" firstAttribute="leading" secondItem="zOs-V2-JxS" secondAttribute="leading" id="LGq-h5-b0i"/>
+                    <constraint firstItem="agU-N6-hAt" firstAttribute="leading" secondItem="zOs-V2-JxS" secondAttribute="leading" constant="20" id="LRB-Zu-fkl"/>
+                    <constraint firstItem="J9O-pR-UM4" firstAttribute="top" secondItem="bH8-mJ-9i0" secondAttribute="bottom" constant="2" id="O02-rH-GuW"/>
+                    <constraint firstItem="H0R-C6-JKx" firstAttribute="top" secondItem="mxq-q3-xxb" secondAttribute="bottom" constant="7.5" id="OsZ-Qo-kmi"/>
+                    <constraint firstAttribute="trailing" secondItem="VGk-CQ-h2h" secondAttribute="trailing" id="Rbg-CQ-1wP"/>
+                    <constraint firstItem="agU-N6-hAt" firstAttribute="top" secondItem="zOs-V2-JxS" secondAttribute="top" constant="8" id="S49-NJ-cqB"/>
+                    <constraint firstAttribute="bottom" secondItem="VGk-CQ-h2h" secondAttribute="bottom" id="VqN-ds-CYv"/>
+                    <constraint firstItem="VGk-CQ-h2h" firstAttribute="top" secondItem="H0R-C6-JKx" secondAttribute="bottom" constant="10" id="WKQ-uV-BwU"/>
+                    <constraint firstItem="J9O-pR-UM4" firstAttribute="leading" secondItem="bH8-mJ-9i0" secondAttribute="leading" id="Xoz-du-ced"/>
+                    <constraint firstItem="zeR-fw-Xws" firstAttribute="leading" secondItem="J9O-pR-UM4" secondAttribute="trailing" constant="2" id="ajq-lN-FMV"/>
+                    <constraint firstItem="bH8-mJ-9i0" firstAttribute="leading" secondItem="agU-N6-hAt" secondAttribute="trailing" constant="10" id="bNl-W5-cnq"/>
+                    <constraint firstItem="mxq-q3-xxb" firstAttribute="top" secondItem="zeR-fw-Xws" secondAttribute="bottom" constant="9.5" id="bg3-li-Ng3"/>
+                    <constraint firstItem="zeR-fw-Xws" firstAttribute="top" secondItem="J9O-pR-UM4" secondAttribute="top" id="fXq-Tt-h37"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mxq-q3-xxb" secondAttribute="trailing" constant="10" id="mak-Q5-LcA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bH8-mJ-9i0" secondAttribute="trailing" constant="10" id="vDD-b3-za1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="H0R-C6-JKx" secondAttribute="trailing" constant="10" id="zU7-p3-NGx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgUser" destination="agU-N6-hAt" id="9N0-KE-Sgx"/>
+                <outlet property="lblDescription" destination="H0R-C6-JKx" id="dLo-XE-A5I"/>
+                <outlet property="lblName" destination="bH8-mJ-9i0" id="wYi-Wx-Fza"/>
+                <outlet property="lblTitle" destination="mxq-q3-xxb" id="KXk-9y-7Gw"/>
+                <outlet property="lblTotalRating" destination="zeR-fw-Xws" id="fgg-YH-g3X"/>
+                <outlet property="viewAverageRating" destination="J9O-pR-UM4" id="noB-qA-tfJ"/>
+            </connections>
+            <point key="canvasLocation" x="-274.5" y="195.5"/>
+        </tableViewCell>
+    </objects>
+</document>

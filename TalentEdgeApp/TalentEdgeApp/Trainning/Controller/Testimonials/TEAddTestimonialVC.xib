@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TEAddTestimonialVC" customModule="ELSA" customModuleProvider="target">
+            <connections>
+                <outlet property="imgUser" destination="egm-6C-CCX" id="SzJ-C0-dVK"/>
+                <outlet property="lblUserName" destination="6sh-2A-UYt" id="gG0-bD-wzH"/>
+                <outlet property="txtVWTestimonial" destination="7gQ-LJ-UWq" id="XeZ-DY-a3x"/>
+                <outlet property="view" destination="IZ6-PP-jjW" id="NTE-S9-hVn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="IZ6-PP-jjW">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avatar_on_comments" translatesAutoresizingMaskIntoConstraints="NO" id="egm-6C-CCX" customClass="BCUIImageView" customModule="ELSA" customModuleProvider="target">
+                    <rect key="frame" x="15" y="30" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="SeW-zM-poB"/>
+                        <constraint firstAttribute="height" constant="60" id="jzp-Za-ynl"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7gQ-LJ-UWq" customClass="BCUITextView" customModule="ELSA" customModuleProvider="target">
+                    <rect key="frame" x="15" y="100" width="345" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="R1a-2R-yxv"/>
+                    </constraints>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sh-2A-UYt" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                    <rect key="frame" x="90" y="37" width="270" height="21"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL5-CF-itT" customClass="BCUIButton" customModule="ELSA" customModuleProvider="target">
+                    <rect key="frame" x="127.5" y="315" width="120" height="41"/>
+                    <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                    <inset key="contentEdgeInsets" minX="30" minY="10" maxX="30" maxY="10"/>
+                    <state key="normal" title="Publish"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="publish_Click:" destination="-1" eventType="touchUpInside" id="I9K-5a-qrd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7gQ-LJ-UWq" firstAttribute="leading" secondItem="egm-6C-CCX" secondAttribute="leading" id="3Mb-G2-6hJ"/>
+                <constraint firstItem="egm-6C-CCX" firstAttribute="top" secondItem="IZ6-PP-jjW" secondAttribute="top" constant="30" id="CUd-YP-EFD"/>
+                <constraint firstItem="HL5-CF-itT" firstAttribute="top" secondItem="7gQ-LJ-UWq" secondAttribute="bottom" constant="15" id="EHb-hq-w1p"/>
+                <constraint firstItem="HL5-CF-itT" firstAttribute="centerX" secondItem="7gQ-LJ-UWq" secondAttribute="centerX" id="Umg-HS-Up4"/>
+                <constraint firstAttribute="trailing" secondItem="6sh-2A-UYt" secondAttribute="trailing" constant="15" id="Xhg-Kc-sLu"/>
+                <constraint firstItem="7gQ-LJ-UWq" firstAttribute="trailing" secondItem="6sh-2A-UYt" secondAttribute="trailing" id="ap6-2i-4BM"/>
+                <constraint firstItem="7gQ-LJ-UWq" firstAttribute="top" secondItem="egm-6C-CCX" secondAttribute="bottom" constant="10" id="nUE-Y0-8A8"/>
+                <constraint firstItem="6sh-2A-UYt" firstAttribute="top" secondItem="egm-6C-CCX" secondAttribute="top" constant="7" id="q0r-PT-2Lb"/>
+                <constraint firstItem="egm-6C-CCX" firstAttribute="leading" secondItem="IZ6-PP-jjW" secondAttribute="leading" constant="15" id="vv4-Bg-Dc0"/>
+                <constraint firstItem="6sh-2A-UYt" firstAttribute="leading" secondItem="egm-6C-CCX" secondAttribute="trailing" constant="15" id="wHC-tg-kti"/>
+                <constraint firstItem="7gQ-LJ-UWq" firstAttribute="width" secondItem="egm-6C-CCX" secondAttribute="height" multiplier="23:4" id="yeW-bh-5LC"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_avatar_on_comments" width="25" height="25"/>
+    </resources>
+</document>

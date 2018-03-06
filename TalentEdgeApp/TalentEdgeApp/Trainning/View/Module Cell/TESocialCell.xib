@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="7s2-2P-gX1" customClass="TESocialCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7s2-2P-gX1" id="ctz-Tb-9ES">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PbX-dZ-8E3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Kny-I6-35D"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tef-Z2-gmj" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="35" y="2" width="41" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="A83-0z-Gze"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <state key="normal" title="99 likes">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8c-1f-SeV" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="86" y="2" width="82" height="26"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <state key="normal" title="105 Comments">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnT-mC-tOF" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="178" y="2" width="47" height="26"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <state key="normal" title="9 shares">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgE-jn-1Dg" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="38" y="33" width="35" height="35"/>
+                        <color key="backgroundColor" red="0.90580290559999999" green="0.90593320129999999" blue="0.90577441449999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="ZXa-Zj-No5"/>
+                            <constraint firstAttribute="width" constant="35" id="vXA-ya-eJ4"/>
+                        </constraints>
+                        <state key="normal" image="like_icon"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="17.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="like_Click:" destination="7s2-2P-gX1" eventType="touchUpInside" id="MD2-40-8ZH"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fy2-RG-L7J" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="85" y="33" width="35" height="35"/>
+                        <color key="backgroundColor" red="0.90580290559999999" green="0.90593320129999999" blue="0.90577441449999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="comments_icon"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="17.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="commets_Click:" destination="7s2-2P-gX1" eventType="touchUpInside" id="QPb-EP-75Y"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTi-ML-rdF" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="130" y="33" width="35" height="35"/>
+                        <color key="backgroundColor" red="0.90580290555953979" green="0.9059332013130188" blue="0.90577441453933716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="ic_share_Icon"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="17.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="share_Click:" destination="7s2-2P-gX1" eventType="touchUpInside" id="NhD-1x-weZ"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ig4-ye-Gat">
+                        <rect key="frame" x="0.0" y="89" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="bYQ-dy-mTp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CTi-ML-rdF" firstAttribute="width" secondItem="Fy2-RG-L7J" secondAttribute="width" id="32B-IY-l1K"/>
+                    <constraint firstItem="pnT-mC-tOF" firstAttribute="leading" secondItem="Q8c-1f-SeV" secondAttribute="trailing" constant="10" id="6zP-Jh-YuO"/>
+                    <constraint firstItem="CTi-ML-rdF" firstAttribute="height" secondItem="Fy2-RG-L7J" secondAttribute="height" id="94g-4u-dJw"/>
+                    <constraint firstItem="Q8c-1f-SeV" firstAttribute="top" secondItem="Tef-Z2-gmj" secondAttribute="top" id="AdU-yB-z6F"/>
+                    <constraint firstItem="EgE-jn-1Dg" firstAttribute="leading" secondItem="ctz-Tb-9ES" secondAttribute="leadingMargin" constant="30" id="DYh-aa-J91"/>
+                    <constraint firstAttribute="bottom" secondItem="ig4-ye-Gat" secondAttribute="bottom" id="JcN-vK-tmC"/>
+                    <constraint firstItem="Tef-Z2-gmj" firstAttribute="leading" secondItem="ctz-Tb-9ES" secondAttribute="leadingMargin" constant="27" id="LRT-3H-4GR"/>
+                    <constraint firstItem="pnT-mC-tOF" firstAttribute="height" secondItem="Q8c-1f-SeV" secondAttribute="height" id="Lim-mf-6Z0"/>
+                    <constraint firstItem="CTi-ML-rdF" firstAttribute="top" secondItem="Fy2-RG-L7J" secondAttribute="top" id="NOj-iX-pXI"/>
+                    <constraint firstItem="Tef-Z2-gmj" firstAttribute="top" secondItem="PbX-dZ-8E3" secondAttribute="bottom" constant="1" id="SOr-aB-rLw"/>
+                    <constraint firstItem="PbX-dZ-8E3" firstAttribute="leading" secondItem="ctz-Tb-9ES" secondAttribute="leadingMargin" constant="-8" id="U8A-RA-9Ti"/>
+                    <constraint firstItem="EgE-jn-1Dg" firstAttribute="top" secondItem="Tef-Z2-gmj" secondAttribute="bottom" constant="5" id="UgT-wm-Tmf"/>
+                    <constraint firstItem="pnT-mC-tOF" firstAttribute="top" secondItem="Q8c-1f-SeV" secondAttribute="top" id="VgA-CG-ROD"/>
+                    <constraint firstItem="ig4-ye-Gat" firstAttribute="top" secondItem="EgE-jn-1Dg" secondAttribute="bottom" constant="20.5" id="Wc5-WL-zg6"/>
+                    <constraint firstItem="Q8c-1f-SeV" firstAttribute="leading" secondItem="Tef-Z2-gmj" secondAttribute="trailing" constant="10" id="X9L-Q7-fVs"/>
+                    <constraint firstItem="Fy2-RG-L7J" firstAttribute="height" secondItem="EgE-jn-1Dg" secondAttribute="height" id="dGI-br-QOL"/>
+                    <constraint firstItem="Q8c-1f-SeV" firstAttribute="height" secondItem="Tef-Z2-gmj" secondAttribute="height" id="fee-pK-eJw"/>
+                    <constraint firstItem="ig4-ye-Gat" firstAttribute="leading" secondItem="PbX-dZ-8E3" secondAttribute="leading" id="gEX-kX-3lc"/>
+                    <constraint firstItem="Fy2-RG-L7J" firstAttribute="width" secondItem="EgE-jn-1Dg" secondAttribute="width" id="iFu-CY-cM1"/>
+                    <constraint firstItem="PbX-dZ-8E3" firstAttribute="top" secondItem="ctz-Tb-9ES" secondAttribute="top" id="pLw-eQ-S2G"/>
+                    <constraint firstItem="ig4-ye-Gat" firstAttribute="trailing" secondItem="PbX-dZ-8E3" secondAttribute="trailing" id="pgV-WW-Rur"/>
+                    <constraint firstItem="Fy2-RG-L7J" firstAttribute="top" secondItem="EgE-jn-1Dg" secondAttribute="top" id="u9h-Ue-NT7"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PbX-dZ-8E3" secondAttribute="trailing" constant="-8" id="xDv-7v-oVz"/>
+                    <constraint firstItem="Fy2-RG-L7J" firstAttribute="leading" secondItem="EgE-jn-1Dg" secondAttribute="trailing" constant="12" id="yGb-xQ-Sgl"/>
+                    <constraint firstItem="CTi-ML-rdF" firstAttribute="leading" secondItem="Fy2-RG-L7J" secondAttribute="trailing" constant="10" id="zxC-K0-my7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentsValue" destination="Q8c-1f-SeV" id="AH2-7e-KU4"/>
+                <outlet property="likeValue" destination="Tef-Z2-gmj" id="1ac-bR-v9Z"/>
+                <outlet property="shareValue" destination="pnT-mC-tOF" id="VLc-tW-8E8"/>
+            </connections>
+            <point key="canvasLocation" x="-164.5" y="135"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="comments_icon" width="20" height="17"/>
+        <image name="ic_share_Icon" width="17" height="17"/>
+        <image name="like_icon" width="20" height="20"/>
+    </resources>
+</document>

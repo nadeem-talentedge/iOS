@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZnF-X6-gGw" customClass="TELeftMenuCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZnF-X6-gGw" id="KUK-2d-Qgh">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3gE-G8-ghD" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="30" y="11" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="ITa-oX-vn0"/>
+                            <constraint firstAttribute="width" constant="22" id="otT-vT-bMZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiI-9n-gn4" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="72" y="12" width="77.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="9AG-Sk-B7n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="3gE-G8-ghD" firstAttribute="leading" secondItem="KUK-2d-Qgh" secondAttribute="leading" constant="30" id="AeN-5c-Hxp"/>
+                    <constraint firstItem="KiI-9n-gn4" firstAttribute="centerY" secondItem="KUK-2d-Qgh" secondAttribute="centerY" id="SZt-sh-ZvG"/>
+                    <constraint firstItem="3gE-G8-ghD" firstAttribute="centerY" secondItem="KUK-2d-Qgh" secondAttribute="centerY" id="VOA-wU-Kti"/>
+                    <constraint firstItem="KiI-9n-gn4" firstAttribute="leading" secondItem="3gE-G8-ghD" secondAttribute="trailing" constant="20" id="e0C-gP-ED9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imageIcon" destination="3gE-G8-ghD" id="Mdw-vk-Mtr"/>
+                <outlet property="lblTitle" destination="KiI-9n-gn4" id="tFy-9o-5d7"/>
+            </connections>
+            <point key="canvasLocation" x="-5" y="47"/>
+        </tableViewCell>
+    </objects>
+</document>

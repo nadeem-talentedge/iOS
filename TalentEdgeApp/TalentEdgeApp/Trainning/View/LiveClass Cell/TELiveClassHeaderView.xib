@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vTA-yb-OLa" customClass="TELiveClassHeaderView" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUe-yV-J7c" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                    <rect key="frame" x="10" y="4" width="323" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="KAE-SW-a1V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHm-7o-2Xo" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                    <rect key="frame" x="345" y="0.0" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="04v-oP-L2V"/>
+                    </constraints>
+                    <state key="normal" image="ic_filter"/>
+                    <connections>
+                        <action selector="filter_Click:" destination="vTA-yb-OLa" eventType="touchUpInside" id="giN-1f-kED"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XHm-7o-2Xo" firstAttribute="top" secondItem="vTA-yb-OLa" secondAttribute="top" id="OhM-VU-pgR"/>
+                <constraint firstAttribute="bottom" secondItem="XHm-7o-2Xo" secondAttribute="bottom" id="VLv-b1-DaQ"/>
+                <constraint firstAttribute="trailing" secondItem="XHm-7o-2Xo" secondAttribute="trailing" id="a9w-GR-1AB"/>
+                <constraint firstItem="XHm-7o-2Xo" firstAttribute="leading" secondItem="XUe-yV-J7c" secondAttribute="trailing" constant="12" id="hMm-MP-256"/>
+                <constraint firstItem="XUe-yV-J7c" firstAttribute="leading" secondItem="vTA-yb-OLa" secondAttribute="leading" constant="10" id="kcS-li-Xw5"/>
+                <constraint firstItem="XUe-yV-J7c" firstAttribute="centerY" secondItem="vTA-yb-OLa" secondAttribute="centerY" id="vTV-BV-Rl0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="heading" destination="XUe-yV-J7c" id="PNC-r5-E9f"/>
+            </connections>
+            <point key="canvasLocation" x="141.5" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_filter" width="14" height="14"/>
+    </resources>
+</document>

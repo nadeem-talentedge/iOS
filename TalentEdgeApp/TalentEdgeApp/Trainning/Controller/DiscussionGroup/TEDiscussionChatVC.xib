@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TEDiscussionChatVC" customModule="TalentEdgeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="growingTextView" destination="nmO-HC-71k" id="8IR-p1-eL5"/>
+                <outlet property="inputContainerView" destination="6Y1-bq-wJs" id="h3P-eE-6Ka"/>
+                <outlet property="inputContainerViewBottom" destination="r4V-nK-aSP" id="D3J-Si-FiB"/>
+                <outlet property="tableview" destination="nsb-zR-CvV" id="l0V-Uo-Wca"/>
+                <outlet property="view" destination="Ai7-qA-piX" id="LV8-3F-j4g"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ai7-qA-piX">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nsb-zR-CvV" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="612"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hJN-M4-pL5"/>
+                        <outlet property="delegate" destination="-1" id="ibg-Is-Jv5"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Y1-bq-wJs" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="36" translatesAutoresizingMaskIntoConstraints="NO" id="nmO-HC-71k" customClass="NextGrowingTextView" customModule="NextGrowingTextView">
+                            <rect key="frame" x="4" y="4" width="300" height="36"/>
+                            <color key="backgroundColor" red="0.0" green="0.55294117649999996" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZd-4v-f6e">
+                            <rect key="frame" x="324" y="4" width="38" height="36"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="38" id="1tN-DO-bV9"/>
+                                <constraint firstAttribute="height" constant="36" id="nQc-La-zZ8"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                            <state key="normal" image="send-orange"/>
+                            <connections>
+                                <action selector="sendMessageWithSender:" destination="-1" eventType="touchUpInside" id="QCm-Jj-n0u"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cZd-4v-f6e" secondAttribute="trailing" constant="13" id="0cp-aR-El5"/>
+                        <constraint firstItem="cZd-4v-f6e" firstAttribute="leading" secondItem="nmO-HC-71k" secondAttribute="trailing" constant="20" id="783-m4-hbM"/>
+                        <constraint firstItem="cZd-4v-f6e" firstAttribute="top" secondItem="nmO-HC-71k" secondAttribute="top" id="Esj-To-muc"/>
+                        <constraint firstItem="nmO-HC-71k" firstAttribute="leading" secondItem="6Y1-bq-wJs" secondAttribute="leading" constant="4" id="UeO-aT-BHO"/>
+                        <constraint firstAttribute="bottom" secondItem="nmO-HC-71k" secondAttribute="bottom" constant="15" id="r4V-nK-aSP"/>
+                        <constraint firstItem="nmO-HC-71k" firstAttribute="top" secondItem="6Y1-bq-wJs" secondAttribute="top" constant="4" id="uGx-bI-962"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6Y1-bq-wJs" secondAttribute="trailing" id="5MB-kF-1nm"/>
+                <constraint firstAttribute="bottom" secondItem="6Y1-bq-wJs" secondAttribute="bottom" id="ESh-k7-avW"/>
+                <constraint firstItem="6Y1-bq-wJs" firstAttribute="top" secondItem="nsb-zR-CvV" secondAttribute="bottom" id="Fgw-hL-rue"/>
+                <constraint firstItem="6Y1-bq-wJs" firstAttribute="leading" secondItem="Ai7-qA-piX" secondAttribute="leading" id="GFo-kw-qQL"/>
+                <constraint firstAttribute="trailing" secondItem="nsb-zR-CvV" secondAttribute="trailing" id="IQL-YU-b9D"/>
+                <constraint firstItem="nsb-zR-CvV" firstAttribute="leading" secondItem="Ai7-qA-piX" secondAttribute="leading" id="XVe-uM-QMl"/>
+                <constraint firstItem="nsb-zR-CvV" firstAttribute="top" secondItem="Ai7-qA-piX" secondAttribute="top" id="xYf-nk-w1N"/>
+            </constraints>
+            <point key="canvasLocation" x="-67" y="-172"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="send-orange" width="20" height="20"/>
+    </resources>
+</document>

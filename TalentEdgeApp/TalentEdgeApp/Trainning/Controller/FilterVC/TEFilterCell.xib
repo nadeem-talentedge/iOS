@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="KGk-i7-Jjw" customClass="TEFilterCell" customModule="ELSA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOv-dD-I8F" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="18" y="13" width="271" height="20.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9TE-Wk-gca">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="2Hs-cK-CL3"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZz-sp-wwl" customClass="BCUIButton" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="294" y="15.5" width="16" height="16"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="ZE6-UT-Jly"/>
+                            <constraint firstAttribute="width" constant="16" id="bgJ-TF-mmB"/>
+                        </constraints>
+                        <state key="normal" image="unselect"/>
+                        <state key="selected" image="select"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="HZz-sp-wwl" secondAttribute="trailing" constant="10" id="BY9-w7-T5C"/>
+                    <constraint firstItem="HZz-sp-wwl" firstAttribute="leading" secondItem="WOv-dD-I8F" secondAttribute="trailing" constant="5" id="Rk9-qQ-5Ku"/>
+                    <constraint firstItem="HZz-sp-wwl" firstAttribute="centerY" secondItem="WOv-dD-I8F" secondAttribute="centerY" id="RpX-Cy-UR3"/>
+                    <constraint firstAttribute="trailing" secondItem="9TE-Wk-gca" secondAttribute="trailing" id="ZNH-Zi-ATT"/>
+                    <constraint firstItem="9TE-Wk-gca" firstAttribute="top" secondItem="WOv-dD-I8F" secondAttribute="bottom" constant="9" id="bVH-jW-a5n"/>
+                    <constraint firstAttribute="bottom" secondItem="9TE-Wk-gca" secondAttribute="bottom" id="kcH-bJ-rzi"/>
+                    <constraint firstItem="9TE-Wk-gca" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oO6-c7-w1E"/>
+                    <constraint firstItem="WOv-dD-I8F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="vJx-iF-DkB"/>
+                    <constraint firstItem="WOv-dD-I8F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="xWG-Qm-eXr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnSelection" destination="HZz-sp-wwl" id="Pmm-yX-zmw"/>
+                <outlet property="lblTitle" destination="WOv-dD-I8F" id="dCx-7l-MzF"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="select" width="20" height="20"/>
+        <image name="unselect" width="64" height="64"/>
+    </resources>
+</document>

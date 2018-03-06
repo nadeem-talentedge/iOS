@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="246" id="x8H-Mg-K2J" customClass="TETestimonialsCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="246"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x8H-Mg-K2J" id="zVt-OA-3WM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="245.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yyq-Ze-tpA" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="355" height="225"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pts-Uo-umi" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avatar_on_comments" translatesAutoresizingMaskIntoConstraints="NO" id="FQs-6g-4Iv" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="35" height="35"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="5am-Pt-6ji"/>
+                                            <constraint firstAttribute="width" constant="35" id="xV8-w4-z3e"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                                <real key="value" value="17"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="You Said" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSD-os-e0y" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="55" y="10" width="231" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34.5" id="lZQ-Mm-w7s"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 min ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8n-ZC-VJs" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="296" y="20" width="49" height="13"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xM1-cT-rKm">
+                                        <rect key="frame" x="0.0" y="49" width="355" height="1"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="ki9-Oc-dWP"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="h9k-JC-3o4">
+                                        <rect key="frame" x="335" y="8" width="10" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="10" id="GeB-yQ-gwj"/>
+                                            <constraint firstAttribute="height" constant="10" id="d3Q-4R-QKc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="nSD-os-e0y" secondAttribute="bottom" constant="5.5" id="10x-k0-sQ9"/>
+                                    <constraint firstItem="U8n-ZC-VJs" firstAttribute="top" secondItem="pts-Uo-umi" secondAttribute="top" constant="20" id="1Sm-Lg-yNc"/>
+                                    <constraint firstItem="FQs-6g-4Iv" firstAttribute="top" secondItem="pts-Uo-umi" secondAttribute="top" constant="10" id="1VR-LA-7oT"/>
+                                    <constraint firstItem="U8n-ZC-VJs" firstAttribute="leading" secondItem="nSD-os-e0y" secondAttribute="trailing" constant="10" id="45k-vO-eJl"/>
+                                    <constraint firstAttribute="trailing" secondItem="U8n-ZC-VJs" secondAttribute="trailing" constant="10" id="AUF-xu-0Oe"/>
+                                    <constraint firstItem="nSD-os-e0y" firstAttribute="top" secondItem="pts-Uo-umi" secondAttribute="top" constant="10" id="AcV-SX-wX5"/>
+                                    <constraint firstAttribute="trailing" secondItem="h9k-JC-3o4" secondAttribute="trailing" constant="10" id="SDa-dT-Wmm"/>
+                                    <constraint firstAttribute="trailing" secondItem="xM1-cT-rKm" secondAttribute="trailing" id="ViC-86-Og4"/>
+                                    <constraint firstItem="nSD-os-e0y" firstAttribute="leading" secondItem="FQs-6g-4Iv" secondAttribute="trailing" constant="10" id="f4I-Zs-Jzd"/>
+                                    <constraint firstItem="xM1-cT-rKm" firstAttribute="leading" secondItem="pts-Uo-umi" secondAttribute="leading" id="fox-wg-YRS"/>
+                                    <constraint firstItem="FQs-6g-4Iv" firstAttribute="leading" secondItem="pts-Uo-umi" secondAttribute="leading" constant="10" id="qNI-4j-yT4"/>
+                                    <constraint firstItem="h9k-JC-3o4" firstAttribute="top" secondItem="pts-Uo-umi" secondAttribute="top" constant="8" id="tHh-OS-pcD"/>
+                                    <constraint firstAttribute="bottom" secondItem="xM1-cT-rKm" secondAttribute="bottom" id="uEZ-Ec-uIV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zaF-qK-5Ze" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="355" height="55"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avatar_on_comments" translatesAutoresizingMaskIntoConstraints="NO" id="DFp-dG-huN" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="35" height="35"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="doe-hU-yaM"/>
+                                            <constraint firstAttribute="width" constant="35" id="qxV-KA-x5o"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                                <real key="value" value="17"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foundation Certificate Traning " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7i2-QH-nBZ" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="55" y="10" width="290" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34.5" id="DgF-Nl-PoI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.96470588235294119" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7i2-QH-nBZ" secondAttribute="trailing" constant="10" id="6vj-TN-n59"/>
+                                    <constraint firstItem="DFp-dG-huN" firstAttribute="top" secondItem="zaF-qK-5Ze" secondAttribute="top" constant="10" id="AA5-QI-97o"/>
+                                    <constraint firstAttribute="bottom" secondItem="7i2-QH-nBZ" secondAttribute="bottom" constant="10" id="AAy-9d-P0J"/>
+                                    <constraint firstItem="DFp-dG-huN" firstAttribute="leading" secondItem="zaF-qK-5Ze" secondAttribute="leading" constant="10" id="Oqd-FD-j7P"/>
+                                    <constraint firstItem="7i2-QH-nBZ" firstAttribute="leading" secondItem="DFp-dG-huN" secondAttribute="trailing" constant="10" id="gSc-Oc-t83"/>
+                                    <constraint firstItem="7i2-QH-nBZ" firstAttribute="top" secondItem="zaF-qK-5Ze" secondAttribute="top" constant="10" id="laD-oz-XAV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEv-ba-CnD" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="107" width="355" height="118"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mk-lZ-7v6" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="3" width="335" height="73"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gus-ZE-1Hl" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="76" width="89" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="pcd-54-qbv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                        <state key="normal" title="Show more...">
+                                            <color key="titleColor" red="0.0" green="0.55686274509803924" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Show less..."/>
+                                        <connections>
+                                            <action selector="showMore_Click:" destination="x8H-Mg-K2J" eventType="touchUpInside" id="B8A-sY-VSj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gus-ZE-1Hl" secondAttribute="bottom" constant="12" id="YM6-cw-Jnl"/>
+                                    <constraint firstItem="1Mk-lZ-7v6" firstAttribute="top" secondItem="XEv-ba-CnD" secondAttribute="top" constant="3" id="aRi-wQ-gG9"/>
+                                    <constraint firstItem="gus-ZE-1Hl" firstAttribute="top" secondItem="1Mk-lZ-7v6" secondAttribute="bottom" id="kv7-km-8Vk"/>
+                                    <constraint firstItem="gus-ZE-1Hl" firstAttribute="leading" secondItem="1Mk-lZ-7v6" secondAttribute="leading" id="sqQ-1i-g0K"/>
+                                    <constraint firstItem="1Mk-lZ-7v6" firstAttribute="leading" secondItem="XEv-ba-CnD" secondAttribute="leading" constant="10" id="vTz-9U-3pl"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Mk-lZ-7v6" secondAttribute="trailing" constant="10" id="vZx-tC-hu5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pts-Uo-umi" secondAttribute="trailing" id="91M-4C-Qyi"/>
+                            <constraint firstAttribute="bottom" secondItem="XEv-ba-CnD" secondAttribute="bottom" id="Bdf-tR-6rF"/>
+                            <constraint firstItem="zaF-qK-5Ze" firstAttribute="top" secondItem="pts-Uo-umi" secondAttribute="bottom" id="XxE-KA-zur"/>
+                            <constraint firstItem="XEv-ba-CnD" firstAttribute="top" secondItem="zaF-qK-5Ze" secondAttribute="bottom" constant="2" id="bps-Hv-zWq"/>
+                            <constraint firstItem="zaF-qK-5Ze" firstAttribute="leading" secondItem="Yyq-Ze-tpA" secondAttribute="leading" id="daq-Qr-dCs"/>
+                            <constraint firstAttribute="trailing" secondItem="XEv-ba-CnD" secondAttribute="trailing" id="iDb-9M-hJu"/>
+                            <constraint firstItem="pts-Uo-umi" firstAttribute="top" secondItem="Yyq-Ze-tpA" secondAttribute="top" id="n52-C8-tBG"/>
+                            <constraint firstAttribute="trailing" secondItem="zaF-qK-5Ze" secondAttribute="trailing" id="tkt-Nz-PBv"/>
+                            <constraint firstItem="pts-Uo-umi" firstAttribute="leading" secondItem="Yyq-Ze-tpA" secondAttribute="leading" id="uXV-np-Bco"/>
+                            <constraint firstItem="XEv-ba-CnD" firstAttribute="leading" secondItem="Yyq-Ze-tpA" secondAttribute="leading" id="xlx-9l-pM2"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="NO"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Yyq-Ze-tpA" secondAttribute="bottom" constant="10" id="S9H-kU-UGH"/>
+                    <constraint firstAttribute="trailing" secondItem="Yyq-Ze-tpA" secondAttribute="trailing" constant="10" id="ZRm-mV-1oi"/>
+                    <constraint firstItem="Yyq-Ze-tpA" firstAttribute="leading" secondItem="zVt-OA-3WM" secondAttribute="leading" constant="10" id="tEs-6V-mBK"/>
+                    <constraint firstItem="Yyq-Ze-tpA" firstAttribute="top" secondItem="zVt-OA-3WM" secondAttribute="top" constant="10" id="w53-Wl-bQE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnShowMore" destination="gus-ZE-1Hl" id="iGN-GZ-qMs"/>
+                <outlet property="imgTestimonial" destination="DFp-dG-huN" id="FR3-LI-Ab3"/>
+                <outlet property="lblDate" destination="U8n-ZC-VJs" id="U7z-cH-eqn"/>
+                <outlet property="lblDescription" destination="1Mk-lZ-7v6" id="Cwy-v7-FzM"/>
+                <outlet property="lblTitleOfTestimonial" destination="7i2-QH-nBZ" id="5N2-3K-bw8"/>
+                <outlet property="lblUserName" destination="nSD-os-e0y" id="lXc-HH-kyb"/>
+                <outlet property="userImage" destination="FQs-6g-4Iv" id="EhR-fp-hma"/>
+            </connections>
+            <point key="canvasLocation" x="144.5" y="141"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="downArrow" width="12" height="12"/>
+        <image name="ic_avatar_on_comments" width="25" height="25"/>
+    </resources>
+</document>

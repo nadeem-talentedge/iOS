@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="165" id="KGk-i7-Jjw" customClass="TEModulePlannerCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="164.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBi-mU-gIy">
+                        <rect key="frame" x="18" y="13" width="284" height="19"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock_green" translatesAutoresizingMaskIntoConstraints="NO" id="gmc-O0-ztu">
+                        <rect key="frame" x="151" y="38" width="18" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="1Lg-lH-pJi"/>
+                            <constraint firstAttribute="height" constant="22" id="qaP-RW-vd9"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Grd-9V-gfo" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="18" y="68" width="284" height="90"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVT-Ml-Pnj">
+                                <rect key="frame" x="0.0" y="0.0" width="284" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8K-lc-FvP" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="16" width="124" height="28.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digital Interface" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="oCG-hE-6te" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="124" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5s-bd-G5a" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="18.5" width="124" height="10"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="1qn-xy-usw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="10"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="D5s-bd-G5a" firstAttribute="leading" secondItem="oCG-hE-6te" secondAttribute="leading" id="7eR-Oj-W7s"/>
+                                            <constraint firstItem="D5s-bd-G5a" firstAttribute="trailing" secondItem="oCG-hE-6te" secondAttribute="trailing" id="A3v-Xe-fZq"/>
+                                            <constraint firstItem="oCG-hE-6te" firstAttribute="top" secondItem="i8K-lc-FvP" secondAttribute="top" id="Euq-eM-YCy"/>
+                                            <constraint firstAttribute="bottom" secondItem="D5s-bd-G5a" secondAttribute="bottom" id="Odh-da-9Jn"/>
+                                            <constraint firstItem="D5s-bd-G5a" firstAttribute="top" secondItem="oCG-hE-6te" secondAttribute="bottom" constant="2" id="RCR-G5-C0f"/>
+                                            <constraint firstAttribute="trailing" secondItem="oCG-hE-6te" secondAttribute="trailing" id="aE9-QK-EhX"/>
+                                            <constraint firstItem="oCG-hE-6te" firstAttribute="leading" secondItem="i8K-lc-FvP" secondAttribute="leading" id="fX9-ha-SbP"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dotted_division" translatesAutoresizingMaskIntoConstraints="NO" id="gVh-BC-bnP">
+                                        <rect key="frame" x="140" y="10" width="4" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="4" id="GBD-2T-dfr"/>
+                                            <constraint firstAttribute="height" constant="40" id="lYE-ZF-Nul"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RK4-d2-SP7" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="222" y="19" width="54" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="sbB-Ue-J42"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" red="0.1148860231" green="0.55599170919999996" blue="0.75004488229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                                <real key="value" value="11"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="1" height="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="play_Click:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="13M-Rs-L4B"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="1:00:12" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="F1a-9k-T53" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="156" y="23" width="61" height="14"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="gVh-BC-bnP" firstAttribute="top" secondItem="GVT-Ml-Pnj" secondAttribute="top" constant="10" id="550-rf-3hJ"/>
+                                    <constraint firstItem="RK4-d2-SP7" firstAttribute="centerY" secondItem="GVT-Ml-Pnj" secondAttribute="centerY" id="5m3-ao-GtU"/>
+                                    <constraint firstItem="gVh-BC-bnP" firstAttribute="centerX" secondItem="GVT-Ml-Pnj" secondAttribute="centerX" id="BGA-yn-ycu"/>
+                                    <constraint firstItem="i8K-lc-FvP" firstAttribute="leading" secondItem="GVT-Ml-Pnj" secondAttribute="leading" constant="8" id="O4A-z7-p76"/>
+                                    <constraint firstAttribute="bottom" secondItem="gVh-BC-bnP" secondAttribute="bottom" constant="10" id="OYl-Zv-3dk"/>
+                                    <constraint firstItem="i8K-lc-FvP" firstAttribute="centerY" secondItem="GVT-Ml-Pnj" secondAttribute="centerY" id="Qg4-8t-XhT"/>
+                                    <constraint firstItem="F1a-9k-T53" firstAttribute="centerY" secondItem="gVh-BC-bnP" secondAttribute="centerY" id="dGB-Sp-fDk"/>
+                                    <constraint firstAttribute="trailing" secondItem="RK4-d2-SP7" secondAttribute="trailing" constant="8" id="gNH-ec-CuN"/>
+                                    <constraint firstItem="RK4-d2-SP7" firstAttribute="leading" secondItem="F1a-9k-T53" secondAttribute="trailing" priority="256" constant="5" id="h8P-fk-gfZ"/>
+                                    <constraint firstItem="gVh-BC-bnP" firstAttribute="leading" secondItem="i8K-lc-FvP" secondAttribute="trailing" constant="8" id="hhY-zZ-Yqq"/>
+                                    <constraint firstItem="F1a-9k-T53" firstAttribute="leading" secondItem="gVh-BC-bnP" secondAttribute="trailing" constant="12" id="r5Y-J4-MFe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSa-gL-2HV">
+                                <rect key="frame" x="0.0" y="60" width="284" height="30"/>
+                                <subviews>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLu-fm-UNl">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Xgc-z4-BHo"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date : 12:12:12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLc-wY-N14" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="5" width="268" height="21"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="eLu-fm-UNl" firstAttribute="leading" secondItem="MSa-gL-2HV" secondAttribute="leading" id="1u5-mb-92n"/>
+                                    <constraint firstItem="VLc-wY-N14" firstAttribute="leading" secondItem="MSa-gL-2HV" secondAttribute="leading" constant="8" id="7Dm-0E-QwV"/>
+                                    <constraint firstItem="VLc-wY-N14" firstAttribute="top" secondItem="eLu-fm-UNl" secondAttribute="bottom" constant="4" id="8Jr-fS-zkT"/>
+                                    <constraint firstItem="eLu-fm-UNl" firstAttribute="top" secondItem="MSa-gL-2HV" secondAttribute="top" id="ZwK-Id-g4g"/>
+                                    <constraint firstAttribute="trailing" secondItem="VLc-wY-N14" secondAttribute="trailing" constant="8" id="dac-zU-8gc"/>
+                                    <constraint firstAttribute="bottom" secondItem="VLc-wY-N14" secondAttribute="bottom" constant="4" id="fFR-Y7-1oI"/>
+                                    <constraint firstAttribute="trailing" secondItem="eLu-fm-UNl" secondAttribute="trailing" id="obG-uX-DLN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GVT-Ml-Pnj" secondAttribute="trailing" id="Ahi-Ox-O2S"/>
+                            <constraint firstAttribute="bottom" secondItem="MSa-gL-2HV" secondAttribute="bottom" id="GF6-VN-xuq"/>
+                            <constraint firstItem="MSa-gL-2HV" firstAttribute="trailing" secondItem="GVT-Ml-Pnj" secondAttribute="trailing" id="Jz7-HP-YeZ"/>
+                            <constraint firstItem="GVT-Ml-Pnj" firstAttribute="top" secondItem="Grd-9V-gfo" secondAttribute="top" id="Mq2-b3-13b"/>
+                            <constraint firstItem="MSa-gL-2HV" firstAttribute="top" secondItem="GVT-Ml-Pnj" secondAttribute="bottom" id="Uw0-zI-kh7"/>
+                            <constraint firstAttribute="height" constant="90" id="WYK-2h-xHG"/>
+                            <constraint firstItem="MSa-gL-2HV" firstAttribute="leading" secondItem="GVT-Ml-Pnj" secondAttribute="leading" id="b2w-DN-PBC"/>
+                            <constraint firstItem="GVT-Ml-Pnj" firstAttribute="leading" secondItem="Grd-9V-gfo" secondAttribute="leading" id="rOf-kB-EUa"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JBi-mU-gIy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="3MJ-yg-eOx"/>
+                    <constraint firstItem="Grd-9V-gfo" firstAttribute="leading" secondItem="JBi-mU-gIy" secondAttribute="leading" id="AdV-6n-shy"/>
+                    <constraint firstItem="Grd-9V-gfo" firstAttribute="trailing" secondItem="JBi-mU-gIy" secondAttribute="trailing" id="CCV-wR-MoC"/>
+                    <constraint firstItem="JBi-mU-gIy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Gya-Tf-8xI"/>
+                    <constraint firstItem="Grd-9V-gfo" firstAttribute="top" secondItem="gmc-O0-ztu" secondAttribute="bottom" constant="8" id="Lmq-Tt-lth"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JBi-mU-gIy" secondAttribute="trailing" constant="10" id="TPj-ie-wAg"/>
+                    <constraint firstItem="gmc-O0-ztu" firstAttribute="top" secondItem="JBi-mU-gIy" secondAttribute="bottom" constant="6" id="XRD-Te-weU"/>
+                    <constraint firstItem="gmc-O0-ztu" firstAttribute="centerX" secondItem="JBi-mU-gIy" secondAttribute="centerX" id="aN7-0A-CIZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Grd-9V-gfo" secondAttribute="bottom" constant="-1.5" id="v3t-dd-oJY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgView" destination="Grd-9V-gfo" id="IUH-12-0Ia"/>
+                <outlet property="btnPlay" destination="RK4-d2-SP7" id="f6s-e7-gPO"/>
+                <outlet property="btnSubTitle" destination="D5s-bd-G5a" id="KDX-9w-A2e"/>
+                <outlet property="lblDueDate" destination="VLc-wY-N14" id="1vB-nM-hci"/>
+                <outlet property="lblTime" destination="F1a-9k-T53" id="rOd-g5-jMA"/>
+                <outlet property="lblTitle" destination="oCG-hE-6te" id="Qdx-lr-p6E"/>
+            </connections>
+            <point key="canvasLocation" x="-49" y="25.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dotted_division" width="4" height="40"/>
+        <image name="lock_green" width="24" height="34"/>
+    </resources>
+</document>

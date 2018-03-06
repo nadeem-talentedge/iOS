@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="TEReadMessageInfoCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BwJ-Bf-KU0">
+                        <rect key="frame" x="0.0" y="80.5" width="320" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Xql-1D-YQg"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lHt-zV-jq9" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="ZAE-EJ-TUR"/>
+                            <constraint firstAttribute="height" constant="40" id="pv6-yA-FVQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RC-dE-GeT" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="64" y="10" width="246" height="19.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkY-rH-AOE" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="64" y="33.5" width="246" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 days ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vh-Ms-FYD" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="64" y="54" width="246" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5RC-dE-GeT" secondAttribute="trailing" constant="10" id="1hi-Q7-RXe"/>
+                    <constraint firstItem="lHt-zV-jq9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2lr-2g-OZj"/>
+                    <constraint firstItem="6Vh-Ms-FYD" firstAttribute="top" secondItem="UkY-rH-AOE" secondAttribute="bottom" constant="4" id="Mg5-Lf-pH1"/>
+                    <constraint firstItem="6Vh-Ms-FYD" firstAttribute="trailing" secondItem="UkY-rH-AOE" secondAttribute="trailing" id="UCD-yf-s48"/>
+                    <constraint firstItem="6Vh-Ms-FYD" firstAttribute="leading" secondItem="UkY-rH-AOE" secondAttribute="leading" id="YAZ-aT-Xet"/>
+                    <constraint firstItem="5RC-dE-GeT" firstAttribute="top" secondItem="lHt-zV-jq9" secondAttribute="top" id="ahG-qY-sQd"/>
+                    <constraint firstItem="UkY-rH-AOE" firstAttribute="top" secondItem="5RC-dE-GeT" secondAttribute="bottom" constant="4" id="bJs-Lj-p2T"/>
+                    <constraint firstItem="BwJ-Bf-KU0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="du7-Nv-w4N"/>
+                    <constraint firstAttribute="trailing" secondItem="BwJ-Bf-KU0" secondAttribute="trailing" id="j29-F6-AOn"/>
+                    <constraint firstAttribute="bottom" secondItem="BwJ-Bf-KU0" secondAttribute="bottom" id="nn0-JG-weo"/>
+                    <constraint firstItem="lHt-zV-jq9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ow6-jd-qGH"/>
+                    <constraint firstItem="UkY-rH-AOE" firstAttribute="leading" secondItem="5RC-dE-GeT" secondAttribute="leading" id="rap-ET-m5z"/>
+                    <constraint firstItem="5RC-dE-GeT" firstAttribute="leading" secondItem="lHt-zV-jq9" secondAttribute="trailing" constant="14" id="tjB-7l-XW0"/>
+                    <constraint firstItem="UkY-rH-AOE" firstAttribute="trailing" secondItem="5RC-dE-GeT" secondAttribute="trailing" id="wiX-2k-Nrg"/>
+                    <constraint firstAttribute="bottom" secondItem="6Vh-Ms-FYD" secondAttribute="bottom" priority="250" constant="8" id="xe4-aT-iJp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgICon" destination="lHt-zV-jq9" id="5Ba-dJ-a30"/>
+                <outlet property="lblDate" destination="6Vh-Ms-FYD" id="Zeg-s0-BzE"/>
+                <outlet property="lblName" destination="5RC-dE-GeT" id="0Pn-Ns-eVn"/>
+                <outlet property="lblToMe" destination="UkY-rH-AOE" id="jbS-XU-pvB"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="174"/>
+        </tableViewCell>
+    </objects>
+</document>

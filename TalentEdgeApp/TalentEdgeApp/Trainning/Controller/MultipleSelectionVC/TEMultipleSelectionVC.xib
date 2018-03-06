@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TEMultipleSelectionVC" customModule="TalentEdgeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="btnApply" destination="73j-46-kPu" id="kXd-Tk-cmP"/>
+                <outlet property="btnReset" destination="NkK-82-k27" id="E6a-9d-Ajg"/>
+                <outlet property="tableView" destination="Q3D-zh-1ll" id="nNw-TT-cfE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q3D-zh-1ll" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="q2g-na-Mmd"/>
+                        <outlet property="delegate" destination="-1" id="Kk9-PC-1zx"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUy-95-c2j" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73j-46-kPu" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                            <rect key="frame" x="8" y="7" width="83" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                            <inset key="contentEdgeInsets" minX="20" minY="5" maxX="20" maxY="5"/>
+                            <state key="normal" title="Apply"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="applyWithSender:" destination="-1" eventType="touchUpInside" id="Ven-CL-1cC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkK-82-k27" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                            <rect key="frame" x="284" y="7" width="83" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                            <inset key="contentEdgeInsets" minX="20" minY="5" maxX="20" maxY="5"/>
+                            <state key="normal" title="Reset"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="resetWithSender:" destination="-1" eventType="touchUpInside" id="PAe-XO-cZg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="NkK-82-k27" firstAttribute="centerY" secondItem="73j-46-kPu" secondAttribute="centerY" id="AUN-Zt-6LU"/>
+                        <constraint firstItem="73j-46-kPu" firstAttribute="leading" secondItem="WUy-95-c2j" secondAttribute="leading" constant="8" id="CO6-Ce-rGp"/>
+                        <constraint firstItem="73j-46-kPu" firstAttribute="centerY" secondItem="WUy-95-c2j" secondAttribute="centerY" id="g5b-AR-1oW"/>
+                        <constraint firstAttribute="height" constant="44" id="jvg-7n-Trq"/>
+                        <constraint firstAttribute="trailing" secondItem="NkK-82-k27" secondAttribute="trailing" constant="8" id="x4z-yd-a1h"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q3D-zh-1ll" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="165-8V-mIJ"/>
+                <constraint firstAttribute="trailing" secondItem="Q3D-zh-1ll" secondAttribute="trailing" id="1Zk-gp-Gel"/>
+                <constraint firstAttribute="trailing" secondItem="WUy-95-c2j" secondAttribute="trailing" id="6VU-ns-Ogz"/>
+                <constraint firstItem="Q3D-zh-1ll" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Cig-Pt-jkV"/>
+                <constraint firstItem="WUy-95-c2j" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="I4b-kH-NdT"/>
+                <constraint firstAttribute="bottom" secondItem="WUy-95-c2j" secondAttribute="bottom" id="PfB-71-i3C"/>
+                <constraint firstItem="WUy-95-c2j" firstAttribute="top" secondItem="Q3D-zh-1ll" secondAttribute="bottom" id="X1f-cV-XgV"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

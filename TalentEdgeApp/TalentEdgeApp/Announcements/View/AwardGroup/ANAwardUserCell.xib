@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ANAwardUserCell" customModule="ELSA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="129" height="123"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="129" height="123"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vKG-Fd-oEI" customClass="BCUIImageView" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="34.5" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="6HE-bA-Nc3"/>
+                            <constraint firstAttribute="width" constant="60" id="Wba-q3-IOD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBl-FI-QZc" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="3" y="75" width="123" height="45"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.1148860231" green="0.55599170919999996" blue="0.75004488229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="GBl-FI-QZc" secondAttribute="bottom" constant="3" id="5bR-il-7xx"/>
+                <constraint firstItem="GBl-FI-QZc" firstAttribute="top" secondItem="vKG-Fd-oEI" secondAttribute="bottom" constant="5" id="CMz-tz-fw6"/>
+                <constraint firstItem="vKG-Fd-oEI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="MIx-bx-jI9"/>
+                <constraint firstItem="vKG-Fd-oEI" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="d6N-0D-yy0"/>
+                <constraint firstAttribute="trailing" secondItem="GBl-FI-QZc" secondAttribute="trailing" constant="3" id="f4Z-Sa-fVU"/>
+                <constraint firstItem="GBl-FI-QZc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="reV-gX-M7j"/>
+            </constraints>
+            <size key="customSize" width="129" height="123"/>
+            <connections>
+                <outlet property="imgProfile" destination="vKG-Fd-oEI" id="Pe2-Pn-e3k"/>
+                <outlet property="name" destination="GBl-FI-QZc" id="UL0-Wp-ryX"/>
+            </connections>
+            <point key="canvasLocation" x="73.5" y="90.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

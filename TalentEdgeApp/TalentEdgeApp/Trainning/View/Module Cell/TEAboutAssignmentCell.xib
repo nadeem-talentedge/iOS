@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="335" id="9Gv-nL-jTk" customClass="TEAboutAssignmentCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="335"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Gv-nL-jTk" id="EWe-vZ-pbq">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="About this Assignment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfa-iJ-RMS" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="25" y="5" width="325" height="17"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send posuere consequal Send posuere consequal " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6a-rf-GIk" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="25" y="27" width="325" height="15"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assessment Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViI-HM-QPB" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="25" y="62.5" width="99" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEf-g7-3ym" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="163" y="62.5" width="189" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lw0-ed-6sm" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="25" y="91.5" width="30.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am4-FA-Q8O" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="163" y="91.5" width="189" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Marks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNa-o0-xBg" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="25" y="120.5" width="63.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="50" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeY-Bs-mvm" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="162.5" y="120.5" width="189.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="Min. Marks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgr-Bh-MIm" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="25" y="149.5" width="61.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFL-5O-W2z" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="162.5" y="149.5" width="189.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiple Submission" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l09-cj-0Cb" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="25" y="178.5" width="114.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBi-Oq-ec1" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="162.5" y="178.5" width="189.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsP-jS-Leo" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="25" y="208" width="51" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="May 18,2017" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37M-Ce-WXe" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="163" y="208" width="189" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.30588235294117649" green="0.66666666666666663" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSz-Rq-2E3" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="138" y="247" width="100" height="34"/>
+                        <color key="backgroundColor" red="0.0" green="0.55686274509803924" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Kbb-Tn-UxS"/>
+                            <constraint firstAttribute="height" constant="34" id="axc-Wt-TKL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                        <state key="normal" title="Start Quiz">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="17.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.0" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="startQuiz_Click:" destination="9Gv-nL-jTk" eventType="touchUpInside" id="a4A-5l-qkE"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="37M-Ce-WXe" secondAttribute="trailing" constant="15" id="14G-3s-xaB"/>
+                    <constraint firstItem="l09-cj-0Cb" firstAttribute="top" secondItem="ZFL-5O-W2z" secondAttribute="bottom" constant="15" id="3f8-Z7-NMC"/>
+                    <constraint firstItem="am4-FA-Q8O" firstAttribute="top" secondItem="Lw0-ed-6sm" secondAttribute="top" id="5mH-Zu-fPe"/>
+                    <constraint firstItem="DNa-o0-xBg" firstAttribute="leading" secondItem="Lw0-ed-6sm" secondAttribute="leading" id="97k-A3-UDb"/>
+                    <constraint firstItem="TsP-jS-Leo" firstAttribute="top" secondItem="l09-cj-0Cb" secondAttribute="bottom" constant="15" id="98P-o9-gph"/>
+                    <constraint firstItem="YBi-Oq-ec1" firstAttribute="leading" secondItem="l09-cj-0Cb" secondAttribute="trailing" constant="23" id="A4d-O0-fYu"/>
+                    <constraint firstItem="37M-Ce-WXe" firstAttribute="leading" secondItem="YBi-Oq-ec1" secondAttribute="leading" id="Ckj-nk-npR"/>
+                    <constraint firstItem="YBi-Oq-ec1" firstAttribute="leading" secondItem="ZFL-5O-W2z" secondAttribute="leading" id="Cob-PN-exD"/>
+                    <constraint firstItem="37M-Ce-WXe" firstAttribute="top" secondItem="TsP-jS-Leo" secondAttribute="top" id="E4e-Hz-4Vc"/>
+                    <constraint firstAttribute="trailing" secondItem="Sfa-iJ-RMS" secondAttribute="trailing" constant="25" id="Eov-De-p47"/>
+                    <constraint firstItem="Bgr-Bh-MIm" firstAttribute="leading" secondItem="DNa-o0-xBg" secondAttribute="leading" id="Fl2-IE-G2L"/>
+                    <constraint firstItem="37M-Ce-WXe" firstAttribute="leading" secondItem="TsP-jS-Leo" secondAttribute="trailing" constant="87" id="GjR-JM-beq"/>
+                    <constraint firstItem="Lw0-ed-6sm" firstAttribute="top" secondItem="zEf-g7-3ym" secondAttribute="bottom" constant="15" id="GmA-NJ-0gm"/>
+                    <constraint firstItem="zEf-g7-3ym" firstAttribute="top" secondItem="ViI-HM-QPB" secondAttribute="top" id="Ijn-L1-ixc"/>
+                    <constraint firstItem="ZFL-5O-W2z" firstAttribute="leading" secondItem="oeY-Bs-mvm" secondAttribute="leading" id="Imp-qx-WcU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="am4-FA-Q8O" secondAttribute="trailing" constant="15" id="JUc-v0-NU7"/>
+                    <constraint firstItem="ViI-HM-QPB" firstAttribute="leading" secondItem="y6a-rf-GIk" secondAttribute="leading" id="LTY-nt-xMY"/>
+                    <constraint firstItem="am4-FA-Q8O" firstAttribute="leading" secondItem="zEf-g7-3ym" secondAttribute="leading" id="N4k-uk-iXK"/>
+                    <constraint firstItem="l09-cj-0Cb" firstAttribute="leading" secondItem="Bgr-Bh-MIm" secondAttribute="leading" id="Nou-Ig-tQ7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="SSz-Rq-2E3" secondAttribute="bottom" constant="45.5" id="Pua-nj-8Jk"/>
+                    <constraint firstItem="Lw0-ed-6sm" firstAttribute="leading" secondItem="ViI-HM-QPB" secondAttribute="leading" id="RMm-tM-eMf"/>
+                    <constraint firstItem="SSz-Rq-2E3" firstAttribute="centerX" secondItem="EWe-vZ-pbq" secondAttribute="centerX" id="Uyf-aF-aOk"/>
+                    <constraint firstItem="y6a-rf-GIk" firstAttribute="leading" secondItem="Sfa-iJ-RMS" secondAttribute="leading" id="WVf-bt-vYf"/>
+                    <constraint firstItem="SSz-Rq-2E3" firstAttribute="top" secondItem="37M-Ce-WXe" secondAttribute="bottom" constant="25" id="XlH-KB-pT0"/>
+                    <constraint firstItem="oeY-Bs-mvm" firstAttribute="top" secondItem="DNa-o0-xBg" secondAttribute="top" id="YSt-ez-A6h"/>
+                    <constraint firstItem="ZFL-5O-W2z" firstAttribute="top" secondItem="Bgr-Bh-MIm" secondAttribute="top" id="a1G-5n-UUe"/>
+                    <constraint firstItem="DNa-o0-xBg" firstAttribute="top" secondItem="am4-FA-Q8O" secondAttribute="bottom" constant="15" id="bEf-Rj-UwH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oeY-Bs-mvm" secondAttribute="trailing" constant="15" id="cIY-wD-Y4o"/>
+                    <constraint firstItem="ZFL-5O-W2z" firstAttribute="leading" secondItem="Bgr-Bh-MIm" secondAttribute="trailing" constant="76" id="f54-mm-u3y"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZFL-5O-W2z" secondAttribute="trailing" constant="15" id="gZd-yN-61M"/>
+                    <constraint firstItem="TsP-jS-Leo" firstAttribute="leading" secondItem="l09-cj-0Cb" secondAttribute="leading" id="iuX-xb-U1N"/>
+                    <constraint firstItem="ViI-HM-QPB" firstAttribute="top" secondItem="y6a-rf-GIk" secondAttribute="bottom" constant="20.5" id="kAJ-fG-JYB"/>
+                    <constraint firstItem="Bgr-Bh-MIm" firstAttribute="top" secondItem="oeY-Bs-mvm" secondAttribute="bottom" constant="15" id="m9h-zc-Yqd"/>
+                    <constraint firstItem="Sfa-iJ-RMS" firstAttribute="leading" secondItem="EWe-vZ-pbq" secondAttribute="leading" constant="25" id="mGU-fT-Yhb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YBi-Oq-ec1" secondAttribute="trailing" constant="15" id="nfK-fs-qH8"/>
+                    <constraint firstItem="y6a-rf-GIk" firstAttribute="trailing" secondItem="Sfa-iJ-RMS" secondAttribute="trailing" id="oJS-gR-4Hp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zEf-g7-3ym" secondAttribute="trailing" constant="15" id="of4-ZL-6Yr"/>
+                    <constraint firstItem="am4-FA-Q8O" firstAttribute="leading" secondItem="Lw0-ed-6sm" secondAttribute="trailing" constant="107.5" id="rEy-lU-E7E"/>
+                    <constraint firstItem="YBi-Oq-ec1" firstAttribute="top" secondItem="l09-cj-0Cb" secondAttribute="top" id="tnW-8t-ZQz"/>
+                    <constraint firstItem="oeY-Bs-mvm" firstAttribute="leading" secondItem="DNa-o0-xBg" secondAttribute="trailing" constant="74" id="vUQ-VH-wfZ"/>
+                    <constraint firstItem="y6a-rf-GIk" firstAttribute="top" secondItem="Sfa-iJ-RMS" secondAttribute="bottom" constant="5" id="wFe-XT-DQi"/>
+                    <constraint firstItem="zEf-g7-3ym" firstAttribute="leading" secondItem="ViI-HM-QPB" secondAttribute="trailing" constant="39" id="xmG-r1-AtP"/>
+                    <constraint firstItem="Sfa-iJ-RMS" firstAttribute="top" secondItem="EWe-vZ-pbq" secondAttribute="top" constant="5" id="zh4-yt-9Cm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="date" destination="37M-Ce-WXe" id="WYW-0G-spL"/>
+                <outlet property="marks" destination="oeY-Bs-mvm" id="Aq2-Kh-ZA2"/>
+                <outlet property="minMarks" destination="ZFL-5O-W2z" id="0lV-06-zwz"/>
+                <outlet property="modeValue" destination="am4-FA-Q8O" id="aV6-I1-ihC"/>
+                <outlet property="subTitle" destination="y6a-rf-GIk" id="i7C-eX-J80"/>
+                <outlet property="submissionType" destination="YBi-Oq-ec1" id="oUP-iX-ts0"/>
+                <outlet property="title" destination="Sfa-iJ-RMS" id="aiK-l7-F9p"/>
+                <outlet property="typeValue" destination="zEf-g7-3ym" id="ONG-Ad-XpE"/>
+            </connections>
+            <point key="canvasLocation" x="92.5" y="183.5"/>
+        </tableViewCell>
+    </objects>
+</document>

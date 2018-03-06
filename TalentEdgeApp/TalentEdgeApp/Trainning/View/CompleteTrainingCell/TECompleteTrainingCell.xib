@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="113" id="KGk-i7-Jjw" customClass="TECompleteTrainingCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="112.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUo-WF-Hdv" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="10" y="2" width="300" height="108"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pc4-iz-DnL" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.30196078430000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ieP-ya-hSH"/>
+                                    <constraint firstAttribute="width" constant="40" id="ihs-oL-4a2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Machine Learning Regression" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aI-si-0i5" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="58" y="10" width="211" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Apr , 2016 - 15 May , 2016" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQ9-Wu-jiS" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="58" y="53.5" width="211" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsy-bH-PvA" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="58" y="77.5" width="26" height="18"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evy-7V-thg" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="2" width="8" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Ab5-2Y-60C" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="14" y="5" width="8" height="8"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="8" id="KVz-aT-Qhx"/>
+                                            <constraint firstAttribute="width" constant="8" id="iUV-GW-cPY"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31764705882352939" green="0.6588235294117647" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ab5-2Y-60C" firstAttribute="centerY" secondItem="jsy-bH-PvA" secondAttribute="centerY" id="17O-eY-2bT"/>
+                                    <constraint firstAttribute="bottom" secondItem="Evy-7V-thg" secondAttribute="bottom" constant="2" id="1LI-79-EbG"/>
+                                    <constraint firstItem="Evy-7V-thg" firstAttribute="top" secondItem="jsy-bH-PvA" secondAttribute="top" constant="2" id="QiE-Vt-GSv"/>
+                                    <constraint firstItem="Ab5-2Y-60C" firstAttribute="leading" secondItem="Evy-7V-thg" secondAttribute="trailing" constant="2" id="ahC-ZL-Ttp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ab5-2Y-60C" secondAttribute="trailing" constant="4" id="fwc-Jm-lqo"/>
+                                    <constraint firstItem="Evy-7V-thg" firstAttribute="leading" secondItem="jsy-bH-PvA" secondAttribute="leading" constant="4" id="y6T-fh-3qa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,001 Ratings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxr-yP-3Vg" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="90" y="79.5" width="77" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azn-cD-FUh" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="175" y="75.5" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="GF7-Y6-30k"/>
+                                    <constraint firstAttribute="height" constant="22" id="xIf-hg-ypD"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                                <state key="normal" image="star_bordered"/>
+                                <connections>
+                                    <action selector="starButtonDidClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mYL-lI-dh8"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZc-Ji-USv" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="205" y="75.5" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="GRr-7B-vNw"/>
+                                    <constraint firstAttribute="height" constant="22" id="Hi3-Mk-1OH"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                                <state key="normal" image="share_borderd"/>
+                                <connections>
+                                    <action selector="shareButtonDidClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Hgo-kD-ImX"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgp-7b-VyZ" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="235" y="75.5" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="n88-xY-5hF"/>
+                                    <constraint firstAttribute="height" constant="22" id="wiS-CL-csf"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                                <state key="normal" image="chat_boadered"/>
+                                <connections>
+                                    <action selector="chatButtonDidClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="m6h-oI-xKm"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DA-Jb-K3t" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="274" y="10" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="iN5-5e-rW7"/>
+                                    <constraint firstAttribute="width" constant="22" id="nvp-H7-RRj"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                                <state key="normal" image="menu_cell"/>
+                                <connections>
+                                    <action selector="menuButtonDidClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mWL-y5-KTr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MZc-Ji-USv" firstAttribute="width" secondItem="Azn-cD-FUh" secondAttribute="width" id="0q6-fP-csQ"/>
+                            <constraint firstAttribute="trailing" secondItem="4DA-Jb-K3t" secondAttribute="trailing" constant="4" id="3G6-wP-K8W"/>
+                            <constraint firstItem="Azn-cD-FUh" firstAttribute="leading" secondItem="Mxr-yP-3Vg" secondAttribute="trailing" constant="8" id="3Qq-Ue-eyf"/>
+                            <constraint firstItem="tgp-7b-VyZ" firstAttribute="leading" secondItem="MZc-Ji-USv" secondAttribute="trailing" constant="8" id="3jn-Hn-i1H"/>
+                            <constraint firstItem="4DA-Jb-K3t" firstAttribute="top" secondItem="9aI-si-0i5" secondAttribute="top" id="5OW-PM-dXJ"/>
+                            <constraint firstItem="Azn-cD-FUh" firstAttribute="centerY" secondItem="Mxr-yP-3Vg" secondAttribute="centerY" id="5xu-8N-CtO"/>
+                            <constraint firstItem="jsy-bH-PvA" firstAttribute="leading" secondItem="gQ9-Wu-jiS" secondAttribute="leading" id="Awx-I9-UV9"/>
+                            <constraint firstItem="gQ9-Wu-jiS" firstAttribute="trailing" secondItem="9aI-si-0i5" secondAttribute="trailing" id="DkJ-QI-Mgc"/>
+                            <constraint firstItem="tgp-7b-VyZ" firstAttribute="centerY" secondItem="MZc-Ji-USv" secondAttribute="centerY" id="EdM-m8-Ogh"/>
+                            <constraint firstItem="Mxr-yP-3Vg" firstAttribute="centerY" secondItem="jsy-bH-PvA" secondAttribute="centerY" id="H82-00-AaY"/>
+                            <constraint firstItem="Pc4-iz-DnL" firstAttribute="top" secondItem="sUo-WF-Hdv" secondAttribute="top" constant="10" id="KdM-yS-3vm"/>
+                            <constraint firstItem="MZc-Ji-USv" firstAttribute="centerY" secondItem="Azn-cD-FUh" secondAttribute="centerY" id="NJW-3p-ybH"/>
+                            <constraint firstItem="9aI-si-0i5" firstAttribute="top" secondItem="Pc4-iz-DnL" secondAttribute="top" id="UNm-pg-34M"/>
+                            <constraint firstItem="4DA-Jb-K3t" firstAttribute="leading" secondItem="9aI-si-0i5" secondAttribute="trailing" constant="5" id="WEV-9Y-lNG"/>
+                            <constraint firstItem="MZc-Ji-USv" firstAttribute="height" secondItem="Azn-cD-FUh" secondAttribute="height" id="YCd-hw-fYY"/>
+                            <constraint firstItem="tgp-7b-VyZ" firstAttribute="height" secondItem="MZc-Ji-USv" secondAttribute="height" id="YGv-0F-DMa"/>
+                            <constraint firstItem="gQ9-Wu-jiS" firstAttribute="top" secondItem="9aI-si-0i5" secondAttribute="bottom" constant="5" id="bID-ot-Ibt"/>
+                            <constraint firstItem="MZc-Ji-USv" firstAttribute="leading" secondItem="Azn-cD-FUh" secondAttribute="trailing" constant="8" id="bzw-4a-f7i"/>
+                            <constraint firstAttribute="bottom" secondItem="jsy-bH-PvA" secondAttribute="bottom" priority="251" constant="19.5" id="ekN-uX-Hel"/>
+                            <constraint firstItem="Mxr-yP-3Vg" firstAttribute="leading" secondItem="jsy-bH-PvA" secondAttribute="trailing" constant="6" id="gs9-6J-ZYt"/>
+                            <constraint firstItem="jsy-bH-PvA" firstAttribute="top" secondItem="gQ9-Wu-jiS" secondAttribute="bottom" constant="8" id="jhd-A7-Tc7"/>
+                            <constraint firstItem="9aI-si-0i5" firstAttribute="leading" secondItem="Pc4-iz-DnL" secondAttribute="trailing" constant="8" id="oZv-fU-uwC"/>
+                            <constraint firstItem="gQ9-Wu-jiS" firstAttribute="leading" secondItem="9aI-si-0i5" secondAttribute="leading" id="qxo-y3-aZ9"/>
+                            <constraint firstItem="tgp-7b-VyZ" firstAttribute="width" secondItem="MZc-Ji-USv" secondAttribute="width" id="viC-xx-NFM"/>
+                            <constraint firstItem="Pc4-iz-DnL" firstAttribute="leading" secondItem="sUo-WF-Hdv" secondAttribute="leading" constant="10" id="ztR-zj-qHV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="NO"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="sUo-WF-Hdv" secondAttribute="trailing" constant="10" id="J4n-kW-vYK"/>
+                    <constraint firstAttribute="bottom" secondItem="sUo-WF-Hdv" secondAttribute="bottom" constant="2" id="g6S-ct-53V"/>
+                    <constraint firstItem="sUo-WF-Hdv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gEM-vv-wgN"/>
+                    <constraint firstItem="sUo-WF-Hdv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="gqJ-wr-AQf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnChat" destination="tgp-7b-VyZ" id="ILI-4E-VAu"/>
+                <outlet property="btnMenu" destination="4DA-Jb-K3t" id="zfe-ur-OI9"/>
+                <outlet property="btnRating" destination="Azn-cD-FUh" id="INT-ZH-I4l"/>
+                <outlet property="btnShare" destination="MZc-Ji-USv" id="2eI-GZ-O0J"/>
+                <outlet property="lblIcon" destination="Pc4-iz-DnL" id="24d-57-8Wb"/>
+                <outlet property="lblPeriod" destination="gQ9-Wu-jiS" id="pUQ-O7-RxX"/>
+                <outlet property="lblRatings" destination="Mxr-yP-3Vg" id="cu2-bZ-onf"/>
+                <outlet property="lblStarRating" destination="Evy-7V-thg" id="dbd-JG-7KN"/>
+                <outlet property="lblTitle" destination="9aI-si-0i5" id="ciM-eM-2q2"/>
+            </connections>
+            <point key="canvasLocation" x="49" y="88.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_boadered" width="64" height="64"/>
+        <image name="menu_cell" width="20" height="20"/>
+        <image name="share_borderd" width="64" height="64"/>
+        <image name="star" width="16" height="16"/>
+        <image name="star_bordered" width="64" height="64"/>
+    </resources>
+</document>

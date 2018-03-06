@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="145" id="KGk-i7-Jjw" customClass="TEMessageCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="144.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ae-3y-qQL" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="10" y="5" width="300" height="134.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nyu-zo-4as" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="OzU-tL-dJw"/>
+                                    <constraint firstAttribute="width" constant="40" id="W7w-CP-Py5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuQ-mi-ikf" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="68" y="35" width="222" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lj-Ip-uMd" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="68" y="59.5" width="222" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hc-bg-mmV" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="68" y="8" width="183" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0R-8o-S6q" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="259" y="8" width="33" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nyu-zo-4as" firstAttribute="leading" secondItem="8ae-3y-qQL" secondAttribute="leading" constant="8" id="1K4-gV-j0v"/>
+                            <constraint firstItem="6Lj-Ip-uMd" firstAttribute="trailing" secondItem="nuQ-mi-ikf" secondAttribute="trailing" id="4bk-PG-SnH"/>
+                            <constraint firstItem="nyu-zo-4as" firstAttribute="top" secondItem="8ae-3y-qQL" secondAttribute="top" constant="8" id="Gu8-Co-GY7"/>
+                            <constraint firstItem="v0R-8o-S6q" firstAttribute="top" secondItem="1hc-bg-mmV" secondAttribute="top" id="HwX-hV-aC7"/>
+                            <constraint firstItem="nuQ-mi-ikf" firstAttribute="leading" secondItem="1hc-bg-mmV" secondAttribute="leading" id="QzI-Nx-cd6"/>
+                            <constraint firstAttribute="trailing" secondItem="v0R-8o-S6q" secondAttribute="trailing" constant="8" id="a3o-Qf-ldF"/>
+                            <constraint firstItem="1hc-bg-mmV" firstAttribute="leading" secondItem="nyu-zo-4as" secondAttribute="trailing" constant="20" id="e2f-r3-P4w"/>
+                            <constraint firstItem="6Lj-Ip-uMd" firstAttribute="leading" secondItem="nuQ-mi-ikf" secondAttribute="leading" id="fLT-K3-pIe"/>
+                            <constraint firstAttribute="bottom" secondItem="6Lj-Ip-uMd" secondAttribute="bottom" priority="250" constant="12" id="hFI-ge-Ihj"/>
+                            <constraint firstItem="v0R-8o-S6q" firstAttribute="leading" secondItem="1hc-bg-mmV" secondAttribute="trailing" priority="250" constant="8" id="k4d-lR-xjS"/>
+                            <constraint firstAttribute="trailing" secondItem="nuQ-mi-ikf" secondAttribute="trailing" constant="10" id="mrN-rt-hkz"/>
+                            <constraint firstItem="nuQ-mi-ikf" firstAttribute="top" secondItem="1hc-bg-mmV" secondAttribute="bottom" constant="8" id="t54-ls-vqT"/>
+                            <constraint firstItem="6Lj-Ip-uMd" firstAttribute="top" secondItem="nuQ-mi-ikf" secondAttribute="bottom" constant="8" id="wNG-w4-XWz"/>
+                            <constraint firstItem="1hc-bg-mmV" firstAttribute="top" secondItem="8ae-3y-qQL" secondAttribute="top" constant="8" id="yQp-gh-xGY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="8ae-3y-qQL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="1kW-ed-6EK"/>
+                    <constraint firstAttribute="trailing" secondItem="8ae-3y-qQL" secondAttribute="trailing" constant="10" id="Wqi-pq-3Gd"/>
+                    <constraint firstItem="8ae-3y-qQL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="a9m-NN-i5i"/>
+                    <constraint firstAttribute="bottom" secondItem="8ae-3y-qQL" secondAttribute="bottom" constant="5" id="uDj-Jd-ddz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imgUser" destination="nyu-zo-4as" id="9N6-pw-YZt"/>
+                <outlet property="lblDate" destination="v0R-8o-S6q" id="lY5-dN-hFm"/>
+                <outlet property="lblDescription" destination="6Lj-Ip-uMd" id="g4F-bR-ys7"/>
+                <outlet property="lblName" destination="1hc-bg-mmV" id="eBD-dA-2Ov"/>
+                <outlet property="lblTitle" destination="nuQ-mi-ikf" id="0dn-jX-FUY"/>
+            </connections>
+            <point key="canvasLocation" x="-98" y="41.5"/>
+        </tableViewCell>
+    </objects>
+</document>

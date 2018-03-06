@@ -1,0 +1,468 @@
+//
+//  TEContentVC.swift
+//  TalentEdgeApp
+//
+//  Created by Rohit Pareek  on 20/05/17.
+//  Copyright © 2017 Vinod Sahu. All rights reserved.
+//
+
+import UIKit
+
+
+
+
+class TEContentVC: BCUIViewController {
+
+    @IBOutlet weak var tableview: BCUITableView!
+    var docType : docmentTypeValue?
+    var baseViewController:UIViewController?
+    var moduleID:String?
+    var arrOfContent = Array<Any>()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+       
+        docType = docmentTypeValue.PDF
+        
+        
+        self.tableview.registerCellWithTable(nibName: TELecturersAttachmentCell.nibName, reuseIdentifier: TELecturersAttachmentCell.reuseIdentifier)
+        
+        self.tableview.registerCellWithTable(nibName: TELecturersCell.nibName, reuseIdentifier: TELecturersCell.reuseIdentifier)
+        
+        self.tableview.registerCellWithTable(nibName: TEAssignmentsCell.nibName, reuseIdentifier: TEAssignmentsCell.reuseIdentifier)
+        
+        self.tableview.registerCellWithTable(nibName: TEAssesmentsCell.nibName, reuseIdentifier: TEAssesmentsCell.reuseIdentifier)
+        
+        self.tableview.registerCellWithTable(nibName: TEConcludedCell.nibName, reuseIdentifier: TEConcludedCell.reuseIdentifier)
+        
+        self.tableview.registerCellWithTable(nibName: TELiveClassCell.nibName, reuseIdentifier: TELiveClassCell.reuseIdentifier)
+        
+        self.tableview.addRefrehsControl(target: self)
+        self.callWebserviceForContentList()
+        
+    }
+    
+    
+    func refreshTable(_ sender:AnyObject) -> Void {
+        
+        self.callWebserviceForContentList()
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        self.navigationController?.navigationBar.isHidden = false
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+        /*if segue.identifier == "LecturerDetailSegue"{
+        
+            let obj : TELecturerDetailVC = segue.destination as! TELecturerDetailVC
+            obj.documentType = docType!
+        }*/
+            
+    }
+    
+
+}
+
+
+extension TEContentVC : TELecturersCellDelegate,TELecturersAttachmentCellDelegate,TEConcludedCellDelegate,TEAssignmentsCellDelegate,TEAssesmentsCellDelegate{
+    
+    //MARK: - TELiveClassCell Delegate
+    
+    func rightButton_Click() -> Void{
+    
+    
+    }
+    
+    
+    //MARK: - TELecturersCellDelegate
+    
+    func submit_Click(index : Int) {
+        
+        if self.arrOfContent[index] is ContentListAssignment {
+            
+            let content = self.arrOfContent[index] as! ContentListAssignment
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let obj = storyboard.instantiateViewController(withIdentifier: Utility.ID_TEAssignmentDetailVC) as! TEAssignmentDetailVC
+            
+            obj.contentId = content.id
+            self.navigationController?.pushViewController(obj, animated: true)
+        }
+            
+        else if self.arrOfContent[index] is ContentListAssessment {
+            
+            let content = self.arrOfContent[index] as! ContentListAssessment
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let obj = storyboard.instantiateViewController(withIdentifier: Utility.ID_TEAssessmentDetailVC) as! TEAssessmentDetailVC
+            
+            obj.contentId = content.id
+            self.navigationController?.pushViewController(obj, animated: true)
+        }
+
+        
+    }
+    
+    //MARK: - TELecturersAttachmentCellDelegate
+    func view_Click(index : Int) {
+        
+        if self.arrOfContent[index] is ContentListNotes {
+            
+            
+            let content = self.arrOfContent[index] as! ContentListNotes
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let obj = storyboard.instantiateViewController(withIdentifier: Utility.ID_TELecturerDetailVC) as! TELecturerDetailVC
+            
+            obj.documentType = .PDF
+            obj.contentId = content.id
+            
+            self.navigationController?.pushViewController(obj, animated: true)
+        }
+            
+        else if self.arrOfContent[index] is ContentListVideos {
+            
+            let content = self.arrOfContent[index] as! ContentListVideos
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let obj = storyboard.instantiateViewController(withIdentifier: Utility.ID_TELecturerDetailVC) as! TELecturerDetailVC
+            
+            obj.documentType = .VIDEO
+            obj.contentId = content.id
+            
+            self.navigationController?.pushViewController(obj, animated: true)
+        }
+        
+        
+    }
+    
+    //MARK: - TEConcludedCellDelegate
+    func concluded_Click(index : Int) {
+     
+        if self.arrOfContent[index] is ContentListVideos {
+            
+            let content = self.arrOfContent[index] as! ContentListVideos
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let obj = storyboard.instantiateViewController(withIdentifier: Utility.ID_TELecturerDetailVC) as! TELecturerDetailVC
+            
+            obj.documentType = .VIDEO
+            obj.contentId = content.id
+            
+            self.navigationController?.pushViewController(obj, animated: true)
+        }
+    }
+    
+    //MARK: - TEAssignmentsCellDelegate
+    func rightbtnAssignment_Click(indx : Int) -> Void{
+        
+        if self.arrOfContent[indx] is ContentListAssignment {
+            
+            let content = self.arrOfContent[indx] as! ContentListAssignment
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let obj = storyboard.instantiateViewController(withIdentifier: Utility.ID_TEAssignmentDetailVC) as! TEAssignmentDetailVC
+            
+            obj.contentId = content.id
+            self.navigationController?.pushViewController(obj, animated: true)
+        }
+    }
+    
+     //MARK: - TEAssesmentsCellDelegate
+    func rightbtnClick(index : Int) -> Void{
+        
+        if self.arrOfContent[index] is ContentListAssessment {
+            
+            let content = self.arrOfContent[index] as! ContentListAssessment
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let obj = storyboard.instantiateViewController(withIdentifier: Utility.ID_TEAssessmentDetailVC) as! TEAssessmentDetailVC
+            
+            obj.contentId = content.id
+            self.navigationController?.pushViewController(obj, animated: true)
+        }
+    }
+}
+
+//MARK: - TableView Delegate and DataSource
+
+extension TEContentVC : UITableViewDataSource,UITableViewDelegate{
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return 1
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return self.arrOfContent.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if self.arrOfContent[indexPath.row] is ContentListNotes{
+            
+            let cell : TELecturersAttachmentCell = tableView.dequeueReusableCell(withIdentifier: TELecturersAttachmentCell.reuseIdentifier) as! TELecturersAttachmentCell
+            cell.delegate = self
+            cell.indexOfCell = indexPath.row
+            cell.configureCell(objet: self.arrOfContent[indexPath.row] as! ContentListNotes)
+            cell.selectionStyle = .none
+            return cell
+            
+            
+            
+        }else if self.arrOfContent[indexPath.row] is ContentListVideos{
+            
+            let cell : TELecturersAttachmentCell = tableView.dequeueReusableCell(withIdentifier: TELecturersAttachmentCell.reuseIdentifier) as! TELecturersAttachmentCell
+            cell.delegate = self
+            cell.indexOfCell = indexPath.row
+            cell.configureCell(objet: self.arrOfContent[indexPath.row] as! ContentListVideos)
+            cell.selectionStyle = .none
+            return cell
+            
+        
+        }else if self.arrOfContent[indexPath.row] is ContentListAssessment{
+            
+            let cell : TEAssesmentsCell = tableView.dequeueReusableCell(withIdentifier: TEAssesmentsCell.reuseIdentifier) as! TEAssesmentsCell
+            cell.delegate = self
+            cell.indexOfCell = indexPath.row
+            cell.configureCell(objet: self.arrOfContent[indexPath.row] as? ContentListAssessment)
+            cell.selectionStyle = .none
+            return cell
+            
+        }else if self.arrOfContent[indexPath.row] is ContentListAssignment{
+            
+            let cell : TEAssignmentsCell = tableView.dequeueReusableCell(withIdentifier: TEAssignmentsCell.reuseIdentifier) as! TEAssignmentsCell
+            cell.delegate = self
+            cell.indexOfCell = indexPath.row
+            cell.configureCell(objet: self.arrOfContent[indexPath.row] as? ContentListAssignment)
+            cell.selectionStyle = .none
+             
+            return cell
+            
+        }else if self.arrOfContent[indexPath.row] is ContentListModule{
+            
+            let cell : TELecturersCell = tableView.dequeueReusableCell(withIdentifier: TELecturersCell.reuseIdentifier) as! TELecturersCell
+            cell.delegate = self
+             cell.indexOfCell = indexPath.row
+            return cell
+            
+        }else if self.arrOfContent[indexPath.row] is ContentListLiveClass{
+            
+            let cell : TELiveClassCell = tableView.dequeueReusableCell(withIdentifier: TELiveClassCell.reuseIdentifier) as! TELiveClassCell
+            
+            cell.indexOfCell = indexPath.row
+<<<<<<< HEAD
+           // cell.delegate = self
+=======
+            
+            cell.delegate = self
+>>>>>>> 5bf407767ff6350c7d2c911fbd1f8d3c31782942
+            
+            cell.configureCellForContent(object: self.arrOfContent[indexPath.row] as! ContentListLiveClass)
+            
+            return cell
+            
+        }else if self.arrOfContent[indexPath.row] is ContentListDiscussion{
+            
+            let cell : TEConcludedCell = tableView.dequeueReusableCell(withIdentifier: TEConcludedCell.reuseIdentifier) as! TEConcludedCell
+            cell.delegate = self
+            cell.indexOfCell = indexPath.row
+            cell.configureCell(objet: self.arrOfContent[indexPath.row] as! ContentListDiscussion)
+            
+            return cell
+            
+        }else{
+            let cell : TELecturersCell = tableView.dequeueReusableCell(withIdentifier: TELecturersCell.reuseIdentifier) as! TELecturersCell
+            cell.indexOfCell = indexPath.row
+            cell.delegate = self
+             
+            return cell
+        }
+        
+    }
+
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+     
+        if self.arrOfContent[indexPath.row] is ContentListNotes {
+        
+        
+            let content = self.arrOfContent[indexPath.row] as! ContentListNotes
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let obj = storyboard.instantiateViewController(withIdentifier: Utility.ID_TELecturerDetailVC) as! TELecturerDetailVC
+            
+            obj.documentType = .PDF
+            obj.contentId = content.id
+            
+            self.navigationController?.pushViewController(obj, animated: true)
+        }
+            
+        else if self.arrOfContent[indexPath.row] is ContentListVideos {
+            
+            let content = self.arrOfContent[indexPath.row] as! ContentListVideos
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let obj = storyboard.instantiateViewController(withIdentifier: Utility.ID_TELecturerDetailVC) as! TELecturerDetailVC
+            
+            obj.documentType = .VIDEO
+            obj.contentId = content.id
+            
+            self.navigationController?.pushViewController(obj, animated: true)
+        }
+        
+        
+        else if self.arrOfContent[indexPath.row] is ContentListAssignment {
+            
+            let content = self.arrOfContent[indexPath.row] as! ContentListAssignment
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let obj = storyboard.instantiateViewController(withIdentifier: Utility.ID_TEAssignmentDetailVC) as! TEAssignmentDetailVC
+            
+            obj.contentId = content.id
+            self.navigationController?.pushViewController(obj, animated: true)
+        }
+        
+        else if self.arrOfContent[indexPath.row] is ContentListAssessment {
+            
+            let content = self.arrOfContent[indexPath.row] as! ContentListAssessment
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let obj = storyboard.instantiateViewController(withIdentifier: Utility.ID_TEAssessmentDetailVC) as! TEAssessmentDetailVC
+            
+            obj.contentId = content.id
+            self.navigationController?.pushViewController(obj, animated: true)
+        }
+    }
+}
+
+
+//MARK: - Network Call
+
+extension TEContentVC {
+    
+    func callWebserviceForContentList() {
+        
+        if let moduleID = self.moduleID , let userName = Utility.getLoginUserDetail()?.resultData?.user?.username {
+            
+            let dicParam  =  NSMutableDictionary()
+            dicParam["module_id"] = moduleID
+            
+            let headerParam = NSMutableDictionary()
+            headerParam["user_id"] =  userName
+            
+            self.startActivityAnimating()
+            
+            NetworkManager.httpPostRequest(.getContentList, dataParam: dicParam, requestHeader: headerParam, completionHandler: { (data : NSDictionary?, error : NSError?) in
+                
+                print("Content List : ------> ",data ?? "Content List Error");
+                
+                if let data = data{
+                    
+                    if let isSuccess = data.value(forKey: "status") as? Bool{
+                        
+                        if isSuccess == true{
+                            
+                            if let resultData = data.value(forKey: "resultData") as? NSArray{
+                               
+                                self.arrOfContent.removeAll()
+                                
+                                for dict in resultData{
+                                
+                                    if let dict = dict as? NSDictionary{
+                                
+                                        if let contentTypeID = Utility.AnyVaueToInt(value: dict.value(forKey: "content_type_id") as AnyObject) as? Int{
+                                            
+                                            
+                                            if contentTypeID == 1{
+                                                
+                                            self.arrOfContent.append(ContentListNotes(object:dict))
+                                                
+                                            }else if contentTypeID == 2{
+                                                
+                                                self.arrOfContent.append(ContentListVideos(object:dict))
+                                                
+                                            }else if contentTypeID == 3{
+                                                
+                                                //self.arrOfContent.append(ContentListVideoInteractive(object:dict))
+                                                
+                                            }else if contentTypeID == 4{
+                                                
+                                            self.arrOfContent.append(ContentListAssessment(object:dict))
+                                                
+                                            }else if contentTypeID == 5{
+                                                
+                                                self.arrOfContent.append(ContentListAssignment(object:dict))
+                                                
+                                            }else if contentTypeID == 6{
+                                                
+                                                self.arrOfContent.append(ContentListModule(object:dict))
+                                                
+                                            }else if contentTypeID == 7{
+                                                
+                                                self.arrOfContent.append(ContentListLiveClass(object:dict))
+                                                
+                                            } else if contentTypeID == 8{
+                                                
+                                                self.arrOfContent.append(ContentListDiscussion(object:dict))
+                                            }
+                                        }
+                                    }
+                                }
+                                self.tableview.reloadData()
+                                
+                            }
+                            
+                        }else{
+                            
+                            let message : String =  data.value(forKey: "message")  as! String
+                            Utility.showAlert(message: message, title: AppName, actions: nil, controller: self)
+                        }
+                        
+                    }
+                    else{
+                        
+                        Utility.showAlert(message: "Data not found.", title: AppName, actions: nil, controller: self)
+                    }
+                    
+                }
+                
+                if self.arrOfContent.count == 0{
+                    self.tableview.backgroundView = Utility.nodataFoundView()
+                }
+                
+                self.tableview.endRefreshing()
+                self.stopActivityAnimating()
+            })
+            
+        }else{
+            
+            Utility.showAlert(message: "Batch id or user name not available", title: AppName, actions: nil, controller: self)
+        }
+        
+    }
+}

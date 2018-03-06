@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="00D-pM-mjQ" customClass="TESearchCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="00D-pM-mjQ" id="DHi-5l-Pgx">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPq-kb-vsd" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="10" y="0.0" width="355" height="59"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_doc_file" translatesAutoresizingMaskIntoConstraints="NO" id="OrJ-Z9-HOr" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="12" width="30" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="NOE-Lr-UKG"/>
+                                    <constraint firstAttribute="height" constant="35" id="UXl-xU-FOH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ITIFoundationPracticeNotes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wW-JK-UqG" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="50" y="10" width="305" height="19"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 Pages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUt-fz-bBF" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="50" y="34" width="51" height="14"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sch-ui-QUf">
+                                <rect key="frame" x="111" y="36" width="4" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="mOH-ma-TJy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.3MB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzJ-qy-N7w" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="125" y="34" width="35" height="14"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D71-4q-U2n">
+                                <rect key="frame" x="167" y="36" width="4" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="l8J-kt-yZy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PDF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxG-ek-GNE" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="181" y="34" width="24" height="14"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09/05/2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhh-7Z-QXn" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="289.5" y="34" width="60.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OrJ-Z9-HOr" firstAttribute="top" secondItem="gPq-kb-vsd" secondAttribute="top" constant="12" id="4C2-eT-lan"/>
+                            <constraint firstItem="D71-4q-U2n" firstAttribute="leading" secondItem="gzJ-qy-N7w" secondAttribute="trailing" constant="7" id="6ad-00-JBt"/>
+                            <constraint firstItem="Sch-ui-QUf" firstAttribute="leading" secondItem="vUt-fz-bBF" secondAttribute="trailing" constant="10" id="DDa-C6-Xth"/>
+                            <constraint firstItem="D71-4q-U2n" firstAttribute="top" secondItem="Sch-ui-QUf" secondAttribute="top" id="PFj-SV-Nnt"/>
+                            <constraint firstItem="oxG-ek-GNE" firstAttribute="top" secondItem="gzJ-qy-N7w" secondAttribute="top" id="Rer-EX-q9T"/>
+                            <constraint firstAttribute="trailing" secondItem="Fhh-7Z-QXn" secondAttribute="trailing" constant="5" id="U61-EY-dXE"/>
+                            <constraint firstItem="3wW-JK-UqG" firstAttribute="leading" secondItem="OrJ-Z9-HOr" secondAttribute="trailing" constant="10" id="UT9-QF-ax4"/>
+                            <constraint firstAttribute="bottom" secondItem="vUt-fz-bBF" secondAttribute="bottom" constant="11" id="Zb0-eW-bXP"/>
+                            <constraint firstAttribute="trailing" secondItem="3wW-JK-UqG" secondAttribute="trailing" id="cJs-Av-Qzw"/>
+                            <constraint firstItem="3wW-JK-UqG" firstAttribute="top" secondItem="gPq-kb-vsd" secondAttribute="top" constant="10" id="hLh-Tu-nTp"/>
+                            <constraint firstItem="gzJ-qy-N7w" firstAttribute="leading" secondItem="Sch-ui-QUf" secondAttribute="trailing" constant="10" id="hwC-B0-WsN"/>
+                            <constraint firstItem="D71-4q-U2n" firstAttribute="width" secondItem="Sch-ui-QUf" secondAttribute="width" id="ihZ-sq-0Ko"/>
+                            <constraint firstItem="Fhh-7Z-QXn" firstAttribute="top" secondItem="oxG-ek-GNE" secondAttribute="top" id="ioz-7c-cOi"/>
+                            <constraint firstItem="D71-4q-U2n" firstAttribute="height" secondItem="Sch-ui-QUf" secondAttribute="height" id="jle-cs-0YQ"/>
+                            <constraint firstItem="OrJ-Z9-HOr" firstAttribute="leading" secondItem="gPq-kb-vsd" secondAttribute="leading" constant="10" id="keZ-Xa-Ldf"/>
+                            <constraint firstItem="Sch-ui-QUf" firstAttribute="centerY" secondItem="vUt-fz-bBF" secondAttribute="centerY" id="qiZ-2e-yhk"/>
+                            <constraint firstItem="vUt-fz-bBF" firstAttribute="top" secondItem="3wW-JK-UqG" secondAttribute="bottom" constant="5" id="t81-gq-Lgj"/>
+                            <constraint firstItem="oxG-ek-GNE" firstAttribute="leading" secondItem="D71-4q-U2n" secondAttribute="trailing" constant="10" id="ueE-DM-yi0"/>
+                            <constraint firstItem="gzJ-qy-N7w" firstAttribute="top" secondItem="vUt-fz-bBF" secondAttribute="top" id="xz8-RS-WJ9"/>
+                            <constraint firstItem="vUt-fz-bBF" firstAttribute="leading" secondItem="3wW-JK-UqG" secondAttribute="leading" id="yTo-Qn-dF4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="NO"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gPq-kb-vsd" secondAttribute="trailing" constant="10" id="Xqd-0u-73S"/>
+                    <constraint firstItem="gPq-kb-vsd" firstAttribute="top" secondItem="DHi-5l-Pgx" secondAttribute="top" id="e1y-DI-ehx"/>
+                    <constraint firstAttribute="bottom" secondItem="gPq-kb-vsd" secondAttribute="bottom" id="eJQ-xa-m4c"/>
+                    <constraint firstItem="gPq-kb-vsd" firstAttribute="leading" secondItem="DHi-5l-Pgx" secondAttribute="leading" constant="10" id="lco-kb-9hY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imgDoc" destination="OrJ-Z9-HOr" id="dZZ-8a-IBe"/>
+                <outlet property="lblDate" destination="Fhh-7Z-QXn" id="jh6-sa-Cfy"/>
+                <outlet property="lblDocName" destination="3wW-JK-UqG" id="LG1-9E-51Q"/>
+                <outlet property="lblDocSize" destination="gzJ-qy-N7w" id="RbE-oU-who"/>
+                <outlet property="lblDocType" destination="oxG-ek-GNE" id="YP8-og-imB"/>
+                <outlet property="lblPageCount" destination="vUt-fz-bBF" id="kuv-Gi-4dJ"/>
+            </connections>
+            <point key="canvasLocation" x="-159" y="20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_doc_file" width="42" height="47"/>
+    </resources>
+</document>

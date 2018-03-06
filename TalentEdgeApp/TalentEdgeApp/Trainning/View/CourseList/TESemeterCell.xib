@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TESemeterCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="238" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="238" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semester 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZN-dS-sh6" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="235" height="46"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="RxS-Zb-HnI">
+                        <rect key="frame" x="0.0" y="46" width="238" height="4"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="nnG-Fd-23z"/>
+                        </constraints>
+                        <color key="progressTintColor" red="0.10419379340277778" green="0.5" blue="0.097862419194444508" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="trackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </progressView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivG-Kg-mwF">
+                        <rect key="frame" x="235" y="0.0" width="3" height="46"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3" id="EaA-e9-6uf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ivG-Kg-mwF" firstAttribute="leading" secondItem="cZN-dS-sh6" secondAttribute="trailing" id="93M-5E-dcJ"/>
+                <constraint firstItem="RxS-Zb-HnI" firstAttribute="top" secondItem="cZN-dS-sh6" secondAttribute="bottom" id="BvF-UB-SFF"/>
+                <constraint firstItem="RxS-Zb-HnI" firstAttribute="top" secondItem="ivG-Kg-mwF" secondAttribute="bottom" id="HTG-hz-soM"/>
+                <constraint firstItem="RxS-Zb-HnI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UTn-WL-mCt"/>
+                <constraint firstItem="ivG-Kg-mwF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gX4-0M-ral"/>
+                <constraint firstAttribute="trailing" secondItem="ivG-Kg-mwF" secondAttribute="trailing" id="iz7-M8-gwC"/>
+                <constraint firstAttribute="bottom" secondItem="RxS-Zb-HnI" secondAttribute="bottom" id="jXC-bL-dcp"/>
+                <constraint firstItem="cZN-dS-sh6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mqc-BQ-OTn"/>
+                <constraint firstAttribute="trailing" secondItem="RxS-Zb-HnI" secondAttribute="trailing" id="xmA-UI-FUI"/>
+                <constraint firstItem="cZN-dS-sh6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zfQ-rT-ULb"/>
+            </constraints>
+            <size key="customSize" width="238" height="50"/>
+            <connections>
+                <outlet property="lblSemesterName" destination="cZN-dS-sh6" id="8I6-Yh-OfI"/>
+                <outlet property="progress" destination="RxS-Zb-HnI" id="afe-vM-Sj0"/>
+            </connections>
+            <point key="canvasLocation" x="186" y="54"/>
+        </collectionViewCell>
+    </objects>
+</document>

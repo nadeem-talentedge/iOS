@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TERefferalHeaderCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXW-rf-6g4" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="70" height="70"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sf7-US-0R3">
+                                <rect key="frame" x="1" y="1" width="68" height="68"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ga1-n1-zUn" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="8" width="66" height="35.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" red="0.0" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rejected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anv-ti-oUg" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="39.5" width="66" height="12"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ga1-n1-zUn" firstAttribute="top" secondItem="sf7-US-0R3" secondAttribute="top" constant="8" id="KTw-wP-3pa"/>
+                                    <constraint firstItem="ga1-n1-zUn" firstAttribute="leading" secondItem="sf7-US-0R3" secondAttribute="leading" constant="1" id="RRe-AA-ylT"/>
+                                    <constraint firstAttribute="trailing" secondItem="ga1-n1-zUn" secondAttribute="trailing" constant="1" id="inu-UO-7Oz"/>
+                                    <constraint firstItem="anv-ti-oUg" firstAttribute="top" secondItem="ga1-n1-zUn" secondAttribute="bottom" constant="-4" id="tSO-mZ-YJJ"/>
+                                    <constraint firstItem="anv-ti-oUg" firstAttribute="trailing" secondItem="ga1-n1-zUn" secondAttribute="trailing" id="xBD-GX-S9y"/>
+                                    <constraint firstItem="anv-ti-oUg" firstAttribute="leading" secondItem="ga1-n1-zUn" secondAttribute="leading" id="xgb-xE-l0W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sf7-US-0R3" firstAttribute="leading" secondItem="vXW-rf-6g4" secondAttribute="leading" constant="1" id="1eh-PC-pYT"/>
+                            <constraint firstAttribute="trailing" secondItem="sf7-US-0R3" secondAttribute="trailing" constant="1" id="Wr3-9m-Fsg"/>
+                            <constraint firstAttribute="bottom" secondItem="sf7-US-0R3" secondAttribute="bottom" constant="1" id="Y9e-tH-LJ4"/>
+                            <constraint firstItem="sf7-US-0R3" firstAttribute="top" secondItem="vXW-rf-6g4" secondAttribute="top" constant="1" id="kI1-lR-gOb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="35"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.0" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vXW-rf-6g4" secondAttribute="trailing" constant="5" id="3uN-zd-hPp"/>
+                <constraint firstItem="vXW-rf-6g4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Fvh-vg-jmK"/>
+                <constraint firstAttribute="bottom" secondItem="vXW-rf-6g4" secondAttribute="bottom" constant="5" id="q10-Re-H3g"/>
+                <constraint firstItem="vXW-rf-6g4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="wNU-jO-GwB"/>
+            </constraints>
+            <size key="customSize" width="200" height="97"/>
+            <connections>
+                <outlet property="lblCount" destination="ga1-n1-zUn" id="szI-r6-keW"/>
+                <outlet property="lblTitle" destination="anv-ti-oUg" id="Jwv-F1-Nei"/>
+            </connections>
+            <point key="canvasLocation" x="109" y="77.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

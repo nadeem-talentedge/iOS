@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4uj-wv-hnX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--DashboardVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ID_TEDashboardVC" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="TEDashboardVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6fO-tv-4uO" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cWc-Gq-Gc4"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fG8-fE-WLq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6fO-tv-4uO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="65J-XO-x9d"/>
+                            <constraint firstItem="6fO-tv-4uO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PNV-ed-Hac"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6fO-tv-4uO" secondAttribute="bottom" id="Yb9-Dj-ifu"/>
+                            <constraint firstAttribute="trailing" secondItem="6fO-tv-4uO" secondAttribute="trailing" id="eYt-Vl-7fL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6a8-pa-NJ6"/>
+                    <connections>
+                        <outlet property="tableView" destination="6fO-tv-4uO" id="Ulg-Gw-a4U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="239"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="wXZ-H4-tsr">
+            <objects>
+                <tableViewController id="xZD-K3-4HJ" customClass="TELoginVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Sq4-Oa-S5l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.153850615" green="0.35733491179999999" blue="0.65634465220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="HAQ-Ys-ZuD">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="222" id="41Q-8K-OTY">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="41Q-8K-OTY" id="ZV5-Nh-Iwb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="talentedge" translatesAutoresizingMaskIntoConstraints="NO" id="ReD-BD-8HN">
+                                                    <rect key="frame" x="20" y="20" width="335" height="182"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ReD-BD-8HN" secondAttribute="bottom" constant="20" id="0uK-P0-ULg"/>
+                                                <constraint firstItem="ReD-BD-8HN" firstAttribute="top" secondItem="ZV5-Nh-Iwb" secondAttribute="top" constant="20" id="kFa-hM-yh4"/>
+                                                <constraint firstItem="ReD-BD-8HN" firstAttribute="leading" secondItem="ZV5-Nh-Iwb" secondAttribute="leading" constant="20" id="oNE-vY-fJB"/>
+                                                <constraint firstAttribute="trailing" secondItem="ReD-BD-8HN" secondAttribute="trailing" constant="20" id="y62-wM-BP7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="70" id="GPM-P6-zXj">
+                                        <rect key="frame" x="0.0" y="222" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GPM-P6-zXj" id="5Vt-Rg-ghu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0kc-LC-Vmh" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                    <rect key="frame" x="40" y="13" width="295" height="44"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="oVM-6t-rda"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="USERNAME"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                            <color key="value" red="0.38664364810000001" green="0.55297958849999995" blue="0.73273056749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                            <color key="value" red="0.38664364810000001" green="0.55297958849999995" blue="0.73273056749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                            <color key="value" red="0.38664364810000001" green="0.55297958849999995" blue="0.73273056749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="xZD-K3-4HJ" id="rdP-kj-DWF"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="0kc-LC-Vmh" firstAttribute="leading" secondItem="5Vt-Rg-ghu" secondAttribute="leading" constant="40" id="PgE-wJ-ZAP"/>
+                                                <constraint firstItem="0kc-LC-Vmh" firstAttribute="centerY" secondItem="5Vt-Rg-ghu" secondAttribute="centerY" id="WVA-Nb-Tbh"/>
+                                                <constraint firstAttribute="trailing" secondItem="0kc-LC-Vmh" secondAttribute="trailing" constant="40" id="ZFQ-iC-E4U"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="70" id="3nF-MT-epd">
+                                        <rect key="frame" x="0.0" y="292" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3nF-MT-epd" id="l4u-vm-9in">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FI1-jE-sws" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                    <rect key="frame" x="40" y="13" width="295" height="44"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="yyj-3N-b4Z"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="PASSWORD"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                            <color key="value" red="0.38664364810000001" green="0.55297958849999995" blue="0.73273056749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                            <color key="value" red="0.38664364810000001" green="0.55297958849999995" blue="0.73273056749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                            <color key="value" red="0.38664364810000001" green="0.55297958849999995" blue="0.73273056749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="xZD-K3-4HJ" id="jhk-Wo-Vei"/>
+                                                    </connections>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfI-VZ-pju">
+                                                    <rect key="frame" x="291" y="13" width="44" height="44"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="0Iu-cl-god"/>
+                                                        <constraint firstAttribute="width" constant="44" id="LRQ-Oc-ZZO"/>
+                                                    </constraints>
+                                                    <state key="normal" image="showpass"/>
+                                                    <connections>
+                                                        <action selector="showPassword_Click:" destination="xZD-K3-4HJ" eventType="touchUpInside" id="BfF-QI-XPX"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="GfI-VZ-pju" firstAttribute="trailing" secondItem="FI1-jE-sws" secondAttribute="trailing" id="5wA-dC-WeY"/>
+                                                <constraint firstItem="FI1-jE-sws" firstAttribute="centerY" secondItem="l4u-vm-9in" secondAttribute="centerY" id="A2z-pt-5HH"/>
+                                                <constraint firstItem="GfI-VZ-pju" firstAttribute="top" secondItem="FI1-jE-sws" secondAttribute="top" id="IVq-Z8-jZA"/>
+                                                <constraint firstAttribute="trailing" secondItem="FI1-jE-sws" secondAttribute="trailing" constant="40" id="TCN-C4-fko"/>
+                                                <constraint firstItem="FI1-jE-sws" firstAttribute="leading" secondItem="l4u-vm-9in" secondAttribute="leading" constant="40" id="bC0-bj-U7O"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="59" id="RQM-Id-zCj">
+                                        <rect key="frame" x="0.0" y="362" width="375" height="59"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RQM-Id-zCj" id="M2L-ok-8ON">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVz-oc-rys" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                                    <rect key="frame" x="40" y="13" width="295" height="34"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.5607843137254902" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="VrZ-i3-5bd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <state key="normal" title="SIGN IN"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="0.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="1" height="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="signIn_Click:" destination="xZD-K3-4HJ" eventType="touchUpInside" id="6GC-0d-KzY"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="YVz-oc-rys" firstAttribute="leading" secondItem="M2L-ok-8ON" secondAttribute="leading" constant="40" id="Mtd-Na-z50"/>
+                                                <constraint firstAttribute="trailing" secondItem="YVz-oc-rys" secondAttribute="trailing" constant="40" id="nQk-7Q-FFC"/>
+                                                <constraint firstItem="YVz-oc-rys" firstAttribute="centerY" secondItem="M2L-ok-8ON" secondAttribute="centerY" id="yxd-Rm-1hb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="59" id="3SV-Cj-3VU">
+                                        <rect key="frame" x="0.0" y="421" width="375" height="59"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3SV-Cj-3VU" id="nr5-N9-bWx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDF-Zz-23K">
+                                                    <rect key="frame" x="40" y="0.0" width="295" height="34"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="TPJ-7H-JdI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <state key="normal" title="FORGOT PASSWORD?"/>
+                                                    <connections>
+                                                        <segue destination="GOV-6i-iOk" kind="show" id="2Ja-Xi-Qba"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="VDF-Zz-23K" firstAttribute="top" secondItem="nr5-N9-bWx" secondAttribute="top" id="Nnq-7P-6zV"/>
+                                                <constraint firstItem="VDF-Zz-23K" firstAttribute="leading" secondItem="nr5-N9-bWx" secondAttribute="leading" constant="40" id="Uxx-Xw-nYx"/>
+                                                <constraint firstAttribute="trailing" secondItem="VDF-Zz-23K" secondAttribute="trailing" constant="40" id="eoD-Cz-479"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="xZD-K3-4HJ" id="SVE-qK-KX1"/>
+                            <outlet property="delegate" destination="xZD-K3-4HJ" id="ZUq-rL-Phb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="51z-un-LNG"/>
+                    <connections>
+                        <outlet property="PASSWORD" destination="FI1-jE-sws" id="h5t-4R-6Eb"/>
+                        <outlet property="USERNAME" destination="0kc-LC-Vmh" id="mnH-AU-AcL"/>
+                        <segue destination="TLI-nB-ZZg" kind="show" identifier="AppHome" id="ETY-HL-HQy"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9R1-c9-4Ic" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="217" y="966"/>
+        </scene>
+        <!--App HomeVC-->
+        <scene sceneID="nnB-3X-i7p">
+            <objects>
+                <viewController storyboardIdentifier="ID_TEAppHomeVC" id="TLI-nB-ZZg" customClass="TEAppHomeVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z0Y-h5-c5K"/>
+                        <viewControllerLayoutGuide type="bottom" id="lu2-gA-smt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ngj-SM-qSm">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qw9-6i-gfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="966"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="EoY-pc-mBg">
+            <objects>
+                <viewController storyboardIdentifier="ID_HomeVC" automaticallyAdjustsScrollViewInsets="NO" id="7Qn-jK-SNa" customClass="HomeVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K58-qq-Cs5"/>
+                        <viewControllerLayoutGuide type="bottom" id="7jB-7h-NHC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3jE-6I-Gmj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Laz-q7-tsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="966"/>
+        </scene>
+        <!--ModuleVC-->
+        <scene sceneID="TTV-OG-aIq">
+            <objects>
+                <viewController storyboardIdentifier="ID_TEModuleVC" automaticallyAdjustsScrollViewInsets="NO" id="VcD-Lj-tmT" customClass="TEModuleVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="asw-Ah-Sia"/>
+                        <viewControllerLayoutGuide type="bottom" id="pIx-0f-dlO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k6e-4I-GPM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SOl-sv-AZe" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="VcD-Lj-tmT" id="VpG-jR-ats"/>
+                                    <outlet property="delegate" destination="VcD-Lj-tmT" id="k3A-Zj-aJb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pIx-0f-dlO" firstAttribute="top" secondItem="SOl-sv-AZe" secondAttribute="bottom" id="0M6-lR-c6s"/>
+                            <constraint firstItem="SOl-sv-AZe" firstAttribute="top" secondItem="asw-Ah-Sia" secondAttribute="bottom" id="19E-w3-YgA"/>
+                            <constraint firstAttribute="trailing" secondItem="SOl-sv-AZe" secondAttribute="trailing" id="LgP-Ke-PUX"/>
+                            <constraint firstItem="SOl-sv-AZe" firstAttribute="leading" secondItem="k6e-4I-GPM" secondAttribute="leading" id="RsR-JC-Zzu"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="SOl-sv-AZe" id="Iau-65-8OE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qAu-Pi-tsx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2866" y="215"/>
+        </scene>
+        <!--Live ClassVC-->
+        <scene sceneID="xPG-1j-WlC">
+            <objects>
+                <viewController storyboardIdentifier="ID_TELiveClassVC" id="Xj4-aI-u7b" customClass="TELiveClassVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="acP-8x-tfd"/>
+                        <viewControllerLayoutGuide type="bottom" id="EBW-ZC-HDm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hGe-Gj-xJv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="635-Jl-ZoH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Classes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ak0-eh-WxN" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="90" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="4bv-w6-jmk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0es-ij-lXn" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="105" y="10" width="17" height="20"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_present" translatesAutoresizingMaskIntoConstraints="NO" id="hks-Cy-r7Q">
+                                        <rect key="frame" x="263" y="13" width="14" height="14"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attended" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4J-5t-gG4" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="282" y="10" width="61" height="20"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W8-wV-4Ia" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="348" y="10" width="17" height="20"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0es-ij-lXn" firstAttribute="leading" secondItem="ak0-eh-WxN" secondAttribute="trailing" constant="5" id="1DF-T1-Hqf"/>
+                                    <constraint firstItem="ak0-eh-WxN" firstAttribute="centerY" secondItem="635-Jl-ZoH" secondAttribute="centerY" id="8GK-Sf-fVB"/>
+                                    <constraint firstItem="K4J-5t-gG4" firstAttribute="height" secondItem="0es-ij-lXn" secondAttribute="height" id="8gi-e8-0dc"/>
+                                    <constraint firstItem="0es-ij-lXn" firstAttribute="top" secondItem="ak0-eh-WxN" secondAttribute="top" id="CXs-fT-gHF"/>
+                                    <constraint firstItem="0W8-wV-4Ia" firstAttribute="top" secondItem="0es-ij-lXn" secondAttribute="top" id="DJ6-0V-otW"/>
+                                    <constraint firstItem="K4J-5t-gG4" firstAttribute="leading" secondItem="hks-Cy-r7Q" secondAttribute="trailing" constant="5" id="NXS-su-XxG"/>
+                                    <constraint firstItem="0W8-wV-4Ia" firstAttribute="leading" secondItem="K4J-5t-gG4" secondAttribute="trailing" constant="5" id="Qp4-Fm-gXZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="0W8-wV-4Ia" secondAttribute="trailing" constant="10" id="Y5z-QX-fNR"/>
+                                    <constraint firstItem="0W8-wV-4Ia" firstAttribute="height" secondItem="K4J-5t-gG4" secondAttribute="height" id="hcE-vA-8Bp"/>
+                                    <constraint firstItem="ak0-eh-WxN" firstAttribute="leading" secondItem="635-Jl-ZoH" secondAttribute="leading" constant="10" id="hde-XG-2Ac"/>
+                                    <constraint firstItem="hks-Cy-r7Q" firstAttribute="centerY" secondItem="K4J-5t-gG4" secondAttribute="centerY" id="izD-ec-L6t"/>
+                                    <constraint firstItem="K4J-5t-gG4" firstAttribute="top" secondItem="0es-ij-lXn" secondAttribute="top" id="kvN-Y0-I59"/>
+                                    <constraint firstItem="0es-ij-lXn" firstAttribute="height" secondItem="ak0-eh-WxN" secondAttribute="height" id="peS-U0-1Ht"/>
+                                    <constraint firstAttribute="height" constant="40" id="wnb-a5-y4F"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="57J-Nm-OFK" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Xj4-aI-u7b" id="g2n-Fz-IJF"/>
+                                    <outlet property="delegate" destination="Xj4-aI-u7b" id="wZg-qK-Gko"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="57J-Nm-OFK" firstAttribute="leading" secondItem="hGe-Gj-xJv" secondAttribute="leading" id="3vj-Hh-BqH"/>
+                            <constraint firstItem="57J-Nm-OFK" firstAttribute="top" secondItem="635-Jl-ZoH" secondAttribute="bottom" id="ALY-ey-602"/>
+                            <constraint firstItem="635-Jl-ZoH" firstAttribute="leading" secondItem="hGe-Gj-xJv" secondAttribute="leading" id="XAI-i3-e5a"/>
+                            <constraint firstAttribute="trailing" secondItem="57J-Nm-OFK" secondAttribute="trailing" id="Ybo-j2-F8x"/>
+                            <constraint firstItem="EBW-ZC-HDm" firstAttribute="top" secondItem="57J-Nm-OFK" secondAttribute="bottom" id="akL-mE-ifk"/>
+                            <constraint firstItem="635-Jl-ZoH" firstAttribute="top" secondItem="acP-8x-tfd" secondAttribute="bottom" id="pP2-3m-EXP"/>
+                            <constraint firstAttribute="trailing" secondItem="635-Jl-ZoH" secondAttribute="trailing" id="rdl-aZ-hcl"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="attendedValue" destination="0W8-wV-4Ia" id="uU5-mZ-Nxr"/>
+                        <outlet property="tableview" destination="57J-Nm-OFK" id="kno-Wz-ljE"/>
+                        <outlet property="totalClassValue" destination="0es-ij-lXn" id="UB1-sG-hBf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c20-xk-oPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2865" y="973"/>
+        </scene>
+        <!--Live Class DetailVC-->
+        <scene sceneID="yBq-IC-rff">
+            <objects>
+                <viewController storyboardIdentifier="ID_TELiveClassDetailVC" id="5OC-CH-uyH" customClass="TELiveClassDetailVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="feQ-yg-Igq"/>
+                        <viewControllerLayoutGuide type="bottom" id="AjG-mF-9BB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z2b-yk-PJn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Ew5-wh-QLC" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="5OC-CH-uyH" id="Two-tL-Aed"/>
+                                    <outlet property="delegate" destination="5OC-CH-uyH" id="tsX-Xl-N6f"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ew5-wh-QLC" firstAttribute="top" secondItem="feQ-yg-Igq" secondAttribute="bottom" id="2TP-fW-3nR"/>
+                            <constraint firstAttribute="trailing" secondItem="Ew5-wh-QLC" secondAttribute="trailing" id="3pI-h6-iJb"/>
+                            <constraint firstItem="Ew5-wh-QLC" firstAttribute="leading" secondItem="z2b-yk-PJn" secondAttribute="leading" id="sRc-SV-XKu"/>
+                            <constraint firstItem="AjG-mF-9BB" firstAttribute="top" secondItem="Ew5-wh-QLC" secondAttribute="bottom" id="vq9-2k-B1z"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableview" destination="Ew5-wh-QLC" id="56V-aT-g6E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ILC-bt-mOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3529" y="966"/>
+        </scene>
+        <!--AssignmentsVC-->
+        <scene sceneID="MXD-Yy-YFj">
+            <objects>
+                <viewController storyboardIdentifier="ID_TEAssignmentsVC" id="up4-oq-Hc3" customClass="TEAssignmentsVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="efW-oL-YiB"/>
+                        <viewControllerLayoutGuide type="bottom" id="FrN-oy-Tbp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="txc-sW-83j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="XoY-qt-nIQ" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="up4-oq-Hc3" id="qeT-YN-mXq"/>
+                                    <outlet property="delegate" destination="up4-oq-Hc3" id="ctm-Qs-pts"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XoY-qt-nIQ" secondAttribute="trailing" id="1QP-xZ-4B2"/>
+                            <constraint firstItem="FrN-oy-Tbp" firstAttribute="top" secondItem="XoY-qt-nIQ" secondAttribute="bottom" id="D8g-eh-v07"/>
+                            <constraint firstItem="XoY-qt-nIQ" firstAttribute="top" secondItem="efW-oL-YiB" secondAttribute="bottom" id="UDn-4Q-Aor"/>
+                            <constraint firstItem="XoY-qt-nIQ" firstAttribute="leading" secondItem="txc-sW-83j" secondAttribute="leading" id="uPa-Ox-glS"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableview" destination="XoY-qt-nIQ" id="Bu9-yl-Ik0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6F-JG-eLC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4250" y="966"/>
+        </scene>
+        <!--AssesmentVC-->
+        <scene sceneID="fbA-2u-7AK">
+            <objects>
+                <viewController storyboardIdentifier="ID_TEAssesmentVC" id="77f-Wt-NuL" customClass="TEAssesmentVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lfU-4p-WNt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pyw-dc-A2O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EAe-DP-SgW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="igr-Hv-WDM" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="77f-Wt-NuL" id="2kF-Gy-n8g"/>
+                                    <outlet property="delegate" destination="77f-Wt-NuL" id="1MV-bO-DGF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="igr-Hv-WDM" secondAttribute="trailing" id="0fe-b8-IXS"/>
+                            <constraint firstItem="igr-Hv-WDM" firstAttribute="leading" secondItem="EAe-DP-SgW" secondAttribute="leading" id="BEz-sM-TDF"/>
+                            <constraint firstItem="Pyw-dc-A2O" firstAttribute="top" secondItem="igr-Hv-WDM" secondAttribute="bottom" id="edf-jW-TEK"/>
+                            <constraint firstItem="igr-Hv-WDM" firstAttribute="top" secondItem="lfU-4p-WNt" secondAttribute="bottom" id="y1K-TA-xId"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableview" destination="igr-Hv-WDM" id="JWL-Jt-HeS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="859-D8-rHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4991" y="966"/>
+        </scene>
+        <!--Over ViewVC-->
+        <scene sceneID="pok-Xc-1kY">
+            <objects>
+                <viewController storyboardIdentifier="ID_TEOverViewVC" id="UNr-oL-ys1" customClass="TEOverViewVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2HQ-4r-gdk"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfF-FF-mZ0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="veh-m5-zVD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OOZ-R9-sHw" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="UNr-oL-ys1" id="c9U-gv-rcu"/>
+                                    <outlet property="delegate" destination="UNr-oL-ys1" id="o48-nC-XCZ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OOZ-R9-sHw" secondAttribute="trailing" id="J9n-CV-FYn"/>
+                            <constraint firstItem="wfF-FF-mZ0" firstAttribute="top" secondItem="OOZ-R9-sHw" secondAttribute="bottom" id="S0e-n1-uJp"/>
+                            <constraint firstItem="OOZ-R9-sHw" firstAttribute="leading" secondItem="veh-m5-zVD" secondAttribute="leading" id="k0z-3U-wdj"/>
+                            <constraint firstItem="OOZ-R9-sHw" firstAttribute="top" secondItem="2HQ-4r-gdk" secondAttribute="bottom" id="sKc-Ej-q8p"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableview" destination="OOZ-R9-sHw" id="dbG-E3-zrD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7Y-1u-EDQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5772" y="966"/>
+        </scene>
+        <!--TestimonialsVC-->
+        <scene sceneID="FAB-zA-oUc">
+            <objects>
+                <viewController id="zLQ-9t-4mm" customClass="TETestimonialsVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fjC-1o-6d1"/>
+                        <viewControllerLayoutGuide type="bottom" id="psi-fQ-MYd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s0i-AX-nj5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tg9-k9-XLh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="zLQ-9t-4mm" id="b72-4b-k9T"/>
+                                    <outlet property="delegate" destination="zLQ-9t-4mm" id="CWA-4n-zpe"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tg9-k9-XLh" secondAttribute="trailing" id="Y7o-c0-SoT"/>
+                            <constraint firstItem="tg9-k9-XLh" firstAttribute="leading" secondItem="s0i-AX-nj5" secondAttribute="leading" id="YUu-l0-rAY"/>
+                            <constraint firstItem="psi-fQ-MYd" firstAttribute="top" secondItem="tg9-k9-XLh" secondAttribute="bottom" id="hDO-EP-DHA"/>
+                            <constraint firstItem="tg9-k9-XLh" firstAttribute="top" secondItem="fjC-1o-6d1" secondAttribute="bottom" id="usO-jh-aKL"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableview" destination="tg9-k9-XLh" id="8Dj-mi-SVl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v6i-Mj-VA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6484" y="966"/>
+        </scene>
+        <!--User ProfileVC-->
+        <scene sceneID="040-hR-kD7">
+            <objects>
+                <viewController storyboardIdentifier="ID_TEUserProfileVC" automaticallyAdjustsScrollViewInsets="NO" id="GOV-6i-iOk" customClass="TEUserProfileVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ihL-y5-q9k"/>
+                        <viewControllerLayoutGuide type="bottom" id="E7D-rC-UYU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bqS-Zj-lah">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hk4-Kf-48m" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="GOV-6i-iOk" id="pOs-DJ-lDO"/>
+                                    <outlet property="delegate" destination="GOV-6i-iOk" id="U4Q-zO-bF6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E7D-rC-UYU" firstAttribute="top" secondItem="hk4-Kf-48m" secondAttribute="bottom" id="YxV-lk-Ldq"/>
+                            <constraint firstAttribute="trailing" secondItem="hk4-Kf-48m" secondAttribute="trailing" id="b2V-54-3h4"/>
+                            <constraint firstItem="hk4-Kf-48m" firstAttribute="top" secondItem="ihL-y5-q9k" secondAttribute="bottom" id="hLk-q5-pDH"/>
+                            <constraint firstItem="hk4-Kf-48m" firstAttribute="leading" secondItem="bqS-Zj-lah" secondAttribute="leading" id="y5n-bq-EXZ"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableview" destination="hk4-Kf-48m" id="uaP-1Y-sDX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygE-0N-Gih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6908" y="215"/>
+        </scene>
+        <!--Module LecturesVC-->
+        <scene sceneID="Zqa-g0-cF2">
+            <objects>
+                <viewController storyboardIdentifier="ID_TEModuleLecturesVC" automaticallyAdjustsScrollViewInsets="NO" id="70L-zV-uZF" customClass="TEModuleLecturesVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0gJ-w6-JW3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jiu-E0-fuo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zbn-WR-Awa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LTI-iu-CP5" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="70L-zV-uZF" id="QWO-R3-Tm1"/>
+                                    <outlet property="delegate" destination="70L-zV-uZF" id="mAG-vs-sMg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LTI-iu-CP5" firstAttribute="leading" secondItem="Zbn-WR-Awa" secondAttribute="leading" id="RpM-VI-MgS"/>
+                            <constraint firstAttribute="trailing" secondItem="LTI-iu-CP5" secondAttribute="trailing" id="bht-2i-jLF"/>
+                            <constraint firstItem="Jiu-E0-fuo" firstAttribute="top" secondItem="LTI-iu-CP5" secondAttribute="bottom" id="mq3-qj-qS6"/>
+                            <constraint firstItem="LTI-iu-CP5" firstAttribute="top" secondItem="0gJ-w6-JW3" secondAttribute="bottom" constant="20" id="uUK-MH-JAC"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableview" destination="LTI-iu-CP5" id="YwK-Mm-alM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OA1-a5-4qk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3646" y="215"/>
+        </scene>
+        <!--Lecturer DetailVC-->
+        <scene sceneID="IhN-4u-mqQ">
+            <objects>
+                <viewController storyboardIdentifier="ID_TELecturerDetailVC" automaticallyAdjustsScrollViewInsets="NO" id="roK-NP-ZOw" customClass="TELecturerDetailVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4nT-aJ-pUS"/>
+                        <viewControllerLayoutGuide type="bottom" id="0DX-56-okx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Cc-wj-2W7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qci-LU-6EW" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="roK-NP-ZOw" id="lMR-B0-dBs"/>
+                                    <outlet property="delegate" destination="roK-NP-ZOw" id="bQZ-rF-rUG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qci-LU-6EW" firstAttribute="top" secondItem="4nT-aJ-pUS" secondAttribute="bottom" id="Hfv-NJ-zLu"/>
+                            <constraint firstAttribute="trailing" secondItem="Qci-LU-6EW" secondAttribute="trailing" id="fPs-Cv-T1s"/>
+                            <constraint firstItem="Qci-LU-6EW" firstAttribute="leading" secondItem="0Cc-wj-2W7" secondAttribute="leading" id="gfL-eN-Q6X"/>
+                            <constraint firstItem="0DX-56-okx" firstAttribute="top" secondItem="Qci-LU-6EW" secondAttribute="bottom" id="pQd-Pm-cPW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableview" destination="Qci-LU-6EW" id="3YL-97-YeB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLw-xU-bcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4425" y="215"/>
+        </scene>
+        <!--Assignment DetailVC-->
+        <scene sceneID="sIa-ud-cij">
+            <objects>
+                <viewController storyboardIdentifier="ID_TEAssignmentDetailVC" automaticallyAdjustsScrollViewInsets="NO" id="mzA-LK-g9r" customClass="TEAssignmentDetailVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zfS-jD-QkI"/>
+                        <viewControllerLayoutGuide type="bottom" id="klY-ho-YcT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vj1-X5-Rta">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FPQ-KN-tA1" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mzA-LK-g9r" id="5rb-74-Rdl"/>
+                                    <outlet property="delegate" destination="mzA-LK-g9r" id="mpL-GX-qS5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="klY-ho-YcT" firstAttribute="top" secondItem="FPQ-KN-tA1" secondAttribute="bottom" id="2X3-jp-G0g"/>
+                            <constraint firstItem="FPQ-KN-tA1" firstAttribute="leading" secondItem="Vj1-X5-Rta" secondAttribute="leading" id="B8s-DG-a0c"/>
+                            <constraint firstItem="FPQ-KN-tA1" firstAttribute="top" secondItem="zfS-jD-QkI" secondAttribute="bottom" id="ifE-eS-bpR"/>
+                            <constraint firstAttribute="trailing" secondItem="FPQ-KN-tA1" secondAttribute="trailing" id="jFM-9D-7MQ"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableview" destination="FPQ-KN-tA1" id="1an-iM-1fc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4AQ-k0-8nj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5121" y="215"/>
+        </scene>
+        <!--QuizVC-->
+        <scene sceneID="5Fl-hN-zN4">
+            <objects>
+                <viewController storyboardIdentifier="ID_TEQuizVC" automaticallyAdjustsScrollViewInsets="NO" id="PLg-GJ-IT4" customClass="TEQuizVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hwb-Yg-Uil"/>
+                        <viewControllerLayoutGuide type="bottom" id="FYE-N6-ACV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lrA-E0-ELX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gm9-Xc-4IX" customClass="BCUICollectionView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gSM-ww-Crq">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="27j-rV-O2M">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="PLg-GJ-IT4" id="KnS-7r-WKm"/>
+                                    <outlet property="delegate" destination="PLg-GJ-IT4" id="6tc-KB-u9Y"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyw-SJ-BaN" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5rT-X8-dJ5">
+                                        <rect key="frame" x="10" y="10" width="70" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvK-nJ-uRx" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="15" width="70" height="18"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJL-wS-e1J">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+                                                <state key="normal" image="ic_previous_arrow"/>
+                                                <connections>
+                                                    <action selector="previous_Click:" destination="PLg-GJ-IT4" eventType="touchUpInside" id="LP5-IE-x08"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="HJL-wS-e1J" firstAttribute="leading" secondItem="5rT-X8-dJ5" secondAttribute="leading" id="1jN-ND-YDw"/>
+                                            <constraint firstAttribute="trailing" secondItem="fvK-nJ-uRx" secondAttribute="trailing" id="6rk-WV-FOb"/>
+                                            <constraint firstAttribute="trailing" secondItem="HJL-wS-e1J" secondAttribute="trailing" id="Dgt-uA-7XB"/>
+                                            <constraint firstAttribute="bottom" secondItem="fvK-nJ-uRx" secondAttribute="bottom" constant="7" id="Udp-O6-ArZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="HJL-wS-e1J" secondAttribute="bottom" id="XwH-qV-uFe"/>
+                                            <constraint firstAttribute="height" constant="40" id="cyr-Iw-YpK"/>
+                                            <constraint firstAttribute="width" constant="70" id="dHd-C5-wTE"/>
+                                            <constraint firstItem="HJL-wS-e1J" firstAttribute="top" secondItem="5rT-X8-dJ5" secondAttribute="top" id="o5g-eX-Ez0"/>
+                                            <constraint firstItem="fvK-nJ-uRx" firstAttribute="leading" secondItem="5rT-X8-dJ5" secondAttribute="leading" id="xhI-BP-hEL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kza-3v-2Ai">
+                                        <rect key="frame" x="295" y="10" width="70" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KP-te-zum" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="15" width="70" height="18"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxa-tt-R1b">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+                                                <state key="normal" image="ic_next_arrow"/>
+                                                <connections>
+                                                    <action selector="next_Click:" destination="PLg-GJ-IT4" eventType="touchUpInside" id="3hd-U6-FCf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="jxa-tt-R1b" secondAttribute="trailing" id="76r-az-T0S"/>
+                                            <constraint firstItem="jxa-tt-R1b" firstAttribute="top" secondItem="kza-3v-2Ai" secondAttribute="top" id="770-89-dY9"/>
+                                            <constraint firstAttribute="bottom" secondItem="0KP-te-zum" secondAttribute="bottom" constant="7" id="LR1-ef-CTn"/>
+                                            <constraint firstAttribute="bottom" secondItem="jxa-tt-R1b" secondAttribute="bottom" id="Qur-c4-JUG"/>
+                                            <constraint firstItem="0KP-te-zum" firstAttribute="leading" secondItem="kza-3v-2Ai" secondAttribute="leading" id="T99-36-hPw"/>
+                                            <constraint firstAttribute="trailing" secondItem="0KP-te-zum" secondAttribute="trailing" id="VZj-6x-bf4"/>
+                                            <constraint firstItem="jxa-tt-R1b" firstAttribute="leading" secondItem="kza-3v-2Ai" secondAttribute="leading" id="ipw-9R-Fem"/>
+                                            <constraint firstAttribute="width" constant="70" id="n5E-zc-I9v"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5rT-X8-dJ5" firstAttribute="leading" secondItem="yyw-SJ-BaN" secondAttribute="leading" constant="10" id="UTp-8Q-I1c"/>
+                                    <constraint firstItem="5rT-X8-dJ5" firstAttribute="top" secondItem="yyw-SJ-BaN" secondAttribute="top" constant="10" id="dWR-o8-aYf"/>
+                                    <constraint firstAttribute="height" constant="50" id="jYi-MJ-vH5"/>
+                                    <constraint firstAttribute="bottom" secondItem="kza-3v-2Ai" secondAttribute="bottom" id="mKv-zz-lVE"/>
+                                    <constraint firstAttribute="trailing" secondItem="kza-3v-2Ai" secondAttribute="trailing" constant="10" id="nm1-Na-11N"/>
+                                    <constraint firstItem="kza-3v-2Ai" firstAttribute="top" secondItem="yyw-SJ-BaN" secondAttribute="top" constant="10" id="zuS-xu-LSw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FYE-N6-ACV" firstAttribute="top" secondItem="yyw-SJ-BaN" secondAttribute="bottom" id="9fD-k7-gep"/>
+                            <constraint firstItem="yyw-SJ-BaN" firstAttribute="leading" secondItem="lrA-E0-ELX" secondAttribute="leading" id="UvL-2A-REp"/>
+                            <constraint firstItem="Gm9-Xc-4IX" firstAttribute="leading" secondItem="lrA-E0-ELX" secondAttribute="leading" id="Z8F-9M-ftZ"/>
+                            <constraint firstItem="Gm9-Xc-4IX" firstAttribute="top" secondItem="Hwb-Yg-Uil" secondAttribute="bottom" id="am6-Tg-yVK"/>
+                            <constraint firstItem="yyw-SJ-BaN" firstAttribute="top" secondItem="Gm9-Xc-4IX" secondAttribute="bottom" id="dp4-1g-HPt"/>
+                            <constraint firstAttribute="trailing" secondItem="yyw-SJ-BaN" secondAttribute="trailing" id="jov-bH-yVK"/>
+                            <constraint firstAttribute="trailing" secondItem="Gm9-Xc-4IX" secondAttribute="trailing" id="zrx-K5-gQz"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionview" destination="Gm9-Xc-4IX" id="gmS-mo-0FT"/>
+                        <outlet property="viewNext" destination="kza-3v-2Ai" id="3qA-vd-104"/>
+                        <outlet property="viewPrevious" destination="5rT-X8-dJ5" id="IKj-53-buV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5R7-QX-Nef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5911" y="215"/>
+        </scene>
+        <!--LernersVC-->
+        <scene sceneID="Lh9-17-C2K">
+            <objects>
+                <viewController storyboardIdentifier="ID_TELernersVC" automaticallyAdjustsScrollViewInsets="NO" id="D4J-ye-NgE" customClass="TELernersVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7rD-lm-InT"/>
+                        <viewControllerLayoutGuide type="bottom" id="W3y-df-Y6p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Jy-j8-sNb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dnQ-23-o9i" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="D4J-ye-NgE" id="3uq-Sb-znR"/>
+                                    <outlet property="delegate" destination="D4J-ye-NgE" id="Gbw-Tx-0Kf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dnQ-23-o9i" firstAttribute="top" secondItem="7Jy-j8-sNb" secondAttribute="top" id="27w-eX-uUA"/>
+                            <constraint firstItem="dnQ-23-o9i" firstAttribute="leading" secondItem="7Jy-j8-sNb" secondAttribute="leading" id="rmN-v2-mHH"/>
+                            <constraint firstAttribute="trailing" secondItem="dnQ-23-o9i" secondAttribute="trailing" id="uPi-kS-qOr"/>
+                            <constraint firstItem="W3y-df-Y6p" firstAttribute="top" secondItem="dnQ-23-o9i" secondAttribute="bottom" id="wz8-EC-TrW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="dnQ-23-o9i" id="guY-y2-y1Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pok-bF-iQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3646" y="-495"/>
+        </scene>
+        <!--ReaderVC-->
+        <scene sceneID="dkS-JR-yMO">
+            <objects>
+                <viewController storyboardIdentifier="ID_TEPDFReaderVC" automaticallyAdjustsScrollViewInsets="NO" id="p4z-ai-Eh9" customClass="TEPDFReaderVC" customModule="TalentEdgeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fLT-8f-4A7"/>
+                        <viewControllerLayoutGuide type="bottom" id="TOE-Fi-1bK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NX2-hn-xFr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KiW-2B-MfV" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="p4z-ai-Eh9" id="2RA-y7-eMQ"/>
+                                    <outlet property="delegate" destination="p4z-ai-Eh9" id="Eh6-S8-lJX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KiW-2B-MfV" secondAttribute="trailing" id="00i-Tq-vDI"/>
+                            <constraint firstItem="KiW-2B-MfV" firstAttribute="top" secondItem="fLT-8f-4A7" secondAttribute="bottom" id="Bgd-eL-B27"/>
+                            <constraint firstItem="TOE-Fi-1bK" firstAttribute="top" secondItem="KiW-2B-MfV" secondAttribute="bottom" id="t5O-xV-Fhi"/>
+                            <constraint firstItem="KiW-2B-MfV" firstAttribute="leading" secondItem="NX2-hn-xFr" secondAttribute="leading" id="zXI-mI-ezE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableview" destination="KiW-2B-MfV" id="EGh-GT-wv8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TzM-ly-aP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4446" y="-495"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s1K-lb-fZf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4uj-wv-hnX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jzh-il-Jz0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xZD-K3-4HJ" kind="relationship" relationship="rootViewController" id="HTz-Yo-A7n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rhg-fg-ogN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-615" y="966"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_next_arrow" width="17" height="14"/>
+        <image name="ic_present" width="14" height="14"/>
+        <image name="ic_previous_arrow" width="17" height="14"/>
+        <image name="showpass" width="24" height="24"/>
+        <image name="talentedge" width="286" height="134"/>
+    </resources>
+</document>

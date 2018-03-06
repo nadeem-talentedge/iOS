@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Medium</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="fol-L9-7mq" customClass="TELiveClassCell" customModule="ELSA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fol-L9-7mq" id="EII-k1-0v8">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="193.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lvy-i8-U9U" customClass="BCView" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="10" y="5" width="355" height="183.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BP0-oz-64c" customClass="BCUIImageView" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="iJx-s3-poz"/>
+                                    <constraint firstAttribute="width" constant="44" id="myG-N2-wLG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big data Enterprise" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPu-q3-JWP" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="58" y="10" width="262" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVv-uS-FKw" customClass="BCUIButton" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="325" y="10" width="20" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="2vV-5p-bTA"/>
+                                    <constraint firstAttribute="height" constant="20" id="P0I-KY-MZs"/>
+                                </constraints>
+                                <state key="normal" image="down-arrow-fill">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajay Kumar" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2d-we-1GZ" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="58" y="37" width="262" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7m-Md-7lx" customClass="BCUIButton" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="235" y="62" width="110" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title=" Feb 21, 2017" image="ic_clock_Gray">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bt-fm-MTw" customClass="BCUIButton" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="58" y="62" width="87" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title=" Live Class" image="content_type_liveclass">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyY-h9-C6M">
+                                <rect key="frame" x="0.0" y="93" width="355" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="O9U-8s-5pP"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="Business management testing" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjs-5j-ThX" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="10" y="108" width="255" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAX-uS-Cxa" customClass="BCUIButton" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="270" y="103" width="75" height="24"/>
+                                <color key="backgroundColor" red="0.1148860231" green="0.55599170919999996" blue="0.75004488229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="qia-6T-h4h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="  JOIN  "/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1148860231" green="0.55599170919999996" blue="0.75004488229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="rightButton_Click:" destination="fol-L9-7mq" eventType="touchUpInside" id="qvj-if-pxv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jt-Gz-exP" customClass="BCUIButton" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="10" y="135" width="88" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="  01:00Hrs" image="TimerIcon">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zw-hF-BoU" customClass="BCUIButton" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="10" y="160" width="124" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="  20 March 2017" image="watchOrange">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zjs-5j-ThX" firstAttribute="leading" secondItem="BP0-oz-64c" secondAttribute="leading" id="2mj-FV-yjj"/>
+                            <constraint firstItem="BP0-oz-64c" firstAttribute="leading" secondItem="Lvy-i8-U9U" secondAttribute="leading" constant="10" id="2nc-jM-Yh7"/>
+                            <constraint firstItem="WPu-q3-JWP" firstAttribute="leading" secondItem="BP0-oz-64c" secondAttribute="trailing" constant="8" id="445-P8-ZNe"/>
+                            <constraint firstItem="sAX-uS-Cxa" firstAttribute="trailing" secondItem="aVv-uS-FKw" secondAttribute="trailing" id="9BQ-jQ-QcI"/>
+                            <constraint firstItem="d7m-Md-7lx" firstAttribute="top" secondItem="7bt-fm-MTw" secondAttribute="top" id="Apl-28-oNc"/>
+                            <constraint firstItem="lyY-h9-C6M" firstAttribute="leading" secondItem="Lvy-i8-U9U" secondAttribute="leading" id="B1B-GV-xHo"/>
+                            <constraint firstItem="d7m-Md-7lx" firstAttribute="trailing" secondItem="aVv-uS-FKw" secondAttribute="trailing" id="BYm-wF-jnZ"/>
+                            <constraint firstItem="9Zw-hF-BoU" firstAttribute="leading" secondItem="8jt-Gz-exP" secondAttribute="leading" id="D7e-oK-Gf2"/>
+                            <constraint firstItem="BP0-oz-64c" firstAttribute="top" secondItem="Lvy-i8-U9U" secondAttribute="top" constant="10" id="Eb7-EN-3xe"/>
+                            <constraint firstAttribute="trailing" secondItem="lyY-h9-C6M" secondAttribute="trailing" id="KdS-ME-fJQ"/>
+                            <constraint firstItem="9Zw-hF-BoU" firstAttribute="top" secondItem="8jt-Gz-exP" secondAttribute="bottom" constant="8" id="LBu-CC-OTe"/>
+                            <constraint firstItem="A2d-we-1GZ" firstAttribute="trailing" secondItem="WPu-q3-JWP" secondAttribute="trailing" id="MtS-gU-Klm"/>
+                            <constraint firstItem="A2d-we-1GZ" firstAttribute="top" secondItem="WPu-q3-JWP" secondAttribute="bottom" constant="6" id="NDN-u2-jb2"/>
+                            <constraint firstItem="A2d-we-1GZ" firstAttribute="leading" secondItem="WPu-q3-JWP" secondAttribute="leading" id="NoQ-dS-Jti"/>
+                            <constraint firstItem="sAX-uS-Cxa" firstAttribute="leading" secondItem="Zjs-5j-ThX" secondAttribute="trailing" priority="256" constant="5" id="Nqy-VW-gnb"/>
+                            <constraint firstItem="Zjs-5j-ThX" firstAttribute="top" secondItem="lyY-h9-C6M" secondAttribute="bottom" constant="14" id="Q7t-Yd-VE7"/>
+                            <constraint firstItem="7bt-fm-MTw" firstAttribute="top" secondItem="A2d-we-1GZ" secondAttribute="bottom" constant="6" id="QGE-xi-iKn"/>
+                            <constraint firstAttribute="bottom" secondItem="9Zw-hF-BoU" secondAttribute="bottom" constant="6.5" id="SaC-dl-ZPh"/>
+                            <constraint firstItem="7bt-fm-MTw" firstAttribute="leading" secondItem="A2d-we-1GZ" secondAttribute="leading" id="VQB-Tz-976"/>
+                            <constraint firstAttribute="trailing" secondItem="aVv-uS-FKw" secondAttribute="trailing" constant="10" id="c3O-gh-aC3"/>
+                            <constraint firstItem="aVv-uS-FKw" firstAttribute="leading" secondItem="WPu-q3-JWP" secondAttribute="trailing" constant="5" id="fkh-nH-Kf4"/>
+                            <constraint firstItem="lyY-h9-C6M" firstAttribute="top" secondItem="7bt-fm-MTw" secondAttribute="bottom" constant="14" id="kHg-H5-VYg"/>
+                            <constraint firstItem="aVv-uS-FKw" firstAttribute="top" secondItem="Lvy-i8-U9U" secondAttribute="top" constant="10" id="rFO-L5-Gkr"/>
+                            <constraint firstItem="8jt-Gz-exP" firstAttribute="leading" secondItem="Zjs-5j-ThX" secondAttribute="leading" id="vEJ-C3-RhD"/>
+                            <constraint firstItem="8jt-Gz-exP" firstAttribute="top" secondItem="Zjs-5j-ThX" secondAttribute="bottom" constant="8" id="wEf-mh-bet"/>
+                            <constraint firstItem="sAX-uS-Cxa" firstAttribute="bottom" secondItem="Zjs-5j-ThX" secondAttribute="bottom" id="wgp-6D-61Q"/>
+                            <constraint firstItem="WPu-q3-JWP" firstAttribute="top" secondItem="BP0-oz-64c" secondAttribute="top" id="xqh-r4-0DI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Lvy-i8-U9U" firstAttribute="top" secondItem="EII-k1-0v8" secondAttribute="top" constant="5" id="J5z-9f-ZCl"/>
+                    <constraint firstAttribute="trailing" secondItem="Lvy-i8-U9U" secondAttribute="trailing" constant="10" id="QTf-Lr-phj"/>
+                    <constraint firstAttribute="bottom" secondItem="Lvy-i8-U9U" secondAttribute="bottom" constant="5" id="X1O-dZ-dWF"/>
+                    <constraint firstItem="Lvy-i8-U9U" firstAttribute="leading" secondItem="EII-k1-0v8" secondAttribute="leading" constant="10" id="ckz-me-1Qu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnContentType" destination="7bt-fm-MTw" id="UnH-ov-a7t"/>
+                <outlet property="btnEndDate" destination="9Zw-hF-BoU" id="mNP-1Z-V49"/>
+                <outlet property="btnJoin" destination="sAX-uS-Cxa" id="Yby-Ee-q3P"/>
+                <outlet property="btnStartDate" destination="d7m-Md-7lx" id="2wi-IW-68E"/>
+                <outlet property="btnTotalDuration" destination="8jt-Gz-exP" id="tlY-fk-Tah"/>
+                <outlet property="imgProfessor" destination="BP0-oz-64c" id="u7p-eh-JG3"/>
+                <outlet property="lblDescription" destination="Zjs-5j-ThX" id="Wq0-6b-Nxc"/>
+                <outlet property="lblModuleName" destination="WPu-q3-JWP" id="Glo-0E-ANu"/>
+                <outlet property="lblProfessorName" destination="A2d-we-1GZ" id="umq-hR-hbe"/>
+            </connections>
+            <point key="canvasLocation" x="242.5" y="296"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="TimerIcon" width="14" height="14"/>
+        <image name="content_type_liveclass" width="12" height="12"/>
+        <image name="down-arrow-fill" width="10" height="10"/>
+        <image name="ic_clock_Gray" width="14" height="14"/>
+        <image name="watchOrange" width="14" height="14"/>
+    </resources>
+</document>

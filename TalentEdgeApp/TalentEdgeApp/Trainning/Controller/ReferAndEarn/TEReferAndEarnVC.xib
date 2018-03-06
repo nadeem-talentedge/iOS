@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+            <string>Helvetica-Bold</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TEReferAndEarnVC" customModule="TalentEdgeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="lblDetail" destination="atn-VL-3SM" id="DdF-GI-98I"/>
+                <outlet property="lblYourCode" destination="P4L-zn-xy0" id="KNT-V4-g9H"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYx-2n-xEF" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                    <rect key="frame" x="94" y="617" width="187.5" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="iKC-0O-hca"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="Refer a Friend">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnExportWithSender:" destination="-1" eventType="touchUpInside" id="aIZ-5x-UYb"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeD-Ew-bTn">
+                    <rect key="frame" x="0.0" y="60" width="375" height="431.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your unique code is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8c-T9-hkm">
+                            <rect key="frame" x="10" y="263" width="355" height="23"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your unique code is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4L-zn-xy0" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                            <rect key="frame" x="92.5" y="301" width="190" height="23"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                            <color key="textColor" red="0.16078431369999999" green="0.61568627450000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help your friends succed in their career. \ Refer them to us and win prizes or \n vouchers on every successful enrolment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="atn-VL-3SM" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                            <rect key="frame" x="10" y="339" width="355" height="62.5"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refer_n_earn" translatesAutoresizingMaskIntoConstraints="NO" id="rSK-i8-POg">
+                            <rect key="frame" x="102.5" y="30" width="170" height="213"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="atn-VL-3SM" firstAttribute="top" secondItem="P4L-zn-xy0" secondAttribute="bottom" constant="15" id="5so-XP-y21"/>
+                        <constraint firstItem="V8c-T9-hkm" firstAttribute="top" secondItem="rSK-i8-POg" secondAttribute="bottom" constant="20" id="7Lx-g5-VVY"/>
+                        <constraint firstItem="rSK-i8-POg" firstAttribute="top" secondItem="jeD-Ew-bTn" secondAttribute="top" constant="30" id="BCQ-KW-Y1w"/>
+                        <constraint firstItem="P4L-zn-xy0" firstAttribute="centerX" secondItem="V8c-T9-hkm" secondAttribute="centerX" id="D13-xk-b9H"/>
+                        <constraint firstItem="P4L-zn-xy0" firstAttribute="top" secondItem="V8c-T9-hkm" secondAttribute="bottom" constant="15" id="GSO-tD-TiD"/>
+                        <constraint firstItem="V8c-T9-hkm" firstAttribute="leading" secondItem="jeD-Ew-bTn" secondAttribute="leading" constant="10" id="Hie-ER-eki"/>
+                        <constraint firstAttribute="bottom" secondItem="atn-VL-3SM" secondAttribute="bottom" constant="30" id="VH4-xE-XQ8"/>
+                        <constraint firstItem="atn-VL-3SM" firstAttribute="trailing" secondItem="V8c-T9-hkm" secondAttribute="trailing" id="Zza-Yl-wC5"/>
+                        <constraint firstAttribute="trailing" secondItem="V8c-T9-hkm" secondAttribute="trailing" constant="10" id="pOC-xn-XyE"/>
+                        <constraint firstItem="atn-VL-3SM" firstAttribute="leading" secondItem="V8c-T9-hkm" secondAttribute="leading" id="prU-ue-PNu"/>
+                        <constraint firstItem="rSK-i8-POg" firstAttribute="centerX" secondItem="jeD-Ew-bTn" secondAttribute="centerX" id="xjx-5K-AFq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PYx-2n-xEF" secondAttribute="bottom" constant="20" id="SqD-P6-17F"/>
+                <constraint firstItem="jeD-Ew-bTn" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="VPa-c9-2IM"/>
+                <constraint firstItem="jeD-Ew-bTn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gy3-D8-ScB"/>
+                <constraint firstItem="jeD-Ew-bTn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="j3b-pa-dZx"/>
+                <constraint firstItem="jeD-Ew-bTn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="jDy-zV-oWM"/>
+                <constraint firstItem="PYx-2n-xEF" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="kO4-Za-tiw"/>
+                <constraint firstItem="PYx-2n-xEF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="w4M-Cm-2Nd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="refer_n_earn" width="170" height="213"/>
+    </resources>
+</document>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="IaX-bc-sy2" customClass="TETestimonialHeader" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2e-eM-E9M" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Byk-Ju-HCE" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                            <rect key="frame" x="10" y="10" width="40" height="40"/>
+                            <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="mZv-eq-V6T"/>
+                                <constraint firstAttribute="width" constant="40" id="tkv-fg-Ei2"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F7u-Wh-fBe">
+                            <rect key="frame" x="295" y="0.0" width="80" height="69"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="43s-wc-ZKB" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                    <rect key="frame" x="55" y="5" width="20" height="20"/>
+                                    <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="SvU-DG-Uig"/>
+                                        <constraint firstAttribute="height" constant="20" id="p1P-52-KxC"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 min ago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZX3-E0-DRs" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="30" width="64.5" height="15"/>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                    <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgv-zq-s3v" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="69"/>
+                                    <connections>
+                                        <action selector="expandButton_Click:" destination="IaX-bc-sy2" eventType="touchUpInside" id="ogv-Rm-zLt"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="xgv-zq-s3v" secondAttribute="bottom" id="7as-Zg-v5x"/>
+                                <constraint firstAttribute="trailing" secondItem="43s-wc-ZKB" secondAttribute="trailing" constant="5" id="DqV-rm-F9E"/>
+                                <constraint firstAttribute="trailing" secondItem="xgv-zq-s3v" secondAttribute="trailing" id="Lce-QS-k8S"/>
+                                <constraint firstItem="43s-wc-ZKB" firstAttribute="top" secondItem="F7u-Wh-fBe" secondAttribute="top" constant="5" id="NMo-Z0-4MS"/>
+                                <constraint firstItem="xgv-zq-s3v" firstAttribute="leading" secondItem="F7u-Wh-fBe" secondAttribute="leading" id="OPX-6o-nxp"/>
+                                <constraint firstAttribute="width" constant="80" id="TfM-lD-0qt"/>
+                                <constraint firstItem="ZX3-E0-DRs" firstAttribute="top" secondItem="43s-wc-ZKB" secondAttribute="bottom" constant="5" id="jUe-Ia-jlg"/>
+                                <constraint firstItem="xgv-zq-s3v" firstAttribute="top" secondItem="F7u-Wh-fBe" secondAttribute="top" id="n01-rz-TpN"/>
+                                <constraint firstItem="ZX3-E0-DRs" firstAttribute="centerX" secondItem="F7u-Wh-fBe" secondAttribute="centerX" id="vhN-At-wv4"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hx-TN-bzZ" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                            <rect key="frame" x="60" y="12" width="230" height="47"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="1hx-TN-bzZ" firstAttribute="top" secondItem="s2e-eM-E9M" secondAttribute="top" constant="12" id="8on-l7-EHo"/>
+                        <constraint firstItem="Byk-Ju-HCE" firstAttribute="top" secondItem="s2e-eM-E9M" secondAttribute="top" constant="10" id="HpD-kk-TBd"/>
+                        <constraint firstItem="F7u-Wh-fBe" firstAttribute="leading" secondItem="1hx-TN-bzZ" secondAttribute="trailing" constant="5" id="Ldv-tD-pfh"/>
+                        <constraint firstItem="Byk-Ju-HCE" firstAttribute="leading" secondItem="s2e-eM-E9M" secondAttribute="leading" constant="10" id="PMd-Ni-XLo"/>
+                        <constraint firstItem="1hx-TN-bzZ" firstAttribute="leading" secondItem="Byk-Ju-HCE" secondAttribute="trailing" constant="10" id="UHi-Bt-ktb"/>
+                        <constraint firstItem="F7u-Wh-fBe" firstAttribute="top" secondItem="s2e-eM-E9M" secondAttribute="top" id="hRY-HT-A2s"/>
+                        <constraint firstAttribute="bottom" secondItem="F7u-Wh-fBe" secondAttribute="bottom" id="sG7-5o-swP"/>
+                        <constraint firstAttribute="bottom" secondItem="1hx-TN-bzZ" secondAttribute="bottom" constant="10" id="vCS-AD-taR"/>
+                        <constraint firstAttribute="trailing" secondItem="F7u-Wh-fBe" secondAttribute="trailing" id="ziR-Ha-K9c"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="NO"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="1" height="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="s2e-eM-E9M" secondAttribute="trailing" id="R4Q-R7-eXu"/>
+                <constraint firstAttribute="bottom" secondItem="s2e-eM-E9M" secondAttribute="bottom" id="SX4-wE-u4K"/>
+                <constraint firstItem="s2e-eM-E9M" firstAttribute="top" secondItem="IaX-bc-sy2" secondAttribute="top" id="Yii-Qm-GQR"/>
+                <constraint firstItem="s2e-eM-E9M" firstAttribute="leading" secondItem="IaX-bc-sy2" secondAttribute="leading" id="nCU-z5-1Td"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="expandButton" destination="xgv-zq-s3v" id="zKg-gC-Wf4"/>
+                <outlet property="imageArrow" destination="43s-wc-ZKB" id="Xuy-PA-LSO"/>
+                <outlet property="timeOfPost" destination="ZX3-E0-DRs" id="PUB-jh-aAh"/>
+                <outlet property="userImage" destination="Byk-Ju-HCE" id="amj-81-NH7"/>
+                <outlet property="userName" destination="1hx-TN-bzZ" id="dQc-KK-XWI"/>
+            </connections>
+            <point key="canvasLocation" x="-34.5" y="-128.5"/>
+        </view>
+    </objects>
+</document>

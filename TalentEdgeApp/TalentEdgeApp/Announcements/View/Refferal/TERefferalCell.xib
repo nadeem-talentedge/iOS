@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="364" id="mnp-u0-d9H" customClass="TERefferalCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="364"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mnp-u0-d9H" id="OmI-nW-ewW">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="363.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kkR-yb-1Wc" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="10" y="5" width="355" height="353.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TimerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Ucs-zq-fxE" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="48" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="DM6-AB-5Eb"/>
+                                    <constraint firstAttribute="height" constant="48" id="u7i-xQ-rnb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FZh-kD-Fv5">
+                                <rect key="frame" x="63" y="10" width="282" height="19"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Birthday Congratulation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcv-TM-WeD" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="19"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ywe-9l-BEA" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="185" y="0.0" width="30.5" height="18"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="open" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDL-2d-lBh" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                                <rect key="frame" x="2" y="2" width="26.5" height="14"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" red="0.080674913194444448" green="0.65340169270833337" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="rDL-2d-lBh" firstAttribute="leading" secondItem="ywe-9l-BEA" secondAttribute="leading" constant="2" id="A8L-ko-1IK"/>
+                                            <constraint firstAttribute="bottom" secondItem="rDL-2d-lBh" secondAttribute="bottom" constant="2" id="PUT-wy-IMj"/>
+                                            <constraint firstAttribute="trailing" secondItem="rDL-2d-lBh" secondAttribute="trailing" constant="2" id="kTw-Fv-AUt"/>
+                                            <constraint firstItem="rDL-2d-lBh" firstAttribute="top" secondItem="ywe-9l-BEA" secondAttribute="top" constant="2" id="yud-mC-QiE"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="1" height="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job id #000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Tn-Jq-2ta" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="219.5" y="0.0" width="62.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0Tn-Jq-2ta" secondAttribute="trailing" id="07y-bz-jmH"/>
+                                    <constraint firstItem="Qcv-TM-WeD" firstAttribute="top" secondItem="FZh-kD-Fv5" secondAttribute="top" id="0fd-am-vTm"/>
+                                    <constraint firstItem="ywe-9l-BEA" firstAttribute="leading" secondItem="Qcv-TM-WeD" secondAttribute="trailing" priority="256" constant="4" id="7Jb-Pe-C1k"/>
+                                    <constraint firstItem="Qcv-TM-WeD" firstAttribute="leading" secondItem="FZh-kD-Fv5" secondAttribute="leading" id="C5b-W6-2FQ"/>
+                                    <constraint firstItem="ywe-9l-BEA" firstAttribute="top" secondItem="Qcv-TM-WeD" secondAttribute="top" id="ZKx-3f-U8Y"/>
+                                    <constraint firstItem="0Tn-Jq-2ta" firstAttribute="top" secondItem="FZh-kD-Fv5" secondAttribute="top" id="ZyV-79-fht"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qcv-TM-WeD" secondAttribute="bottom" id="vi4-b5-BFK"/>
+                                    <constraint firstItem="0Tn-Jq-2ta" firstAttribute="leading" secondItem="ywe-9l-BEA" secondAttribute="trailing" priority="250" constant="4" id="wUT-Fg-BCI"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Functional Strategies " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGh-b1-bhS" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="63" y="34" width="130" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5D-08-Z06" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="63" y="57" width="69" height="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title=" Birthday" image="ic-tag-yellow-Small">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epo-c0-9wy" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="248" y="57" width="97" height="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title=" Feb 21, 2017" image="ic_clock_Gray">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pg9-s8-0dC">
+                                <rect key="frame" x="0.0" y="85.5" width="355" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="31E-mP-VFK"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IA4-OQ-o0a" customClass="BCUITableView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86.5" width="355" height="265"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="qc5-Gv-Col"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="mnp-u0-d9H" id="qMv-vb-Csb"/>
+                                    <outlet property="delegate" destination="mnp-u0-d9H" id="Bze-EX-8bn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IA4-OQ-o0a" firstAttribute="leading" secondItem="Pg9-s8-0dC" secondAttribute="leading" id="AuV-Jv-EW7"/>
+                            <constraint firstItem="Pg9-s8-0dC" firstAttribute="top" secondItem="q5D-08-Z06" secondAttribute="bottom" constant="13.5" id="BYD-K7-17i"/>
+                            <constraint firstItem="FZh-kD-Fv5" firstAttribute="leading" secondItem="Ucs-zq-fxE" secondAttribute="trailing" constant="5" id="EzL-2g-Em0"/>
+                            <constraint firstItem="Pg9-s8-0dC" firstAttribute="leading" secondItem="kkR-yb-1Wc" secondAttribute="leading" id="Mer-VY-esM"/>
+                            <constraint firstItem="IA4-OQ-o0a" firstAttribute="trailing" secondItem="Pg9-s8-0dC" secondAttribute="trailing" id="ZPB-KR-bbM"/>
+                            <constraint firstItem="Ucs-zq-fxE" firstAttribute="leading" secondItem="kkR-yb-1Wc" secondAttribute="leading" constant="10" id="ZPe-UK-wnf"/>
+                            <constraint firstItem="kGh-b1-bhS" firstAttribute="top" secondItem="FZh-kD-Fv5" secondAttribute="bottom" constant="5" id="c5e-5O-7gB"/>
+                            <constraint firstItem="q5D-08-Z06" firstAttribute="leading" secondItem="kGh-b1-bhS" secondAttribute="leading" id="cJZ-ah-VPk"/>
+                            <constraint firstItem="Epo-c0-9wy" firstAttribute="trailing" secondItem="FZh-kD-Fv5" secondAttribute="trailing" id="edG-Fj-bGE"/>
+                            <constraint firstItem="FZh-kD-Fv5" firstAttribute="top" secondItem="Ucs-zq-fxE" secondAttribute="top" id="eio-Oe-urn"/>
+                            <constraint firstItem="kGh-b1-bhS" firstAttribute="leading" secondItem="FZh-kD-Fv5" secondAttribute="leading" id="fO3-WN-u7X"/>
+                            <constraint firstItem="Epo-c0-9wy" firstAttribute="top" secondItem="q5D-08-Z06" secondAttribute="top" id="fm2-YB-tEr"/>
+                            <constraint firstItem="q5D-08-Z06" firstAttribute="top" secondItem="kGh-b1-bhS" secondAttribute="bottom" constant="6" id="jPt-Aj-hIf"/>
+                            <constraint firstItem="IA4-OQ-o0a" firstAttribute="top" secondItem="Pg9-s8-0dC" secondAttribute="bottom" id="m1i-nm-2BU"/>
+                            <constraint firstAttribute="trailing" secondItem="Pg9-s8-0dC" secondAttribute="trailing" id="nuE-Dh-BFm"/>
+                            <constraint firstAttribute="trailing" secondItem="FZh-kD-Fv5" secondAttribute="trailing" constant="10" id="qVv-Sk-f8L"/>
+                            <constraint firstAttribute="bottom" secondItem="IA4-OQ-o0a" secondAttribute="bottom" constant="2" id="qo0-0r-vf5"/>
+                            <constraint firstItem="Ucs-zq-fxE" firstAttribute="top" secondItem="kkR-yb-1Wc" secondAttribute="top" constant="10" id="tjV-8G-zfl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="NO"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="kkR-yb-1Wc" secondAttribute="trailing" constant="10" id="jCf-TO-FUs"/>
+                    <constraint firstAttribute="bottom" secondItem="kkR-yb-1Wc" secondAttribute="bottom" constant="5" id="qqf-ge-W00"/>
+                    <constraint firstItem="kkR-yb-1Wc" firstAttribute="leading" secondItem="OmI-nW-ewW" secondAttribute="leading" constant="10" id="vH8-sz-dT0"/>
+                    <constraint firstItem="kkR-yb-1Wc" firstAttribute="top" secondItem="OmI-nW-ewW" secondAttribute="top" constant="5" id="z3a-E9-dG7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnContentType" destination="q5D-08-Z06" id="G1M-e7-wo8"/>
+                <outlet property="btnPostedTime" destination="Epo-c0-9wy" id="u0w-s6-5HG"/>
+                <outlet property="imgProfile" destination="Ucs-zq-fxE" id="qcD-Q8-zot"/>
+                <outlet property="lblJobID" destination="0Tn-Jq-2ta" id="A1w-69-VAB"/>
+                <outlet property="lblPostedBy" destination="kGh-b1-bhS" id="vf4-Ua-aL4"/>
+                <outlet property="lblRecruitmentStatus" destination="rDL-2d-lBh" id="7jM-Yx-555"/>
+                <outlet property="lblTitle" destination="Qcv-TM-WeD" id="5Ff-iL-ZRc"/>
+                <outlet property="tableView" destination="IA4-OQ-o0a" id="2ak-mE-BQl"/>
+                <outlet property="tableViewHeight" destination="qc5-Gv-Col" id="Pop-Xh-E12"/>
+            </connections>
+            <point key="canvasLocation" x="-363.5" y="206"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="TimerIcon" width="14" height="14"/>
+        <image name="ic-tag-yellow-Small" width="12" height="12"/>
+        <image name="ic_clock_Gray" width="14" height="14"/>
+    </resources>
+</document>

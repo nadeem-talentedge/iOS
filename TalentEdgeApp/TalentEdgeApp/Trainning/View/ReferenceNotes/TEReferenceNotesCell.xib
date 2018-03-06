@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Medium</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="203" id="niB-1z-TfK" customClass="TEReferenceNotesCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="192"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="niB-1z-TfK" id="hp6-qj-htW">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="191.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3p-NZ-sGP" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="10" y="5" width="355" height="181.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9GG-bQ-2zU" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="HzZ-rO-zTH"/>
+                                    <constraint firstAttribute="width" constant="44" id="jDj-u9-T7G"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Functional Strategies " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vi-ZZ-DeE" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="62" y="10" width="283" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Functional Strategies " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfZ-wZ-DY8" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="62" y="37.5" width="283" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cu-FY-Vlh" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="62" y="62.5" width="123" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title=" Reference video" image="content_type_video">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m85-qv-gc8" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="230" y="62.5" width="115" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="5" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title=" Feb 21, 2017" image="ic_clock_Gray">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8w9-iu-CaD">
+                                <rect key="frame" x="0.0" y="93.5" width="355" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="E7V-iT-wbe"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kOd-WZ-meG" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="108" width="65" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OzT-wq-fp9"/>
+                                    <constraint firstAttribute="width" constant="65" id="qYE-UQ-iGw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="Video Session " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8C-4V-loW" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="83" y="108" width="188" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TimerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="oal-ft-CMv" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="83" y="132" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="EK1-W3-JjL"/>
+                                    <constraint firstAttribute="width" constant="16" id="d47-Cy-Axf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWR-aA-fUA" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="103" y="131.5" width="48" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae1-Hh-SWw" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="83" y="154" width="56.5" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="825-2Q-ord">
+                                <rect key="frame" x="130" y="133" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.69405573610000004" green="0.69415730239999995" blue="0.69403344389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hx6-vF-fOo" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="145.5" y="154.5" width="121" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title=" 20 March 2017" image="watchOrange">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKI-0n-kL2" customClass="BCUIButton" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="276" y="103" width="69" height="24"/>
+                                <color key="backgroundColor" red="0.1148860231" green="0.55599170919999996" blue="0.75004488229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="fFu-Fp-UKv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <state key="normal" title="Read"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="5" height="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="readbtn_Click:" destination="niB-1z-TfK" eventType="touchUpInside" id="adY-no-eqk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AKI-0n-kL2" firstAttribute="leading" secondItem="b8C-4V-loW" secondAttribute="trailing" priority="256" constant="5" id="1JW-dY-0Jf"/>
+                            <constraint firstItem="Ae1-Hh-SWw" firstAttribute="top" secondItem="oal-ft-CMv" secondAttribute="bottom" constant="6" id="1mp-Hi-82n"/>
+                            <constraint firstItem="9GG-bQ-2zU" firstAttribute="leading" secondItem="O3p-NZ-sGP" secondAttribute="leading" constant="10" id="2gw-ia-xwQ"/>
+                            <constraint firstItem="b8C-4V-loW" firstAttribute="leading" secondItem="kOd-WZ-meG" secondAttribute="trailing" constant="8" id="4yK-CF-NcK"/>
+                            <constraint firstItem="sfZ-wZ-DY8" firstAttribute="leading" secondItem="8Vi-ZZ-DeE" secondAttribute="leading" id="5mz-PZ-ld7"/>
+                            <constraint firstItem="oal-ft-CMv" firstAttribute="top" secondItem="b8C-4V-loW" secondAttribute="bottom" constant="5" id="7MY-Hd-4bX"/>
+                            <constraint firstItem="yWR-aA-fUA" firstAttribute="centerY" secondItem="oal-ft-CMv" secondAttribute="centerY" id="BMK-qa-noR"/>
+                            <constraint firstItem="Hx6-vF-fOo" firstAttribute="centerY" secondItem="Ae1-Hh-SWw" secondAttribute="centerY" id="Cfm-eb-Ba5"/>
+                            <constraint firstItem="9GG-bQ-2zU" firstAttribute="top" secondItem="O3p-NZ-sGP" secondAttribute="top" constant="10" id="Hwk-eE-weS"/>
+                            <constraint firstItem="AKI-0n-kL2" firstAttribute="bottom" secondItem="b8C-4V-loW" secondAttribute="bottom" id="K8K-ON-omy"/>
+                            <constraint firstAttribute="trailing" secondItem="8w9-iu-CaD" secondAttribute="trailing" id="LYi-at-Tkh"/>
+                            <constraint firstItem="b8C-4V-loW" firstAttribute="top" secondItem="kOd-WZ-meG" secondAttribute="top" id="NJ9-8x-Wf9"/>
+                            <constraint firstItem="m85-qv-gc8" firstAttribute="top" secondItem="7cu-FY-Vlh" secondAttribute="top" id="QxN-aJ-HRn"/>
+                            <constraint firstItem="sfZ-wZ-DY8" firstAttribute="trailing" secondItem="8Vi-ZZ-DeE" secondAttribute="trailing" id="UrT-5q-Kdk"/>
+                            <constraint firstItem="8Vi-ZZ-DeE" firstAttribute="top" secondItem="9GG-bQ-2zU" secondAttribute="top" id="Y1A-yd-GHX"/>
+                            <constraint firstItem="kOd-WZ-meG" firstAttribute="leading" secondItem="9GG-bQ-2zU" secondAttribute="leading" id="Zdc-b6-bqx"/>
+                            <constraint firstItem="7cu-FY-Vlh" firstAttribute="top" secondItem="sfZ-wZ-DY8" secondAttribute="bottom" constant="6" id="aEc-Y9-gXe"/>
+                            <constraint firstItem="7cu-FY-Vlh" firstAttribute="leading" secondItem="sfZ-wZ-DY8" secondAttribute="leading" id="bwa-6B-d4b"/>
+                            <constraint firstItem="sfZ-wZ-DY8" firstAttribute="top" secondItem="8Vi-ZZ-DeE" secondAttribute="bottom" constant="6" id="d24-aZ-n3Y"/>
+                            <constraint firstItem="Ae1-Hh-SWw" firstAttribute="leading" secondItem="oal-ft-CMv" secondAttribute="leading" id="gRG-52-m7E"/>
+                            <constraint firstItem="AKI-0n-kL2" firstAttribute="trailing" secondItem="m85-qv-gc8" secondAttribute="trailing" id="hZS-fK-onM"/>
+                            <constraint firstItem="Hx6-vF-fOo" firstAttribute="leading" secondItem="Ae1-Hh-SWw" secondAttribute="trailing" constant="6" id="i54-jC-g8J"/>
+                            <constraint firstItem="8w9-iu-CaD" firstAttribute="top" secondItem="7cu-FY-Vlh" secondAttribute="bottom" constant="14" id="j7H-rh-icd"/>
+                            <constraint firstItem="m85-qv-gc8" firstAttribute="trailing" secondItem="sfZ-wZ-DY8" secondAttribute="trailing" id="jAY-XE-0zn"/>
+                            <constraint firstItem="8Vi-ZZ-DeE" firstAttribute="leading" secondItem="9GG-bQ-2zU" secondAttribute="trailing" constant="8" id="kPx-eD-VjL"/>
+                            <constraint firstItem="yWR-aA-fUA" firstAttribute="leading" secondItem="oal-ft-CMv" secondAttribute="trailing" constant="4" id="kwj-Rp-pxU"/>
+                            <constraint firstAttribute="trailing" secondItem="8Vi-ZZ-DeE" secondAttribute="trailing" constant="10" id="m22-j1-NKB"/>
+                            <constraint firstItem="oal-ft-CMv" firstAttribute="leading" secondItem="b8C-4V-loW" secondAttribute="leading" id="mhh-xD-8p0"/>
+                            <constraint firstItem="kOd-WZ-meG" firstAttribute="top" secondItem="8w9-iu-CaD" secondAttribute="bottom" constant="14" id="wk9-NS-7Bo"/>
+                            <constraint firstItem="8w9-iu-CaD" firstAttribute="leading" secondItem="O3p-NZ-sGP" secondAttribute="leading" id="xa5-6K-BY2"/>
+                            <constraint firstAttribute="bottom" secondItem="Ae1-Hh-SWw" secondAttribute="bottom" constant="10.5" id="xm3-wd-Pwb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="NO"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="O3p-NZ-sGP" firstAttribute="top" secondItem="hp6-qj-htW" secondAttribute="top" constant="5" id="9TW-QB-wQf"/>
+                    <constraint firstAttribute="bottom" secondItem="O3p-NZ-sGP" secondAttribute="bottom" constant="5" id="P7w-1I-Cuc"/>
+                    <constraint firstItem="O3p-NZ-sGP" firstAttribute="leading" secondItem="hp6-qj-htW" secondAttribute="leading" constant="10" id="SZj-c9-yb1"/>
+                    <constraint firstAttribute="trailing" secondItem="O3p-NZ-sGP" secondAttribute="trailing" constant="10" id="k6S-2a-4wZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnContentType" destination="7cu-FY-Vlh" id="3GK-rj-4VB"/>
+                <outlet property="btnEndDate" destination="Hx6-vF-fOo" id="gjL-bp-ehb"/>
+                <outlet property="btnRead" destination="AKI-0n-kL2" id="xwm-Ye-tyI"/>
+                <outlet property="btnStartDate" destination="m85-qv-gc8" id="bRQ-Uj-Xbg"/>
+                <outlet property="imgNoteORVideo" destination="kOd-WZ-meG" id="hkC-m9-INk"/>
+                <outlet property="imgProfessor" destination="9GG-bQ-2zU" id="rUJ-OI-vgy"/>
+                <outlet property="lblDescription" destination="b8C-4V-loW" id="Gga-k3-dve"/>
+                <outlet property="lblModuleName" destination="8Vi-ZZ-DeE" id="vL2-3E-s6J"/>
+                <outlet property="lblProfessorName" destination="sfZ-wZ-DY8" id="a8f-jR-fKa"/>
+                <outlet property="lblTotalPageORDuration" destination="yWR-aA-fUA" id="mHX-sM-DJ8"/>
+            </connections>
+            <point key="canvasLocation" x="-364.5" y="108.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="TimerIcon" width="14" height="14"/>
+        <image name="content_type_video" width="12" height="12"/>
+        <image name="ic_clock_Gray" width="14" height="14"/>
+        <image name="watchOrange" width="14" height="14"/>
+    </resources>
+</document>

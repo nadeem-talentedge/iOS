@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="KGk-i7-Jjw" customClass="ANLikeCommentCell" customModule="ELSA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="91.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUa-bD-s1V" customClass="BCView" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="10" y="5" width="300" height="81.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99 Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXg-Ba-jTt" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="7" y="7" width="48" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="102 Comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKt-oh-hQE" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="67" y="7" width="85" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 Shares" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDe-o3-qpP" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="164" y="7" width="63.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtJ-Cm-RCY" customClass="BCUIButton" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="11" y="30" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.90580290559999999" green="0.90593320129999999" blue="0.90577441449999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6au-gB-0FN"/>
+                                    <constraint firstAttribute="width" constant="40" id="j7o-3B-mYP"/>
+                                </constraints>
+                                <state key="normal" image="like_icon"/>
+                                <state key="selected" image="like_icon_selected"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="likeWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sDD-4m-RSm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmZ-ev-d2I" customClass="BCUIButton" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="90" y="30" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.90580290559999999" green="0.90593320129999999" blue="0.90577441449999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="comments_icon"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="messageWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vL5-Q1-qOK"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSA-qG-tae" customClass="BCUIButton" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="176" y="30" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.90580290559999999" green="0.90593320129999999" blue="0.90577441449999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="ic_share_Icon"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CmZ-ev-d2I" firstAttribute="width" secondItem="xtJ-Cm-RCY" secondAttribute="width" id="2sf-fk-AT0"/>
+                            <constraint firstItem="wKt-oh-hQE" firstAttribute="centerY" secondItem="uXg-Ba-jTt" secondAttribute="centerY" id="BOV-Cd-h40"/>
+                            <constraint firstAttribute="height" constant="81.5" id="BwL-FH-UjL"/>
+                            <constraint firstItem="uXg-Ba-jTt" firstAttribute="top" secondItem="WUa-bD-s1V" secondAttribute="top" constant="7" id="Cb7-nX-hJM"/>
+                            <constraint firstItem="CmZ-ev-d2I" firstAttribute="height" secondItem="xtJ-Cm-RCY" secondAttribute="height" id="Ela-hb-Eva"/>
+                            <constraint firstItem="gSA-qG-tae" firstAttribute="centerX" secondItem="JDe-o3-qpP" secondAttribute="centerX" id="Hlg-jq-pqE"/>
+                            <constraint firstItem="JDe-o3-qpP" firstAttribute="leading" secondItem="wKt-oh-hQE" secondAttribute="trailing" constant="12" id="MwU-0d-l1n"/>
+                            <constraint firstItem="JDe-o3-qpP" firstAttribute="centerY" secondItem="wKt-oh-hQE" secondAttribute="centerY" id="Q31-AU-Zki"/>
+                            <constraint firstItem="xtJ-Cm-RCY" firstAttribute="top" secondItem="uXg-Ba-jTt" secondAttribute="bottom" constant="8" id="QXL-Dw-QHv"/>
+                            <constraint firstItem="gSA-qG-tae" firstAttribute="height" secondItem="CmZ-ev-d2I" secondAttribute="height" id="TVl-Ec-oAo"/>
+                            <constraint firstItem="gSA-qG-tae" firstAttribute="centerY" secondItem="CmZ-ev-d2I" secondAttribute="centerY" id="Tdz-HM-irv"/>
+                            <constraint firstItem="uXg-Ba-jTt" firstAttribute="leading" secondItem="WUa-bD-s1V" secondAttribute="leading" constant="7" id="dcN-4W-bbR"/>
+                            <constraint firstItem="CmZ-ev-d2I" firstAttribute="centerX" secondItem="wKt-oh-hQE" secondAttribute="centerX" id="m5b-IP-5xM"/>
+                            <constraint firstItem="xtJ-Cm-RCY" firstAttribute="centerX" secondItem="uXg-Ba-jTt" secondAttribute="centerX" id="shb-Ib-HGF"/>
+                            <constraint firstItem="wKt-oh-hQE" firstAttribute="leading" secondItem="uXg-Ba-jTt" secondAttribute="trailing" constant="12" id="srr-nr-Q8V"/>
+                            <constraint firstItem="CmZ-ev-d2I" firstAttribute="centerY" secondItem="xtJ-Cm-RCY" secondAttribute="centerY" id="yMq-qc-rda"/>
+                            <constraint firstItem="gSA-qG-tae" firstAttribute="width" secondItem="CmZ-ev-d2I" secondAttribute="width" id="yiL-h2-htq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WUa-bD-s1V" secondAttribute="trailing" constant="10" id="LnT-0V-0JP"/>
+                    <constraint firstItem="WUa-bD-s1V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="MAk-o9-6kJ"/>
+                    <constraint firstAttribute="bottom" secondItem="WUa-bD-s1V" secondAttribute="bottom" constant="5" id="UK2-yp-3cI"/>
+                    <constraint firstItem="WUa-bD-s1V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="inf-jG-Ehq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnComment" destination="CmZ-ev-d2I" id="1oq-U9-qs4"/>
+                <outlet property="btnLike" destination="xtJ-Cm-RCY" id="S1W-eZ-PJp"/>
+                <outlet property="btnShare" destination="gSA-qG-tae" id="Tqt-Nk-Iah"/>
+                <outlet property="lblTotalComments" destination="wKt-oh-hQE" id="Qcj-sF-cIX"/>
+                <outlet property="lblTotalLikes" destination="uXg-Ba-jTt" id="eaO-I3-KNc"/>
+                <outlet property="lblTotalShares" destination="JDe-o3-qpP" id="9Ia-mq-Bl0"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="78"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="comments_icon" width="20" height="17"/>
+        <image name="ic_share_Icon" width="17" height="17"/>
+        <image name="like_icon" width="20" height="20"/>
+        <image name="like_icon_selected" width="20" height="19"/>
+    </resources>
+</document>

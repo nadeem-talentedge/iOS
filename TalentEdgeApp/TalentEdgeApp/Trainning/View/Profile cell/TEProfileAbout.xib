@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="YhJ-SE-yIn" customClass="TEProfileAbout" customModule="ELSA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YhJ-SE-yIn" id="RMw-q0-2Vu">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIJ-tM-hkW" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="30" y="10" width="41" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="wQQ-OF-TBF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSk-fC-x6y" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="30" y="30" width="335" height="79.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sck-y0-kov" customClass="BCUITextView" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="30" y="35" width="335" height="59"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="59" id="NTj-5x-8jf"/>
+                        </constraints>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Sck-y0-kov" firstAttribute="top" secondItem="mSk-fC-x6y" secondAttribute="top" constant="5" id="0EM-vV-yHE"/>
+                    <constraint firstItem="dIJ-tM-hkW" firstAttribute="leading" secondItem="RMw-q0-2Vu" secondAttribute="leading" constant="30" id="37N-Ed-Xyg"/>
+                    <constraint firstAttribute="trailing" secondItem="mSk-fC-x6y" secondAttribute="trailing" constant="10" id="9JC-z8-qB8"/>
+                    <constraint firstItem="Sck-y0-kov" firstAttribute="leading" secondItem="mSk-fC-x6y" secondAttribute="leading" id="A2h-xs-ZXq"/>
+                    <constraint firstItem="mSk-fC-x6y" firstAttribute="top" secondItem="dIJ-tM-hkW" secondAttribute="bottom" id="B5t-RT-PjW"/>
+                    <constraint firstAttribute="bottom" secondItem="mSk-fC-x6y" secondAttribute="bottom" constant="10" id="XWw-ck-5Wy"/>
+                    <constraint firstItem="Sck-y0-kov" firstAttribute="trailing" secondItem="mSk-fC-x6y" secondAttribute="trailing" id="iRR-oX-vjn"/>
+                    <constraint firstItem="mSk-fC-x6y" firstAttribute="leading" secondItem="dIJ-tM-hkW" secondAttribute="leading" id="rch-UM-2KX"/>
+                    <constraint firstItem="dIJ-tM-hkW" firstAttribute="top" secondItem="RMw-q0-2Vu" secondAttribute="top" constant="10" id="s6U-wM-jo0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="aboutUser" destination="mSk-fC-x6y" id="ORi-f7-vUU"/>
+                <outlet property="txtAbout" destination="Sck-y0-kov" id="arK-Qg-VS2"/>
+            </connections>
+            <point key="canvasLocation" x="-7.5" y="21.5"/>
+        </tableViewCell>
+    </objects>
+</document>

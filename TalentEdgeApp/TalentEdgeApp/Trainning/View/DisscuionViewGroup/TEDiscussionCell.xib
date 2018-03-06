@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="lZv-EU-gol" customClass="TEDiscussionCell" customModule="ELSA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lZv-EU-gol" id="eQY-hw-YrN">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="125.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBN-UE-3Dw" customClass="BCView" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="125.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-discussions-main" translatesAutoresizingMaskIntoConstraints="NO" id="rHU-xL-ocS" customClass="BCUIImageView" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="12" y="12" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.60392156860000001" green="0.79607843140000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Da2-eQ-tvx"/>
+                                    <constraint firstAttribute="width" constant="44" id="UZ7-QX-elY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="The ITIL Foundation Cource Syllabas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUZ-pY-EPx" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="66" y="12" width="214" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="J9z-0u-HUY" customClass="BCUICollectionView" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="66" y="38.5" width="214" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="aws-YC-PYE"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="Cd1-0g-MND">
+                                    <size key="itemSize" width="26" height="26"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="lZv-EU-gol" id="mF7-AU-nIV"/>
+                                    <outlet property="delegate" destination="lZv-EU-gol" id="Vmn-c6-VsV"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygx-wh-Yvt" customClass="BCView" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="290" y="12" width="22" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6P-IQ-boO" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="b6P-IQ-boO" secondAttribute="bottom" id="Lop-xi-HtR"/>
+                                    <constraint firstAttribute="width" constant="22" id="Wkb-29-2Qt"/>
+                                    <constraint firstItem="b6P-IQ-boO" firstAttribute="leading" secondItem="ygx-wh-Yvt" secondAttribute="leading" id="cJc-QP-DVB"/>
+                                    <constraint firstAttribute="height" constant="22" id="eeN-gL-U7Z"/>
+                                    <constraint firstItem="b6P-IQ-boO" firstAttribute="top" secondItem="ygx-wh-Yvt" secondAttribute="top" id="v2X-A0-Uvc"/>
+                                    <constraint firstAttribute="trailing" secondItem="b6P-IQ-boO" secondAttribute="trailing" id="wkF-0J-7CP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="249" text="25 post from rahul and others" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhA-Un-vy6" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="66" y="82.5" width="170.5" height="33.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TK-AJ-dYl" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                                <rect key="frame" x="244.5" y="82.5" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vaa-rd-xdv">
+                                <rect key="frame" x="66" y="125.5" width="254" height="1"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="uzb-3I-7iX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mhA-Un-vy6" firstAttribute="leading" secondItem="J9z-0u-HUY" secondAttribute="leading" id="4J5-jf-64u"/>
+                            <constraint firstItem="ygx-wh-Yvt" firstAttribute="leading" secondItem="CUZ-pY-EPx" secondAttribute="trailing" constant="10" id="5ZH-WY-3ZR"/>
+                            <constraint firstAttribute="bottom" secondItem="Vaa-rd-xdv" secondAttribute="bottom" constant="-1" id="7EM-lR-1eA"/>
+                            <constraint firstAttribute="trailing" secondItem="ygx-wh-Yvt" secondAttribute="trailing" constant="8" id="AgZ-xo-O2H"/>
+                            <constraint firstItem="rHU-xL-ocS" firstAttribute="leading" secondItem="aBN-UE-3Dw" secondAttribute="leading" constant="12" id="FRt-4f-xwT"/>
+                            <constraint firstItem="4TK-AJ-dYl" firstAttribute="trailing" secondItem="J9z-0u-HUY" secondAttribute="trailing" id="IW2-JR-vJa"/>
+                            <constraint firstItem="4TK-AJ-dYl" firstAttribute="leading" secondItem="mhA-Un-vy6" secondAttribute="trailing" priority="250" constant="8" id="Oah-a7-RUC"/>
+                            <constraint firstItem="CUZ-pY-EPx" firstAttribute="top" secondItem="rHU-xL-ocS" secondAttribute="top" id="RNy-cK-FOC"/>
+                            <constraint firstItem="4TK-AJ-dYl" firstAttribute="top" secondItem="mhA-Un-vy6" secondAttribute="top" id="UEv-RW-WMN"/>
+                            <constraint firstItem="Vaa-rd-xdv" firstAttribute="leading" secondItem="CUZ-pY-EPx" secondAttribute="leading" id="YLR-r7-ccb"/>
+                            <constraint firstItem="mhA-Un-vy6" firstAttribute="top" secondItem="J9z-0u-HUY" secondAttribute="bottom" constant="8" id="ZC2-yA-ipN"/>
+                            <constraint firstAttribute="trailing" secondItem="Vaa-rd-xdv" secondAttribute="trailing" id="c7o-iu-Edh"/>
+                            <constraint firstItem="J9z-0u-HUY" firstAttribute="top" secondItem="CUZ-pY-EPx" secondAttribute="bottom" constant="5" id="cQq-Dv-zNa"/>
+                            <constraint firstItem="CUZ-pY-EPx" firstAttribute="leading" secondItem="rHU-xL-ocS" secondAttribute="trailing" constant="10" id="cap-Tr-Xfg"/>
+                            <constraint firstItem="rHU-xL-ocS" firstAttribute="top" secondItem="aBN-UE-3Dw" secondAttribute="top" constant="12" id="fzI-Rr-Fv4"/>
+                            <constraint firstItem="Vaa-rd-xdv" firstAttribute="top" secondItem="mhA-Un-vy6" secondAttribute="bottom" constant="9.5" id="hse-39-1kw"/>
+                            <constraint firstItem="J9z-0u-HUY" firstAttribute="leading" secondItem="CUZ-pY-EPx" secondAttribute="leading" id="ifS-bY-P5d"/>
+                            <constraint firstItem="ygx-wh-Yvt" firstAttribute="top" secondItem="rHU-xL-ocS" secondAttribute="top" id="jea-c0-BnI"/>
+                            <constraint firstItem="J9z-0u-HUY" firstAttribute="trailing" secondItem="CUZ-pY-EPx" secondAttribute="trailing" id="lUI-zd-Udj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aBN-UE-3Dw" firstAttribute="top" secondItem="eQY-hw-YrN" secondAttribute="top" id="8gw-D5-GVx"/>
+                    <constraint firstAttribute="trailing" secondItem="aBN-UE-3Dw" secondAttribute="trailing" id="Mkz-97-hfR"/>
+                    <constraint firstAttribute="bottom" secondItem="aBN-UE-3Dw" secondAttribute="bottom" id="i1R-HT-kMe"/>
+                    <constraint firstItem="aBN-UE-3Dw" firstAttribute="leading" secondItem="eQY-hw-YrN" secondAttribute="leading" id="nSY-Cx-UIs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="J9z-0u-HUY" id="UBH-Ia-dcH"/>
+                <outlet property="lblCountDeatil" destination="mhA-Un-vy6" id="5et-6o-Gm7"/>
+                <outlet property="lblPostedDate" destination="4TK-AJ-dYl" id="IU1-jZ-Ppn"/>
+                <outlet property="lblTitle" destination="CUZ-pY-EPx" id="ygg-84-2si"/>
+                <outlet property="lblTotalCount" destination="b6P-IQ-boO" id="qE6-pV-Acy"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="64"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic-discussions-main" width="57" height="57"/>
+    </resources>
+</document>

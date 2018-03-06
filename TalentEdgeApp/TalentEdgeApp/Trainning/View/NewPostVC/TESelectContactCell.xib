@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="32" id="KGk-i7-Jjw" customClass="TESelectContactCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="31.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Contacts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upJ-Bb-gei" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="8" y="6" width="110" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fn6-Bg-rEG" customClass="TagListView" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="8" y="5" width="283" height="20.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="251" constant="60" id="kYh-gt-RsN"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                <color key="value" red="0.5" green="0.80000000000000004" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableRemoveButton" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="removeButtonIconSize">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="removeIconLineWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next" translatesAutoresizingMaskIntoConstraints="NO" id="8YH-Kf-jRy">
+                        <rect key="frame" x="296" y="7" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="CfZ-PK-lBC"/>
+                            <constraint firstAttribute="height" constant="16" id="vza-h4-aDW"/>
+                        </constraints>
+                    </imageView>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSz-BK-q3g">
+                        <rect key="frame" x="0.0" y="30.5" width="320" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="4IL-dG-4WM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="LSz-BK-q3g" firstAttribute="top" secondItem="Fn6-Bg-rEG" secondAttribute="bottom" constant="5" id="3T6-iC-KPk"/>
+                    <constraint firstItem="8YH-Kf-jRy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3qR-Bi-K3f"/>
+                    <constraint firstItem="upJ-Bb-gei" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Vo7-er-d9B"/>
+                    <constraint firstAttribute="trailing" secondItem="8YH-Kf-jRy" secondAttribute="trailing" constant="8" id="WDu-I4-aDS"/>
+                    <constraint firstItem="8YH-Kf-jRy" firstAttribute="leading" secondItem="Fn6-Bg-rEG" secondAttribute="trailing" constant="5" id="cS0-mA-CdB"/>
+                    <constraint firstItem="Fn6-Bg-rEG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="fud-PK-tWh"/>
+                    <constraint firstItem="upJ-Bb-gei" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nFJ-Qo-fJW"/>
+                    <constraint firstItem="Fn6-Bg-rEG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ofp-X9-ACP"/>
+                    <constraint firstAttribute="trailing" secondItem="LSz-BK-q3g" secondAttribute="trailing" id="p1h-3t-drO"/>
+                    <constraint firstItem="LSz-BK-q3g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qzJ-4I-VcD"/>
+                    <constraint firstAttribute="bottom" secondItem="LSz-BK-q3g" secondAttribute="bottom" id="wZU-q7-lAP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="lblPlaceholder" destination="upJ-Bb-gei" id="gc9-MN-MVv"/>
+                <outlet property="tagListView" destination="Fn6-Bg-rEG" id="KJj-iE-6iQ"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="13"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="next" width="64" height="64"/>
+    </resources>
+</document>

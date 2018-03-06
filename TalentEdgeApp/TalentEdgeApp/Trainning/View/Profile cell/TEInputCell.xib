@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="TEInputCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hix-b1-m4v" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="30" y="34.5" width="260" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.28627450980000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Sv-VX-WOR">
+                        <rect key="frame" x="30" y="56" width="260" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="r7h-tw-5mG"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Qh-uA-Fm9">
+                        <rect key="frame" x="30" y="93.5" width="260" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hp8-x2-ckx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="2Qh-uA-Fm9" secondAttribute="bottom" id="7vd-XB-CUX"/>
+                    <constraint firstItem="7Sv-VX-WOR" firstAttribute="top" secondItem="Hix-b1-m4v" secondAttribute="bottom" constant="5" id="DsD-6F-nJV"/>
+                    <constraint firstItem="Hix-b1-m4v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="250" constant="20" id="Js0-wo-qwR"/>
+                    <constraint firstItem="7Sv-VX-WOR" firstAttribute="leading" secondItem="2Qh-uA-Fm9" secondAttribute="leading" id="NCT-XE-VMA"/>
+                    <constraint firstAttribute="trailing" secondItem="2Qh-uA-Fm9" secondAttribute="trailing" constant="30" id="Vmf-W9-Ps4"/>
+                    <constraint firstItem="Hix-b1-m4v" firstAttribute="trailing" secondItem="7Sv-VX-WOR" secondAttribute="trailing" id="hqd-xd-3GX"/>
+                    <constraint firstItem="2Qh-uA-Fm9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="lv9-ek-jWx"/>
+                    <constraint firstItem="Hix-b1-m4v" firstAttribute="leading" secondItem="7Sv-VX-WOR" secondAttribute="leading" id="tlL-cr-WxT"/>
+                    <constraint firstItem="7Sv-VX-WOR" firstAttribute="trailing" secondItem="2Qh-uA-Fm9" secondAttribute="trailing" id="xGV-jo-NXt"/>
+                    <constraint firstItem="2Qh-uA-Fm9" firstAttribute="top" secondItem="7Sv-VX-WOR" secondAttribute="bottom" constant="1" id="zlx-UZ-WAX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblPlaceHolder" destination="Hix-b1-m4v" id="grk-gO-bHN"/>
+                <outlet property="txtInput" destination="7Sv-VX-WOR" id="bko-g4-Gel"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="43.5"/>
+        </tableViewCell>
+    </objects>
+</document>

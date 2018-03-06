@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="214" id="hbM-sC-dT8" customClass="TEOverviewCell" customModule="ELSA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hbM-sC-dT8" id="Gg7-hQ-KSi">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Gu-J3-9UW" customClass="BCUIImageView" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="15" y="20" width="48" height="48"/>
+                        <color key="backgroundColor" red="0.87843137250000003" green="0.30196078430000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="SyB-Yo-aW9"/>
+                            <constraint firstAttribute="width" constant="48" id="yYK-C0-MN7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="By Prof. Shailender Tripathi, PhD" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="5du-hH-AeY" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="75" y="18" width="282" height="21.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SdY-Tz-kH6" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="75" y="45.5" width="84" height="12"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="SJV-br-Nim"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="2.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" red="1" green="0.94901960780000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                <color key="value" red="1" green="0.94901960780000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Ratings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jv-Kh-jfu" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="165" y="45.5" width="59.5" height="13.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13.5" id="vZY-n7-i44"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="ITIL - Foundation Certification Training" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LO-il-4QS" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="15" y="81" width="342" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="749" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mb4-Uv-L0K" customClass="BCUILabel" customModule="ELSA" customModuleProvider="target">
+                        <rect key="frame" x="15" y="107" width="342" height="31"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="4LO-il-4QS" secondAttribute="trailing" constant="10" id="15U-IH-Tt2"/>
+                    <constraint firstItem="3Gu-J3-9UW" firstAttribute="top" secondItem="Gg7-hQ-KSi" secondAttribute="top" constant="20" id="5Mb-zp-nVJ"/>
+                    <constraint firstItem="Mb4-Uv-L0K" firstAttribute="top" secondItem="4LO-il-4QS" secondAttribute="bottom" constant="5" id="8FG-rn-EkS"/>
+                    <constraint firstItem="5du-hH-AeY" firstAttribute="top" secondItem="Gg7-hQ-KSi" secondAttribute="topMargin" constant="10" id="8ji-XU-IiG"/>
+                    <constraint firstItem="7jv-Kh-jfu" firstAttribute="centerY" secondItem="SdY-Tz-kH6" secondAttribute="centerY" id="F96-di-fur"/>
+                    <constraint firstItem="7jv-Kh-jfu" firstAttribute="leading" secondItem="SdY-Tz-kH6" secondAttribute="trailing" constant="6" id="IDm-s1-F4B"/>
+                    <constraint firstItem="5du-hH-AeY" firstAttribute="leading" secondItem="3Gu-J3-9UW" secondAttribute="trailing" constant="12" id="Ijy-AS-JAQ"/>
+                    <constraint firstItem="4LO-il-4QS" firstAttribute="top" secondItem="7jv-Kh-jfu" secondAttribute="bottom" constant="22" id="PfD-Ai-Nbd"/>
+                    <constraint firstItem="SdY-Tz-kH6" firstAttribute="leading" secondItem="5du-hH-AeY" secondAttribute="leading" id="VvZ-sA-BLi"/>
+                    <constraint firstItem="Mb4-Uv-L0K" firstAttribute="leading" secondItem="4LO-il-4QS" secondAttribute="leading" id="Zku-5t-VDN"/>
+                    <constraint firstAttribute="bottom" secondItem="Mb4-Uv-L0K" secondAttribute="bottom" constant="6.5" id="gsn-SC-JPk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Mb4-Uv-L0K" secondAttribute="trailing" constant="10" id="hN4-xh-4l6"/>
+                    <constraint firstItem="SdY-Tz-kH6" firstAttribute="top" secondItem="5du-hH-AeY" secondAttribute="bottom" constant="6" id="kNB-I4-sEG"/>
+                    <constraint firstItem="4LO-il-4QS" firstAttribute="leading" secondItem="3Gu-J3-9UW" secondAttribute="leading" id="l4B-0W-Zg8"/>
+                    <constraint firstItem="3Gu-J3-9UW" firstAttribute="leading" secondItem="Gg7-hQ-KSi" secondAttribute="leading" constant="15" id="tPa-Jl-dAl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="5du-hH-AeY" secondAttribute="trailing" constant="10" id="vOK-jq-p31"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="name" destination="5du-hH-AeY" id="SSQ-vf-piU"/>
+                <outlet property="rating" destination="7jv-Kh-jfu" id="Ia8-8U-tQb"/>
+                <outlet property="traingDetail" destination="Mb4-Uv-L0K" id="YKk-me-mLK"/>
+                <outlet property="traingName" destination="4LO-il-4QS" id="AJu-4f-cEY"/>
+                <outlet property="userImage" destination="3Gu-J3-9UW" id="rZe-yS-HXE"/>
+                <outlet property="viewAverageRating" destination="SdY-Tz-kH6" id="3dE-Og-Sjs"/>
+            </connections>
+            <point key="canvasLocation" x="-274.5" y="178.5"/>
+        </tableViewCell>
+    </objects>
+</document>

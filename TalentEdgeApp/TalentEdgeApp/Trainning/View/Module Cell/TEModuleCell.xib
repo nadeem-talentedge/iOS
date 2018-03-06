@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="bZz-Is-rSw" customClass="TEModuleCell" customModule="TalentEdgeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bZz-Is-rSw" id="gR0-6q-h7D">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="113.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quf-yL-JcU" customClass="BCView" customModule="TalentEdgeApp" customModuleProvider="target">
+                        <rect key="frame" x="10" y="5" width="355" height="103.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moduleicon" translatesAutoresizingMaskIntoConstraints="NO" id="fKJ-P7-0jl" customClass="BCUIImageView" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="8" y="41" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="9Xg-xB-qE1"/>
+                                    <constraint firstAttribute="width" constant="22" id="FtQ-8x-CMF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="250" text="Big Data and Enterprise master data" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0N-Dp-zw8" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                <rect key="frame" x="38" y="22" width="254.5" height="59.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7e-zh-k9J">
+                                <rect key="frame" x="300.5" y="27" width="46.5" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWf-ik-8e1" customClass="MBCircularProgressBarView">
+                                        <rect key="frame" x="6.5" y="0.0" width="35" height="35"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="CBh-Ku-Uua"/>
+                                            <constraint firstAttribute="width" constant="35" id="U6i-Rr-FIX"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showValueString" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                <real key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="decimalPlaces">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="valueFontSize">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="valueDecimalFontSize">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showUnitString" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progressRotationAngle">
+                                                <real key="value" value="360"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progressAngle">
+                                                <real key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progressLineWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="emptyLineColor">
+                                                <color key="value" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="emptyLineStrokeColor">
+                                                <color key="value" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="progressStrokeColor">
+                                                <color key="value" red="0.56613588329999998" green="0.78366315360000005" blue="0.99467629189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="unitFontSize">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11M-FT-hp5" customClass="BCUILabel" customModule="TalentEdgeApp" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="39" width="44.5" height="10"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="8"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="11M-FT-hp5" secondAttribute="bottom" constant="1" id="GzY-6r-3Hb"/>
+                                    <constraint firstItem="vWf-ik-8e1" firstAttribute="centerX" secondItem="V7e-zh-k9J" secondAttribute="centerX" id="M3a-yr-05b"/>
+                                    <constraint firstItem="11M-FT-hp5" firstAttribute="top" secondItem="vWf-ik-8e1" secondAttribute="bottom" constant="4" id="OfS-tr-5Id"/>
+                                    <constraint firstAttribute="trailing" secondItem="11M-FT-hp5" secondAttribute="trailing" constant="1" id="RyW-5s-HBr"/>
+                                    <constraint firstItem="11M-FT-hp5" firstAttribute="centerX" secondItem="vWf-ik-8e1" secondAttribute="centerX" id="cc1-6j-aYm"/>
+                                    <constraint firstItem="11M-FT-hp5" firstAttribute="leading" secondItem="V7e-zh-k9J" secondAttribute="leading" constant="1" id="e0P-JK-2YG"/>
+                                    <constraint firstItem="vWf-ik-8e1" firstAttribute="top" secondItem="V7e-zh-k9J" secondAttribute="top" id="iXi-PZ-wLr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fKJ-P7-0jl" firstAttribute="centerY" secondItem="quf-yL-JcU" secondAttribute="centerY" id="1ea-MK-7e1"/>
+                            <constraint firstAttribute="trailing" secondItem="V7e-zh-k9J" secondAttribute="trailing" constant="8" id="CmB-Ha-bD5"/>
+                            <constraint firstItem="V7e-zh-k9J" firstAttribute="leading" secondItem="V0N-Dp-zw8" secondAttribute="trailing" priority="251" constant="8" id="Muj-LA-OKn"/>
+                            <constraint firstAttribute="bottom" secondItem="V0N-Dp-zw8" secondAttribute="bottom" constant="22" id="WBw-JT-qOG"/>
+                            <constraint firstItem="V0N-Dp-zw8" firstAttribute="top" secondItem="quf-yL-JcU" secondAttribute="top" constant="22" id="a56-G6-LFw"/>
+                            <constraint firstItem="V0N-Dp-zw8" firstAttribute="leading" secondItem="fKJ-P7-0jl" secondAttribute="trailing" constant="8" id="dXF-My-93z"/>
+                            <constraint firstItem="V7e-zh-k9J" firstAttribute="centerY" secondItem="quf-yL-JcU" secondAttribute="centerY" id="reN-A9-dhf"/>
+                            <constraint firstItem="fKJ-P7-0jl" firstAttribute="leading" secondItem="quf-yL-JcU" secondAttribute="leading" constant="8" id="y99-hC-WIh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="quf-yL-JcU" firstAttribute="leading" secondItem="gR0-6q-h7D" secondAttribute="leading" constant="10" id="6bh-Y6-hO3"/>
+                    <constraint firstItem="quf-yL-JcU" firstAttribute="top" secondItem="gR0-6q-h7D" secondAttribute="top" constant="5" id="KPv-oM-4V7"/>
+                    <constraint firstAttribute="trailing" secondItem="quf-yL-JcU" secondAttribute="trailing" constant="10" id="P2M-qb-zui"/>
+                    <constraint firstAttribute="bottom" secondItem="quf-yL-JcU" secondAttribute="bottom" constant="5" id="rSh-bd-L0X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imgIcon" destination="fKJ-P7-0jl" id="j3R-Z8-gXK"/>
+                <outlet property="lblModuleName" destination="V0N-Dp-zw8" id="RAF-Pg-lTF"/>
+                <outlet property="lblTitleComplete" destination="11M-FT-hp5" id="d0r-uT-znA"/>
+                <outlet property="progressView" destination="vWf-ik-8e1" id="HhY-bQ-cWE"/>
+            </connections>
+            <point key="canvasLocation" x="-136.5" y="-6"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="moduleicon" width="22" height="22"/>
+    </resources>
+</document>
